@@ -1,0 +1,20 @@
+program MJProgram
+	int x;
+	int y;
+	int arr [];
+	
+	const int x1 = 2, x2 = 3;
+	const char c = 'a';
+	const bool flag = true;
+	{
+		int main() int a; bool boolArr [];{
+			read(x);
+			print(x + 1, 2);
+			print(x);
+			
+			localA++;
+			localA--;
+			arr = new int [x % 5];
+			arr[y] = localA *x1;
+		}
+	}

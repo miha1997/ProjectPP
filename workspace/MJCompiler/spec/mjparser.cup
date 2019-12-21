@@ -1,0 +1,133 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal Integer NUMBER;
+terminal String IDENT;
+terminal Boolean BOOLVALUE;
+terminal String CHAR;
+
+terminal PROG, PRINT, READ, LBRACE, RBRACE, CONST, SEMI, ASSIGN, COMMA, LBRACKET, RBRACKET;
+terminal VOID, LPAREN, RPAREN, INC, DEC, ADD, SUB, NEW, MUL, DIV, MOD;
+
+nonterminal Program, MultiDeclList, MethodDeclList, MultiDecl, ConstDecl, VarDecl, Type, ConstDeclList, ConstDef;
+nonterminal ConstValue, VarDeclList, VarDef, MethodDecl, MethodType, StatementList, Statement, DesignatorStatement;
+nonterminal Designator, Expression, Mulop, Factor, FactorNewArrayPart, Addop, Term, FactorMethodPart, MethodVarDeclList;
+
+Program ::= (Program) PROG IDENT:labelProgram MultiDeclList LBRACE MethodDeclList RBRACE;
+
+MultiDeclList ::= (SimpleMultiDeclList) MultiDeclList MultiDecl
+			| (NoMultiDeclList)/* epsilon */ ;			
+MultiDecl ::= (MultiConstDecl) ConstDecl
+			| (MultiVarDecl) VarDecl;
+			
+ConstDecl ::= (ConstDecl) CONST Type ConstDeclList SEMI;
+ConstDeclList ::= (SimpleConstDeclList) ConstDeclList COMMA ConstDef
+				| (OneConstDeclList) ConstDef;
+ConstDef ::= (ConstDef) IDENT:labelConstName ASSIGN ConstValue:labelConstValue;
+ConstValue ::= (ConstantValueChar) CHAR:value
+			| (ConstantValueNum) NUMBER:value
+			| (ConstantValueBool) BOOLVALUE:value;
+						
+VarDecl ::= (SimpleVarDeclNoError)Type VarDeclList SEMI
+			| (VarDeclError) error:labelErrorText {: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft, null); :};
+VarDeclList ::= (SimpleVarDeclList) VarDeclList COMMA VarDef
+			| (OneVarDeclList) VarDef;
+VarDef ::= (SimpleVarDef) IDENT:labelVarName 
+			| (ArrayVarDef) IDENT:labelVarName LBRACKET RBRACKET;
+			
+Type ::= (Type) IDENT:labelName;
+
+MethodDeclList ::= (SimpleMethodDeclList) MethodDeclList MethodDecl
+						| (NoMethodDeclList) /* epsilon */;			
+MethodDecl ::= (MethodDecl) MethodType IDENT:labelMethodName LPAREN RPAREN MethodVarDeclList LBRACE StatementList RBRACE;
+
+MethodVarDeclList ::= (SimpleMethodVarDeclList) MethodVarDeclList VarDecl
+					| (EmptyMethodVariableDeclarationList)/* epsilon */; 
+
+MethodType ::= (MethodTypeVoid)VOID
+			| (MethodTypeOther)Type;
+
+StatementList ::= (SimpleStatementList)StatementList Statement
+				| (NoStatementList)/* epsilon */;
+				
+Statement ::= (SimpleStatement)DesignatorStatement SEMI
+			| (PrintStatement)PRINT LPAREN Expression RPAREN SEMI
+			| (PrintStatementArguments)PRINT LPAREN Expression COMMA NUMBER:labelNumConst RPAREN SEMI
+			| (ReadStatement)READ LPAREN Designator RPAREN SEMI;
+			
+DesignatorStatement ::= (AssignDesignatorStatement)Designator ASSIGN Expression
+					| (DesignatorInc)Designator INC
+					| (DesignatorDec)Designator DEC;
+
+Designator ::= (SimpleDesignator)IDENT:labelDesignatorName
+			| (DesignatorArray) IDENT:labelDesignatorName LBRACKET Expression RBRACKET;
+			
+Expression ::= (SimpleExpression)Term
+			| (SubExpression)SUB Term
+			| (MultiExpression)Expression Addop Term;
+
+Term ::= (SimpleTerm)Factor
+		| (MulTerm)Term Mulop Factor;
+
+Factor ::= (ConstFactor) ConstValue
+		| (ExpressFactor) LPAREN Expression RPAREN
+		| (NewFactor) NEW Type FactorNewArrayPart
+		| (MethodFactor) Designator FactorMethodPart;
+
+FactorNewArrayPart ::= (SimpleFactorNewArrayPart) LBRACKET Expression RBRACKET
+					| (NoFactorNewArrayPart) /* epsilon */;
+		
+FactorMethodPart ::= (SimpleFactorMethodPart) LPAREN RPAREN
+					 | (NoFactorMethodPart) /* epsilon */;	
+					 
+Addop ::= (AddopAdd) ADD
+		| (AddopSub) SUB;
+		
+Mulop ::= (MulopMul) MUL
+		| (MulopDiv) DIV
+		| (MulopMod) MOD;					 
+
+

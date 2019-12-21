@@ -1,0 +1,69 @@
+INFO  15:26:38,675 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  15:26:38,759 - #6 program
+INFO  15:26:38,759 - #3 MJProgram
+INFO  15:26:38,760 - #3 int
+INFO  15:26:38,761 - #3 x
+INFO  15:26:38,762 - #12 ;
+INFO  15:26:38,763 - #3 int
+INFO  15:26:38,763 - #3 y
+INFO  15:26:38,763 - #12 ;
+INFO  15:26:38,763 - #9 {
+INFO  15:26:38,764 - #3 int
+INFO  15:26:38,765 - #3 main
+INFO  15:26:38,766 - #18 (
+INFO  15:26:38,766 - #19 )
+INFO  15:26:38,766 - #9 {
+INFO  15:26:38,768 - #10 }
+INFO  15:26:38,770 - #10 }
+INFO  15:26:38,774 - Program(
+ MJProgram
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      NoMultiDeclList(
+      ) [NoMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            SimpleVarDef(
+             x
+            ) [SimpleVarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        OneVarDeclList(
+          SimpleVarDef(
+           y
+          ) [SimpleVarDef]
+        ) [OneVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeOther(
+        Type(
+         int
+        ) [Type]
+      ) [MethodTypeOther]
+     main
+      NoVarDeclList(
+      ) [NoVarDeclList]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  15:26:38,775 - ===================================
+INFO  15:26:38,781 -  Print count calls = 0
+INFO  15:26:38,781 -  Deklarisanih promenljivih ima = 0
