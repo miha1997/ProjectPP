@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/11/2019 15:46:15
+// 29/11/2019 17:7:23
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,13 @@ package rs.ac.bg.etf.pp1.ast;
 public class NewFactor extends Factor {
 
     private Type Type;
-    private FactorNewArrayPart FactorNewArrayPart;
+    private Expression Expression;
 
-    public NewFactor (Type Type, FactorNewArrayPart FactorNewArrayPart) {
+    public NewFactor (Type Type, Expression Expression) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
-        this.FactorNewArrayPart=FactorNewArrayPart;
-        if(FactorNewArrayPart!=null) FactorNewArrayPart.setParent(this);
+        this.Expression=Expression;
+        if(Expression!=null) Expression.setParent(this);
     }
 
     public Type getType() {
@@ -25,12 +25,12 @@ public class NewFactor extends Factor {
         this.Type=Type;
     }
 
-    public FactorNewArrayPart getFactorNewArrayPart() {
-        return FactorNewArrayPart;
+    public Expression getExpression() {
+        return Expression;
     }
 
-    public void setFactorNewArrayPart(FactorNewArrayPart FactorNewArrayPart) {
-        this.FactorNewArrayPart=FactorNewArrayPart;
+    public void setExpression(Expression Expression) {
+        this.Expression=Expression;
     }
 
     public void accept(Visitor visitor) {
@@ -39,18 +39,18 @@ public class NewFactor extends Factor {
 
     public void childrenAccept(Visitor visitor) {
         if(Type!=null) Type.accept(visitor);
-        if(FactorNewArrayPart!=null) FactorNewArrayPart.accept(visitor);
+        if(Expression!=null) Expression.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Type!=null) Type.traverseTopDown(visitor);
-        if(FactorNewArrayPart!=null) FactorNewArrayPart.traverseTopDown(visitor);
+        if(Expression!=null) Expression.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Type!=null) Type.traverseBottomUp(visitor);
-        if(FactorNewArrayPart!=null) FactorNewArrayPart.traverseBottomUp(visitor);
+        if(Expression!=null) Expression.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -65,8 +65,8 @@ public class NewFactor extends Factor {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(FactorNewArrayPart!=null)
-            buffer.append(FactorNewArrayPart.toString("  "+tab));
+        if(Expression!=null)
+            buffer.append(Expression.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

@@ -1,0 +1,69 @@
+INFO  17:02:19,831 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  17:02:19,901 - #6 program
+INFO  17:02:19,901 - #3 MJProgram
+INFO  17:02:19,901 - #3 int
+INFO  17:02:19,904 - #3 x
+INFO  17:02:19,905 - #12 ;
+INFO  17:02:19,909 - #3 int
+INFO  17:02:19,910 - #3 y
+INFO  17:02:19,910 - #14 ,
+INFO  17:02:19,910 - #3 a
+INFO  17:02:19,910 - #12 ;
+INFO  17:02:19,910 - #9 {
+INFO  17:02:19,910 - #10 }
+INFO  17:02:19,937 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      NoMultiDeclList(
+      ) [NoMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             x
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        SimpleVarDeclList(
+          OneVarDeclList(
+            VarDef(
+             y
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+          VarDef(
+           a
+            NoArrayDef(
+            ) [NoArrayDef]
+          ) [VarDef]
+        ) [SimpleVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  NoMethodDeclList(
+  ) [NoMethodDeclList]
+) [Program]
+INFO  17:02:19,938 - ===================================
+ERROR 17:02:19,941 - Greska na liniji 2, promenljiva x je vec definisana
+ERROR 17:02:19,941 - Greska na liniji 3, promenljiva y je vec definisana
+ERROR 17:02:19,941 - Greska na liniji 3, promenljiva a je vec definisana
+ERROR 17:02:19,941 - Ne postoji main funkcija!
+INFO  17:02:19,941 -  Print count calls = 0
+INFO  17:02:19,941 -  Deklarisanih promenljivih ima = 0
+INFO  17:02:19,941 - ===================================

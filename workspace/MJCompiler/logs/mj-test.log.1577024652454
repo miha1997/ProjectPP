@@ -1,0 +1,51 @@
+INFO  15:15:22,366 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  15:15:22,410 - #6 program
+INFO  15:15:22,410 - #3 MJProgram
+INFO  15:15:22,411 - #3 int
+INFO  15:15:22,413 - #3 x
+INFO  15:15:22,414 - #12 ;
+INFO  15:15:22,414 - #3 int
+INFO  15:15:22,415 - #3 y
+INFO  15:15:22,415 - #12 ;
+INFO  15:15:22,415 - #9 {
+INFO  15:15:22,415 - #10 }
+INFO  15:15:22,444 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      NoMultiDeclList(
+      ) [NoMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            SimpleVarDef(
+             x
+            ) [SimpleVarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        OneVarDeclList(
+          SimpleVarDef(
+           y
+          ) [SimpleVarDef]
+        ) [OneVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  NoMethodDeclList(
+  ) [NoMethodDeclList]
+) [Program]
+INFO  15:15:22,444 - ===================================
+INFO  15:15:22,447 - Deklarisana promenljiva x na liniji 2
+INFO  15:15:22,447 - Deklarisana promenljiva y na liniji 3

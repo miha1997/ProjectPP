@@ -1,0 +1,127 @@
+INFO  17:15:07,413 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  17:15:07,454 - #6 program
+INFO  17:15:07,454 - #3 MJProgram
+INFO  17:15:07,455 - #3 int
+INFO  17:15:07,456 - #3 x
+INFO  17:15:07,457 - #12 ;
+INFO  17:15:07,460 - #11 const
+INFO  17:15:07,460 - #3 int
+INFO  17:15:07,460 - #3 b
+INFO  17:15:07,460 - #13 =
+INFO  17:15:07,460 - #2 5
+INFO  17:15:07,461 - #14 ,
+INFO  17:15:07,463 - #3 c
+INFO  17:15:07,463 - #13 =
+INFO  17:15:07,463 - #2 7
+INFO  17:15:07,463 - #12 ;
+INFO  17:15:07,463 - #3 int
+INFO  17:15:07,464 - #3 y
+INFO  17:15:07,464 - #14 ,
+INFO  17:15:07,464 - #3 a
+INFO  17:15:07,464 - #12 ;
+INFO  17:15:07,465 - #9 {
+INFO  17:15:07,465 - #17 void
+INFO  17:15:07,466 - #3 main
+INFO  17:15:07,466 - #18 (
+INFO  17:15:07,466 - #19 )
+INFO  17:15:07,467 - #9 {
+INFO  17:15:07,467 - #10 }
+INFO  17:15:07,468 - #10 }
+INFO  17:15:07,494 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        NoMultiDeclList(
+        ) [NoMultiDeclList]
+        MultiVarDecl(
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               x
+                NoArrayDef(
+                ) [NoArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [MultiVarDecl]
+      ) [SimpleMultiDeclList]
+      MultiConstDecl(
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          SimpleConstDeclList(
+            OneConstDeclList(
+              ConstDef(
+               b
+                SimpleAssignOp(
+                ) [SimpleAssignOp]
+                ConstantValueNum(
+                 5
+                ) [ConstantValueNum]
+              ) [ConstDef]
+            ) [OneConstDeclList]
+            ConstDef(
+             c
+              SimpleAssignOp(
+              ) [SimpleAssignOp]
+              ConstantValueNum(
+               7
+              ) [ConstantValueNum]
+            ) [ConstDef]
+          ) [SimpleConstDeclList]
+        ) [ConstDecl]
+      ) [MultiConstDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        SimpleVarDeclList(
+          OneVarDeclList(
+            VarDef(
+             y
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+          VarDef(
+           a
+            NoArrayDef(
+            ) [NoArrayDef]
+          ) [VarDef]
+        ) [SimpleVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+     main
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  17:15:07,495 - ===================================
+INFO  17:15:07,499 - Deklarisana promenljiva x na liniji 2
+ERROR 17:15:07,499 - Greska na liniji 3, naziv b vec postoji!
+ERROR 17:15:07,499 - Greska na liniji 3, naziv c vec postoji!
+INFO  17:15:07,499 - Deklarisana promenljiva y na liniji 4
+INFO  17:15:07,500 - Deklarisana promenljiva a na liniji 4
+ERROR 17:15:07,500 - Ne postoji main funkcija!
+INFO  17:15:07,500 -  Print count calls = 0
+INFO  17:15:07,500 -  Deklarisanih promenljivih ima = 0
+INFO  17:15:07,500 - ===================================

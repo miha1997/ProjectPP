@@ -1,8 +1,11 @@
 program MJProgram
 	int x;
-	int y;
+	const int b = 5;
+	const bool c = true;
+	const char m = 'm', n = 'n';
+	int y, a;
 {
-	int main() int a; {
-		
+	void main(){
+		x = x + 1;
 	}
 }

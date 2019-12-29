@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/11/2019 15:46:15
+// 29/11/2019 17:7:23
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,21 +9,34 @@ public class ConstDef implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
-    private String labelConstName;
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
+
+    private String constName;
+    private AssignOp AssignOp;
     private ConstValue ConstValue;
 
-    public ConstDef (String labelConstName, ConstValue ConstValue) {
-        this.labelConstName=labelConstName;
+    public ConstDef (String constName, AssignOp AssignOp, ConstValue ConstValue) {
+        this.constName=constName;
+        this.AssignOp=AssignOp;
+        if(AssignOp!=null) AssignOp.setParent(this);
         this.ConstValue=ConstValue;
         if(ConstValue!=null) ConstValue.setParent(this);
     }
 
-    public String getLabelConstName() {
-        return labelConstName;
+    public String getConstName() {
+        return constName;
     }
 
-    public void setLabelConstName(String labelConstName) {
-        this.labelConstName=labelConstName;
+    public void setConstName(String constName) {
+        this.constName=constName;
+    }
+
+    public AssignOp getAssignOp() {
+        return AssignOp;
+    }
+
+    public void setAssignOp(AssignOp AssignOp) {
+        this.AssignOp=AssignOp;
     }
 
     public ConstValue getConstValue() {
@@ -55,15 +68,18 @@ public class ConstDef implements SyntaxNode {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(AssignOp!=null) AssignOp.accept(visitor);
         if(ConstValue!=null) ConstValue.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(AssignOp!=null) AssignOp.traverseTopDown(visitor);
         if(ConstValue!=null) ConstValue.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(AssignOp!=null) AssignOp.traverseBottomUp(visitor);
         if(ConstValue!=null) ConstValue.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -73,7 +89,13 @@ public class ConstDef implements SyntaxNode {
         buffer.append(tab);
         buffer.append("ConstDef(\n");
 
-        buffer.append(" "+tab+labelConstName);
+        buffer.append(" "+tab+constName);
+        buffer.append("\n");
+
+        if(AssignOp!=null)
+            buffer.append(AssignOp.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         if(ConstValue!=null)

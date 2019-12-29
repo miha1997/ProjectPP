@@ -1,0 +1,179 @@
+INFO  17:21:31,117 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  17:21:31,151 - #6 program
+INFO  17:21:31,152 - #3 MJProgram
+INFO  17:21:31,152 - #3 int
+INFO  17:21:31,153 - #3 x
+INFO  17:21:31,154 - #12 ;
+INFO  17:21:31,155 - #11 const
+INFO  17:21:31,156 - #3 int
+INFO  17:21:31,156 - #3 b
+INFO  17:21:31,156 - #13 =
+INFO  17:21:31,156 - #2 5
+INFO  17:21:31,158 - #12 ;
+INFO  17:21:31,162 - #11 const
+INFO  17:21:31,163 - #3 bool
+INFO  17:21:31,164 - #3 c
+INFO  17:21:31,164 - #13 =
+INFO  17:21:31,164 - #4 true
+INFO  17:21:31,164 - #12 ;
+INFO  17:21:31,164 - #11 const
+INFO  17:21:31,164 - #3 char
+INFO  17:21:31,164 - #3 m
+INFO  17:21:31,165 - #13 =
+INFO  17:21:31,165 - #5 'm'
+INFO  17:21:31,165 - #14 ,
+INFO  17:21:31,166 - #3 n
+INFO  17:21:31,167 - #13 =
+INFO  17:21:31,167 - #5 'n'
+INFO  17:21:31,167 - #12 ;
+INFO  17:21:31,167 - #3 int
+INFO  17:21:31,167 - #3 y
+INFO  17:21:31,167 - #14 ,
+INFO  17:21:31,168 - #3 a
+INFO  17:21:31,168 - #12 ;
+INFO  17:21:31,168 - #9 {
+INFO  17:21:31,168 - #17 void
+INFO  17:21:31,169 - #3 main
+INFO  17:21:31,170 - #18 (
+INFO  17:21:31,170 - #19 )
+INFO  17:21:31,170 - #9 {
+INFO  17:21:31,170 - #10 }
+INFO  17:21:31,171 - #10 }
+INFO  17:21:31,196 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        SimpleMultiDeclList(
+          SimpleMultiDeclList(
+            NoMultiDeclList(
+            ) [NoMultiDeclList]
+            MultiVarDecl(
+              SimpleVarDeclNoError(
+                Type(
+                 int
+                ) [Type]
+                OneVarDeclList(
+                  VarDef(
+                   x
+                    NoArrayDef(
+                    ) [NoArrayDef]
+                  ) [VarDef]
+                ) [OneVarDeclList]
+              ) [SimpleVarDeclNoError]
+            ) [MultiVarDecl]
+          ) [SimpleMultiDeclList]
+          MultiConstDecl(
+            ConstDecl(
+              Type(
+               int
+              ) [Type]
+              OneConstDeclList(
+                ConstDef(
+                 b
+                  SimpleAssignOp(
+                  ) [SimpleAssignOp]
+                  ConstantValueNum(
+                   5
+                  ) [ConstantValueNum]
+                ) [ConstDef]
+              ) [OneConstDeclList]
+            ) [ConstDecl]
+          ) [MultiConstDecl]
+        ) [SimpleMultiDeclList]
+        MultiConstDecl(
+          ConstDecl(
+            Type(
+             bool
+            ) [Type]
+            OneConstDeclList(
+              ConstDef(
+               c
+                SimpleAssignOp(
+                ) [SimpleAssignOp]
+                ConstantValueBool(
+                 true
+                ) [ConstantValueBool]
+              ) [ConstDef]
+            ) [OneConstDeclList]
+          ) [ConstDecl]
+        ) [MultiConstDecl]
+      ) [SimpleMultiDeclList]
+      MultiConstDecl(
+        ConstDecl(
+          Type(
+           char
+          ) [Type]
+          SimpleConstDeclList(
+            OneConstDeclList(
+              ConstDef(
+               m
+                SimpleAssignOp(
+                ) [SimpleAssignOp]
+                ConstantValueChar(
+                 'm'
+                ) [ConstantValueChar]
+              ) [ConstDef]
+            ) [OneConstDeclList]
+            ConstDef(
+             n
+              SimpleAssignOp(
+              ) [SimpleAssignOp]
+              ConstantValueChar(
+               'n'
+              ) [ConstantValueChar]
+            ) [ConstDef]
+          ) [SimpleConstDeclList]
+        ) [ConstDecl]
+      ) [MultiConstDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        SimpleVarDeclList(
+          OneVarDeclList(
+            VarDef(
+             y
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+          VarDef(
+           a
+            NoArrayDef(
+            ) [NoArrayDef]
+          ) [VarDef]
+        ) [SimpleVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+     main
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  17:21:31,197 - ===================================
+INFO  17:21:31,199 - Deklarisana promenljiva x na liniji 2
+INFO  17:21:31,199 - Deklarisana konstanta b na liniji 3
+INFO  17:21:31,199 - Deklarisana konstanta c na liniji 4
+INFO  17:21:31,199 - Deklarisana konstanta m na liniji 5
+INFO  17:21:31,200 - Deklarisana konstanta n na liniji 5
+INFO  17:21:31,200 - Deklarisana promenljiva y na liniji 6
+INFO  17:21:31,200 - Deklarisana promenljiva a na liniji 6
+ERROR 17:21:31,200 - Ne postoji main funkcija!
+INFO  17:21:31,200 -  Print count calls = 0
+INFO  17:21:31,200 -  Deklarisanih promenljivih ima = 0
+INFO  17:21:31,200 - ===================================

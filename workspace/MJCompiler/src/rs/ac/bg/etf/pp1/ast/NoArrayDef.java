@@ -1,24 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/11/2019 15:46:15
+// 29/11/2019 17:7:23
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class SimpleVarDef extends VarDef {
+public class NoArrayDef extends ArrayVarDef {
 
-    private String labelVarName;
-
-    public SimpleVarDef (String labelVarName) {
-        this.labelVarName=labelVarName;
-    }
-
-    public String getLabelVarName() {
-        return labelVarName;
-    }
-
-    public void setLabelVarName(String labelVarName) {
-        this.labelVarName=labelVarName;
+    public NoArrayDef () {
     }
 
     public void accept(Visitor visitor) {
@@ -39,13 +28,10 @@ public class SimpleVarDef extends VarDef {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("SimpleVarDef(\n");
-
-        buffer.append(" "+tab+labelVarName);
-        buffer.append("\n");
+        buffer.append("NoArrayDef(\n");
 
         buffer.append(tab);
-        buffer.append(") [SimpleVarDef]");
+        buffer.append(") [NoArrayDef]");
         return buffer.toString();
     }
 }

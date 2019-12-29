@@ -1,51 +1,39 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/11/2019 15:46:15
+// 29/11/2019 17:7:23
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ArrayVarDef extends VarDef {
+public abstract class ArrayVarDef implements SyntaxNode {
 
-    private String labelVarName;
+    private SyntaxNode parent;
 
-    public ArrayVarDef (String labelVarName) {
-        this.labelVarName=labelVarName;
+    private int line;
+
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
+
+    public SyntaxNode getParent() {
+        return parent;
     }
 
-    public String getLabelVarName() {
-        return labelVarName;
+    public void setParent(SyntaxNode parent) {
+        this.parent=parent;
     }
 
-    public void setLabelVarName(String labelVarName) {
-        this.labelVarName=labelVarName;
+    public int getLine() {
+        return line;
     }
 
-    public void accept(Visitor visitor) {
-        visitor.visit(this);
+    public void setLine(int line) {
+        this.line=line;
     }
 
-    public void childrenAccept(Visitor visitor) {
-    }
+    public abstract void accept(Visitor visitor);
+    public abstract void childrenAccept(Visitor visitor);
+    public abstract void traverseTopDown(Visitor visitor);
+    public abstract void traverseBottomUp(Visitor visitor);
 
-    public void traverseTopDown(Visitor visitor) {
-        accept(visitor);
-    }
-
-    public void traverseBottomUp(Visitor visitor) {
-        accept(visitor);
-    }
-
-    public String toString(String tab) {
-        StringBuffer buffer=new StringBuffer();
-        buffer.append(tab);
-        buffer.append("ArrayVarDef(\n");
-
-        buffer.append(" "+tab+labelVarName);
-        buffer.append("\n");
-
-        buffer.append(tab);
-        buffer.append(") [ArrayVarDef]");
-        return buffer.toString();
-    }
+    public String toString() { return toString(""); }
+    public abstract String toString(String tab);
 }

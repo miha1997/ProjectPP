@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/11/2019 15:46:15
+// 29/11/2019 17:7:23
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class NoFactorNewArrayPart extends FactorNewArrayPart {
+public class SimpleAssignOp extends AssignOp {
 
-    public NoFactorNewArrayPart () {
+    public SimpleAssignOp () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class NoFactorNewArrayPart extends FactorNewArrayPart {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("NoFactorNewArrayPart(\n");
+        buffer.append("SimpleAssignOp(\n");
 
         buffer.append(tab);
-        buffer.append(") [NoFactorNewArrayPart]");
+        buffer.append(") [SimpleAssignOp]");
         return buffer.toString();
     }
 }

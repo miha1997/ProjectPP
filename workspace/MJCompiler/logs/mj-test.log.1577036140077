@@ -1,0 +1,218 @@
+INFO  18:27:39,702 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  18:27:39,743 - #6 program
+INFO  18:27:39,743 - #3 MJProgram
+INFO  18:27:39,743 - #3 int
+INFO  18:27:39,744 - #3 x
+INFO  18:27:39,745 - #12 ;
+INFO  18:27:39,747 - #11 const
+INFO  18:27:39,747 - #3 int
+INFO  18:27:39,747 - #3 b
+INFO  18:27:39,748 - #13 =
+INFO  18:27:39,748 - #2 5
+INFO  18:27:39,749 - #12 ;
+INFO  18:27:39,750 - #11 const
+INFO  18:27:39,750 - #3 bool
+INFO  18:27:39,750 - #3 c
+INFO  18:27:39,751 - #13 =
+INFO  18:27:39,751 - #4 true
+INFO  18:27:39,751 - #12 ;
+INFO  18:27:39,751 - #11 const
+INFO  18:27:39,751 - #3 char
+INFO  18:27:39,751 - #3 m
+INFO  18:27:39,751 - #13 =
+INFO  18:27:39,752 - #5 'm'
+INFO  18:27:39,752 - #14 ,
+INFO  18:27:39,752 - #3 n
+INFO  18:27:39,752 - #13 =
+INFO  18:27:39,752 - #5 'n'
+INFO  18:27:39,752 - #12 ;
+INFO  18:27:39,752 - #3 int
+INFO  18:27:39,752 - #3 y
+INFO  18:27:39,753 - #14 ,
+INFO  18:27:39,753 - #3 a
+INFO  18:27:39,753 - #12 ;
+INFO  18:27:39,753 - #9 {
+INFO  18:27:39,753 - #17 void
+INFO  18:27:39,754 - #3 main
+INFO  18:27:39,754 - #18 (
+INFO  18:27:39,755 - #19 )
+INFO  18:27:39,755 - #9 {
+INFO  18:27:39,756 - #3 x
+INFO  18:27:39,756 - #13 =
+INFO  18:27:39,756 - #3 x
+INFO  18:27:39,757 - #22 +
+INFO  18:27:39,759 - #2 1
+INFO  18:27:39,760 - #12 ;
+INFO  18:27:39,761 - #10 }
+INFO  18:27:39,762 - #10 }
+INFO  18:27:39,790 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        SimpleMultiDeclList(
+          SimpleMultiDeclList(
+            NoMultiDeclList(
+            ) [NoMultiDeclList]
+            MultiVarDecl(
+              SimpleVarDeclNoError(
+                Type(
+                 int
+                ) [Type]
+                OneVarDeclList(
+                  VarDef(
+                   x
+                    NoArrayDef(
+                    ) [NoArrayDef]
+                  ) [VarDef]
+                ) [OneVarDeclList]
+              ) [SimpleVarDeclNoError]
+            ) [MultiVarDecl]
+          ) [SimpleMultiDeclList]
+          MultiConstDecl(
+            ConstDecl(
+              Type(
+               int
+              ) [Type]
+              OneConstDeclList(
+                ConstDef(
+                 b
+                  SimpleAssignOp(
+                  ) [SimpleAssignOp]
+                  ConstantValueNum(
+                   5
+                  ) [ConstantValueNum]
+                ) [ConstDef]
+              ) [OneConstDeclList]
+            ) [ConstDecl]
+          ) [MultiConstDecl]
+        ) [SimpleMultiDeclList]
+        MultiConstDecl(
+          ConstDecl(
+            Type(
+             bool
+            ) [Type]
+            OneConstDeclList(
+              ConstDef(
+               c
+                SimpleAssignOp(
+                ) [SimpleAssignOp]
+                ConstantValueBool(
+                 true
+                ) [ConstantValueBool]
+              ) [ConstDef]
+            ) [OneConstDeclList]
+          ) [ConstDecl]
+        ) [MultiConstDecl]
+      ) [SimpleMultiDeclList]
+      MultiConstDecl(
+        ConstDecl(
+          Type(
+           char
+          ) [Type]
+          SimpleConstDeclList(
+            OneConstDeclList(
+              ConstDef(
+               m
+                SimpleAssignOp(
+                ) [SimpleAssignOp]
+                ConstantValueChar(
+                 'm'
+                ) [ConstantValueChar]
+              ) [ConstDef]
+            ) [OneConstDeclList]
+            ConstDef(
+             n
+              SimpleAssignOp(
+              ) [SimpleAssignOp]
+              ConstantValueChar(
+               'n'
+              ) [ConstantValueChar]
+            ) [ConstDef]
+          ) [SimpleConstDeclList]
+        ) [ConstDecl]
+      ) [MultiConstDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        SimpleVarDeclList(
+          OneVarDeclList(
+            VarDef(
+             y
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+          VarDef(
+           a
+            NoArrayDef(
+            ) [NoArrayDef]
+          ) [VarDef]
+        ) [SimpleVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+     main
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      SimpleStatementList(
+        NoStatementList(
+        ) [NoStatementList]
+        SimpleStatement(
+          AssignDesignatorStatement(
+            SimpleDesignator(
+             x
+            ) [SimpleDesignator]
+            SimpleAssignOp(
+            ) [SimpleAssignOp]
+            MultiExpression(
+              SimpleExpression(
+                SimpleTerm(
+                  MethodFactor(
+                    SimpleDesignator(
+                     x
+                    ) [SimpleDesignator]
+                    NoFactorMethodPart(
+                    ) [NoFactorMethodPart]
+                  ) [MethodFactor]
+                ) [SimpleTerm]
+              ) [SimpleExpression]
+              AddopAdd(
+              ) [AddopAdd]
+              SimpleTerm(
+                ConstFactor(
+                  ConstantValueNum(
+                   1
+                  ) [ConstantValueNum]
+                ) [ConstFactor]
+              ) [SimpleTerm]
+            ) [MultiExpression]
+          ) [AssignDesignatorStatement]
+        ) [SimpleStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  18:27:39,791 - ===================================
+INFO  18:27:39,794 - Deklarisana promenljiva x na liniji 2
+INFO  18:27:39,794 - Deklarisana konstanta b na liniji 3
+INFO  18:27:39,794 - Deklarisana konstanta c na liniji 4
+INFO  18:27:39,794 - Deklarisana konstanta m na liniji 5
+INFO  18:27:39,794 - Deklarisana konstanta n na liniji 5
+INFO  18:27:39,794 - Deklarisana promenljiva y na liniji 6
+INFO  18:27:39,795 - Deklarisana promenljiva a na liniji 6
+ERROR 18:27:39,795 - Ne postoji main funkcija!
+INFO  18:27:39,795 -  Print count calls = 0
+INFO  18:27:39,795 -  Deklarisanih promenljivih ima = 0
+INFO  18:27:39,795 - ===================================

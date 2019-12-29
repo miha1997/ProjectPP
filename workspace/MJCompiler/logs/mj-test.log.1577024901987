@@ -1,0 +1,60 @@
+INFO  15:24:49,514 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  15:24:49,558 - #6 program
+INFO  15:24:49,559 - #3 MJProgram
+INFO  15:24:49,559 - #3 int
+INFO  15:24:49,560 - #3 x
+INFO  15:24:49,561 - #12 ;
+INFO  15:24:49,561 - #3 int
+INFO  15:24:49,562 - #3 y
+INFO  15:24:49,562 - #14 ,
+INFO  15:24:49,562 - #27 %
+ERROR 15:24:49,562 - 
+Sintaksna greska na liniji 3
+INFO  15:24:49,562 - #14 ,
+INFO  15:24:49,563 - #3 a
+INFO  15:24:49,563 - #12 ;
+INFO  15:24:49,563 - #9 {
+ERROR 15:24:49,564 - Sintaksna greska, izvrsen oporavak u liniji 3
+INFO  15:24:49,565 - #10 }
+INFO  15:24:49,590 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      NoMultiDeclList(
+      ) [NoMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            SimpleVarDef(
+             x
+            ) [SimpleVarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        SimpleVarDeclList(
+          VarDeclErrorComma(
+          ) [VarDeclErrorComma]
+          SimpleVarDef(
+           a
+          ) [SimpleVarDef]
+        ) [SimpleVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  NoMethodDeclList(
+  ) [NoMethodDeclList]
+) [Program]
+INFO  15:24:49,590 - ===================================
+INFO  15:24:49,592 - Deklarisana promenljiva x na liniji 2
+INFO  15:24:49,593 - Deklarisana promenljiva a na liniji 3

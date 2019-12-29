@@ -10,9 +10,11 @@ public class RuleVisitor extends VisitorAdaptor{
 	int varDeclCount = 0;
 	
 	Logger log = Logger.getLogger(getClass());
-
+	
 	public void visit(VarDecl vardecl){
 		varDeclCount++;
+		
+		//Tab.insert(Obj.Var, vardecl.ge, type)
 	}
 	
     public void visit(PrintStatement print) {

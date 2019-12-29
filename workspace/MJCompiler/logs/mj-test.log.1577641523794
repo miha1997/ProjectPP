@@ -1,0 +1,105 @@
+INFO  18:44:36,231 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\SemanticTestLevelA.mj
+INFO  18:44:36,271 - #6 program
+INFO  18:44:36,271 - #3 SemanticTest
+INFO  18:44:36,271 - #3 int
+INFO  18:44:36,273 - #3 x
+INFO  18:44:36,273 - #14 ,
+INFO  18:44:36,275 - #3 y
+INFO  18:44:36,275 - #12 ;
+INFO  18:44:36,275 - #9 {
+INFO  18:44:36,276 - #17 void
+INFO  18:44:36,277 - #3 main
+INFO  18:44:36,277 - #18 (
+INFO  18:44:36,278 - #19 )
+INFO  18:44:36,278 - #3 int
+INFO  18:44:36,279 - #3 a
+INFO  18:44:36,279 - #12 ;
+INFO  18:44:36,279 - #3 char
+INFO  18:44:36,279 - #3 c
+INFO  18:44:36,280 - #12 ;
+INFO  18:44:36,280 - #9 {
+INFO  18:44:36,280 - #10 }
+INFO  18:44:36,281 - #10 }
+INFO  18:44:36,307 - Program(
+  ProgramName(
+   SemanticTest
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    NoMultiDeclList(
+    ) [NoMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        SimpleVarDeclList(
+          OneVarDeclList(
+            VarDef(
+             x
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+          VarDef(
+           y
+            NoArrayDef(
+            ) [NoArrayDef]
+          ) [VarDef]
+        ) [SimpleVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      SimpleMethodVarDeclList(
+        SimpleMethodVarDeclList(
+          EmptyMethodVariableDeclarationList(
+          ) [EmptyMethodVariableDeclarationList]
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               a
+                NoArrayDef(
+                ) [NoArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [SimpleMethodVarDeclList]
+        SimpleVarDeclNoError(
+          Type(
+           char
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             c
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [SimpleMethodVarDeclList]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  18:44:36,308 - ===================================
+INFO  18:44:36,311 - Deklarisana promenljiva x na liniji 2
+INFO  18:44:36,311 - Deklarisana promenljiva y na liniji 2
+INFO  18:44:36,311 - Definisana funkcija main na liniji 5
+INFO  18:44:36,312 - Deklarisana promenljiva a na liniji 5
+INFO  18:44:36,312 - Deklarisana promenljiva c na liniji 5
+INFO  18:44:36,312 -  Print count calls = 0
+INFO  18:44:36,312 -  Deklarisanih promenljivih ima = 4
+INFO  18:44:36,312 - ===================================
+INFO  18:44:36,313 - Parsiranje uspesno zavrseno!

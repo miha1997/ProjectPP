@@ -52,11 +52,22 @@ terminal String CHAR;
 terminal PROG, PRINT, READ, LBRACE, RBRACE, CONST, SEMI, ASSIGN, COMMA, LBRACKET, RBRACKET;
 terminal VOID, LPAREN, RPAREN, INC, DEC, ADD, SUB, NEW, MUL, DIV, MOD;
 
-nonterminal Program, MultiDeclList, MethodDeclList, MultiDecl, ConstDecl, VarDecl, Type, ConstDeclList, ConstDef;
-nonterminal ConstValue, VarDeclList, VarDef, MethodDecl, MethodType, StatementList, Statement, DesignatorStatement;
-nonterminal Designator, Expression, Mulop, Factor, FactorNewArrayPart, Addop, Term, FactorMethodPart, MethodVarDeclList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj VarDef, ConstValue, ConstDef, ArrayVarDef;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDecl, MethodName, MethodVarDeclList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorStatement, Statement, Expression, Designator, Term;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Factor;
 
-Program ::= (Program) PROG IDENT:labelProgram MultiDeclList LBRACE MethodDeclList RBRACE;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodType;
+
+nonterminal MultiDeclList, MethodDeclList, MultiDecl, ConstDecl, VarDecl, ConstDeclList;
+nonterminal VarDeclList, StatementList;
+nonterminal Mulop, Addop, FactorMethodPart;
+nonterminal AssignOp;
+
+Program ::= (Program) PROG ProgramName MultiDeclList LBRACE MethodDeclList RBRACE;
+
+ProgramName ::= (ProgramName) IDENT:progName;
 
 MultiDeclList ::= (SimpleMultiDeclList) MultiDeclList MultiDecl
 			| (NoMultiDeclList)/* epsilon */ ;			
@@ -66,7 +77,7 @@ MultiDecl ::= (MultiConstDecl) ConstDecl
 ConstDecl ::= (ConstDecl) CONST Type ConstDeclList SEMI;
 ConstDeclList ::= (SimpleConstDeclList) ConstDeclList COMMA ConstDef
 				| (OneConstDeclList) ConstDef;
-ConstDef ::= (ConstDef) IDENT:labelConstName ASSIGN ConstValue:labelConstValue;
+ConstDef ::= (ConstDef) IDENT:constName AssignOp ConstValue:constValue;
 ConstValue ::= (ConstantValueChar) CHAR:value
 			| (ConstantValueNum) NUMBER:value
 			| (ConstantValueBool) BOOLVALUE:value;
@@ -74,21 +85,26 @@ ConstValue ::= (ConstantValueChar) CHAR:value
 VarDecl ::= (SimpleVarDeclNoError)Type VarDeclList SEMI
 			| (VarDeclError) error:labelErrorText {: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft, null); :};
 VarDeclList ::= (SimpleVarDeclList) VarDeclList COMMA VarDef
-			| (OneVarDeclList) VarDef;
-VarDef ::= (SimpleVarDef) IDENT:labelVarName 
-			| (ArrayVarDef) IDENT:labelVarName LBRACKET RBRACKET;
+			| (OneVarDeclList) VarDef
+			| (VarDeclErrorComma) error:labelErrorText {: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft, null); :};
+VarDef ::= (VarDef) IDENT:varName ArrayVarDef:arrayObject;
+
+ArrayVarDef ::= (SimpleArrayDef) LBRACKET RBRACKET
+			| (NoArrayDef) /* epsilon */;
 			
-Type ::= (Type) IDENT:labelName;
+Type ::= (Type) IDENT:typeName;
 
 MethodDeclList ::= (SimpleMethodDeclList) MethodDeclList MethodDecl
-						| (NoMethodDeclList) /* epsilon */;			
-MethodDecl ::= (MethodDecl) MethodType IDENT:labelMethodName LPAREN RPAREN MethodVarDeclList LBRACE StatementList RBRACE;
+					| (NoMethodDeclList) /* epsilon */;			
+MethodDecl ::= (MethodDecl) MethodType MethodName LPAREN RPAREN MethodVarDeclList LBRACE StatementList RBRACE;
+
+MethodName ::= (MethodName) IDENT:methodName;
 
 MethodVarDeclList ::= (SimpleMethodVarDeclList) MethodVarDeclList VarDecl
 					| (EmptyMethodVariableDeclarationList)/* epsilon */; 
 
 MethodType ::= (MethodTypeVoid)VOID
-			| (MethodTypeOther)Type;
+			| (MethodTypeOther)Type:typeName;
 
 StatementList ::= (SimpleStatementList)StatementList Statement
 				| (NoStatementList)/* epsilon */;
@@ -98,9 +114,12 @@ Statement ::= (SimpleStatement)DesignatorStatement SEMI
 			| (PrintStatementArguments)PRINT LPAREN Expression COMMA NUMBER:labelNumConst RPAREN SEMI
 			| (ReadStatement)READ LPAREN Designator RPAREN SEMI;
 			
-DesignatorStatement ::= (AssignDesignatorStatement)Designator ASSIGN Expression
+DesignatorStatement ::= (AssignDesignatorStatement)Designator AssignOp Expression
 					| (DesignatorInc)Designator INC
 					| (DesignatorDec)Designator DEC;
+
+AssignOp ::= (SimpleAssignOp) ASSIGN
+		| (AssignOpError) error:labelErrorText {: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft, null); :};
 
 Designator ::= (SimpleDesignator)IDENT:labelDesignatorName
 			| (DesignatorArray) IDENT:labelDesignatorName LBRACKET Expression RBRACKET;
@@ -114,14 +133,11 @@ Term ::= (SimpleTerm)Factor
 
 Factor ::= (ConstFactor) ConstValue
 		| (ExpressFactor) LPAREN Expression RPAREN
-		| (NewFactor) NEW Type FactorNewArrayPart
-		| (MethodFactor) Designator FactorMethodPart;
-
-FactorNewArrayPart ::= (SimpleFactorNewArrayPart) LBRACKET Expression RBRACKET
-					| (NoFactorNewArrayPart) /* epsilon */;
+		| (NewFactor) NEW Type LBRACKET Expression RBRACKET
+		| (DesignatorFactor) Designator FactorMethodPart;
 		
 FactorMethodPart ::= (SimpleFactorMethodPart) LPAREN RPAREN
-					 | (NoFactorMethodPart) /* epsilon */;	
+					| (NoFactorMethodPart) /* epsilon */;	
 					 
 Addop ::= (AddopAdd) ADD
 		| (AddopSub) SUB;

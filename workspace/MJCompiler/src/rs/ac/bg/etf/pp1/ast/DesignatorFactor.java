@@ -1,16 +1,16 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/11/2019 15:46:15
+// 29/11/2019 17:7:23
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class MethodFactor extends Factor {
+public class DesignatorFactor extends Factor {
 
     private Designator Designator;
     private FactorMethodPart FactorMethodPart;
 
-    public MethodFactor (Designator Designator, FactorMethodPart FactorMethodPart) {
+    public DesignatorFactor (Designator Designator, FactorMethodPart FactorMethodPart) {
         this.Designator=Designator;
         if(Designator!=null) Designator.setParent(this);
         this.FactorMethodPart=FactorMethodPart;
@@ -57,7 +57,7 @@ public class MethodFactor extends Factor {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("MethodFactor(\n");
+        buffer.append("DesignatorFactor(\n");
 
         if(Designator!=null)
             buffer.append(Designator.toString("  "+tab));
@@ -72,7 +72,7 @@ public class MethodFactor extends Factor {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [MethodFactor]");
+        buffer.append(") [DesignatorFactor]");
         return buffer.toString();
     }
 }

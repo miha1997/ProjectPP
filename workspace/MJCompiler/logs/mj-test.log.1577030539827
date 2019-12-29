@@ -1,0 +1,62 @@
+INFO  15:30:08,582 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  15:30:08,623 - #6 program
+INFO  15:30:08,623 - #3 MJProgram
+INFO  15:30:08,623 - #3 int
+INFO  15:30:08,624 - #3 x
+INFO  15:30:08,625 - #12 ;
+INFO  15:30:08,625 - #3 int
+INFO  15:30:08,625 - #3 y
+INFO  15:30:08,626 - #14 ,
+INFO  15:30:08,626 - #3 a
+INFO  15:30:08,626 - #12 ;
+INFO  15:30:08,626 - #9 {
+INFO  15:30:08,626 - #10 }
+INFO  15:30:08,651 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      NoMultiDeclList(
+      ) [NoMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            SimpleVarDef(
+             x
+            ) [SimpleVarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        SimpleVarDeclList(
+          OneVarDeclList(
+            SimpleVarDef(
+             y
+            ) [SimpleVarDef]
+          ) [OneVarDeclList]
+          SimpleVarDef(
+           a
+          ) [SimpleVarDef]
+        ) [SimpleVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  NoMethodDeclList(
+  ) [NoMethodDeclList]
+) [Program]
+INFO  15:30:08,651 - ===================================
+INFO  15:30:08,654 - Deklarisana promenljiva x na liniji 2
+INFO  15:30:08,654 - Deklarisana promenljiva y na liniji 3
+INFO  15:30:08,655 - Deklarisana promenljiva a na liniji 3
+INFO  15:30:08,655 -  Print count calls = 0
+INFO  15:30:08,655 -  Deklarisanih promenljivih ima = 0
+INFO  15:30:08,655 - ===================================

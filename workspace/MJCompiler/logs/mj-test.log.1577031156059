@@ -1,0 +1,87 @@
+INFO  17:07:00,905 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  17:07:00,993 - #6 program
+INFO  17:07:00,993 - #3 MJProgram
+INFO  17:07:00,994 - #3 int
+INFO  17:07:00,996 - #3 x
+INFO  17:07:00,999 - #12 ;
+INFO  17:07:01,005 - #11 const
+INFO  17:07:01,007 - #3 int
+INFO  17:07:01,008 - #3 x
+INFO  17:07:01,008 - #13 =
+INFO  17:07:01,008 - #2 5
+INFO  17:07:01,011 - #12 ;
+INFO  17:07:01,013 - #3 int
+INFO  17:07:01,016 - #3 y
+INFO  17:07:01,016 - #14 ,
+INFO  17:07:01,016 - #3 a
+INFO  17:07:01,016 - #12 ;
+INFO  17:07:01,017 - #9 {
+INFO  17:07:01,017 - #10 }
+INFO  17:07:01,090 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        NoMultiDeclList(
+        ) [NoMultiDeclList]
+        MultiVarDecl(
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               x
+                NoArrayDef(
+                ) [NoArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [MultiVarDecl]
+      ) [SimpleMultiDeclList]
+      MultiConstDecl(
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          OneConstDeclList(
+            ConstDef(
+             x
+              SimpleAssignOp(
+              ) [SimpleAssignOp]
+              ConstantValueNum(
+               5
+              ) [ConstantValueNum]
+            ) [ConstDef]
+          ) [OneConstDeclList]
+        ) [ConstDecl]
+      ) [MultiConstDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        SimpleVarDeclList(
+          OneVarDeclList(
+            VarDef(
+             y
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+          VarDef(
+           a
+            NoArrayDef(
+            ) [NoArrayDef]
+          ) [VarDef]
+        ) [SimpleVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  NoMethodDeclList(
+  ) [NoMethodDeclList]
+) [Program]
+INFO  17:07:01,093 - ===================================

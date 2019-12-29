@@ -1,15 +1,40 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/11/2019 15:46:15
+// 29/11/2019 17:7:23
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public abstract class VarDef implements SyntaxNode {
+public class VarDef implements SyntaxNode {
 
     private SyntaxNode parent;
-
     private int line;
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
+
+    private String varName;
+    private ArrayVarDef ArrayVarDef;
+
+    public VarDef (String varName, ArrayVarDef ArrayVarDef) {
+        this.varName=varName;
+        this.ArrayVarDef=ArrayVarDef;
+        if(ArrayVarDef!=null) ArrayVarDef.setParent(this);
+    }
+
+    public String getVarName() {
+        return varName;
+    }
+
+    public void setVarName(String varName) {
+        this.varName=varName;
+    }
+
+    public ArrayVarDef getArrayVarDef() {
+        return ArrayVarDef;
+    }
+
+    public void setArrayVarDef(ArrayVarDef ArrayVarDef) {
+        this.ArrayVarDef=ArrayVarDef;
+    }
 
     public SyntaxNode getParent() {
         return parent;
@@ -27,11 +52,40 @@ public abstract class VarDef implements SyntaxNode {
         this.line=line;
     }
 
-    public abstract void accept(Visitor visitor);
-    public abstract void childrenAccept(Visitor visitor);
-    public abstract void traverseTopDown(Visitor visitor);
-    public abstract void traverseBottomUp(Visitor visitor);
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 
-    public String toString() { return toString(""); }
-    public abstract String toString(String tab);
+    public void childrenAccept(Visitor visitor) {
+        if(ArrayVarDef!=null) ArrayVarDef.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(ArrayVarDef!=null) ArrayVarDef.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(ArrayVarDef!=null) ArrayVarDef.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("VarDef(\n");
+
+        buffer.append(" "+tab+varName);
+        buffer.append("\n");
+
+        if(ArrayVarDef!=null)
+            buffer.append(ArrayVarDef.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [VarDef]");
+        return buffer.toString();
+    }
 }

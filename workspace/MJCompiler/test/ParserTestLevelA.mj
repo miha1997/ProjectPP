@@ -7,14 +7,26 @@ program MJProgram
 	const char c = 'a';
 	const bool flag = true;
 	{
-		int main() int a; bool boolArr [];{
-			read(x);
+		void main() int a; int localA; bool boolArr [];{
+			read(a);
 			print(x + 1, 2);
 			print(x);
 			
+			a = localA + x1;
+			
 			localA++;
 			localA--;
-			arr = new int [x % 5];
+			y = 1;
+			arr = new bool [x % 5];
 			arr[y] = localA *x1;
 		}
+		
+		int test1() int localA;{
+			localA++;
+		}
+		
+		bool test2(){
+		
+		}
+		
 	}
