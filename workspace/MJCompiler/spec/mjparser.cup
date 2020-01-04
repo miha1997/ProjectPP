@@ -56,7 +56,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj VarDef, ConstValue, ConstDef, ArrayVarDef;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDecl, MethodName, MethodVarDeclList;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorStatement, Statement, Expression, Designator, Term;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Factor;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Factor, DesignatorArrayPart;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodType;
 
@@ -121,8 +121,10 @@ DesignatorStatement ::= (AssignDesignatorStatement)Designator AssignOp Expressio
 AssignOp ::= (SimpleAssignOp) ASSIGN
 		| (AssignOpError) error:labelErrorText {: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft, null); :};
 
-Designator ::= (SimpleDesignator)IDENT:labelDesignatorName
-			| (DesignatorArray) IDENT:labelDesignatorName LBRACKET Expression RBRACKET;
+Designator ::= (Designator)IDENT:designatorName DesignatorArrayPart:designatorArrayPart;
+
+DesignatorArrayPart ::= (SimpleDesignatorArrayPart) LBRACKET Expression RBRACKET
+					|	(NoDesignatorArrayPart) /* epsilon */;
 			
 Expression ::= (SimpleExpression)Term
 			| (SubExpression)SUB Term

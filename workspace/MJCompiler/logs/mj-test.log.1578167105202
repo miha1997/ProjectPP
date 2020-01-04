@@ -1,0 +1,151 @@
+INFO  20:35:26,322 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  20:35:26,366 - #6 program
+INFO  20:35:26,366 - #3 MJProgram
+INFO  20:35:26,366 - #3 int
+INFO  20:35:26,368 - #3 x
+INFO  20:35:26,368 - #12 ;
+INFO  20:35:26,371 - #3 int
+INFO  20:35:26,371 - #3 y
+INFO  20:35:26,371 - #12 ;
+INFO  20:35:26,371 - #3 int
+INFO  20:35:26,371 - #3 arr
+INFO  20:35:26,372 - #15 [
+INFO  20:35:26,372 - #16 ]
+INFO  20:35:26,372 - #12 ;
+INFO  20:35:26,372 - #9 {
+INFO  20:35:26,373 - #3 int
+INFO  20:35:26,373 - #3 test
+INFO  20:35:26,373 - #18 (
+INFO  20:35:26,376 - #19 )
+INFO  20:35:26,376 - #9 {
+INFO  20:35:26,377 - #10 }
+INFO  20:35:26,378 - #17 void
+INFO  20:35:26,379 - #3 main
+INFO  20:35:26,380 - #18 (
+INFO  20:35:26,380 - #19 )
+INFO  20:35:26,380 - #9 {
+INFO  20:35:26,380 - #3 x
+INFO  20:35:26,380 - #13 =
+INFO  20:35:26,382 - #2 1
+INFO  20:35:26,383 - #12 ;
+INFO  20:35:26,384 - #10 }
+INFO  20:35:26,384 - #10 }
+INFO  20:35:26,409 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        NoMultiDeclList(
+        ) [NoMultiDeclList]
+        MultiVarDecl(
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               x
+                NoArrayDef(
+                ) [NoArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [MultiVarDecl]
+      ) [SimpleMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             y
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        OneVarDeclList(
+          VarDef(
+           arr
+            SimpleArrayDef(
+            ) [SimpleArrayDef]
+          ) [VarDef]
+        ) [OneVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    SimpleMethodDeclList(
+      NoMethodDeclList(
+      ) [NoMethodDeclList]
+      MethodDecl(
+        MethodTypeOther(
+          Type(
+           int
+          ) [Type]
+        ) [MethodTypeOther]
+        MethodName(
+         test
+        ) [MethodName]
+        EmptyMethodVariableDeclarationList(
+        ) [EmptyMethodVariableDeclarationList]
+        NoStatementList(
+        ) [NoStatementList]
+      ) [MethodDecl]
+    ) [SimpleMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      SimpleStatementList(
+        NoStatementList(
+        ) [NoStatementList]
+        SimpleStatement(
+          AssignDesignatorStatement(
+            Designator(
+             x
+              NoDesignatorArrayPart(
+              ) [NoDesignatorArrayPart]
+            ) [Designator]
+            SimpleAssignOp(
+            ) [SimpleAssignOp]
+            SimpleExpression(
+              SimpleTerm(
+                ConstFactor(
+                  ConstantValueNum(
+                   1
+                  ) [ConstantValueNum]
+                ) [ConstFactor]
+              ) [SimpleTerm]
+            ) [SimpleExpression]
+          ) [AssignDesignatorStatement]
+        ) [SimpleStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  20:35:26,409 - ===================================
+INFO  20:35:26,413 - Deklarisana promenljiva x na liniji 2
+INFO  20:35:26,413 - Deklarisana promenljiva y na liniji 3
+INFO  20:35:26,413 - Deklarisana promenljiva arr na liniji 4
+INFO  20:35:26,413 - Definisana funkcija test na liniji 6
+INFO  20:35:26,413 - Definisana funkcija main na liniji 10
+INFO  20:35:26,413 - Koriscena promenljiva Var x: int, 0, 0 na liniji 17
+INFO  20:35:27,531 -  Print count calls = 0
+INFO  20:35:27,532 -  Deklarisanih promenljivih ima = 3
+INFO  20:35:27,532 - ===================================
+INFO  20:35:27,538 - Parsiranje uspesno zavrseno!
