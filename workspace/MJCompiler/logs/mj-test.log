@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INFO  00:34:33,996 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
 INFO  00:34:34,056 - #6 program
 INFO  00:34:34,057 - #3 MJProgram
@@ -42,6 +43,8 @@ INFO  00:34:34,075 - #12 ;
 INFO  00:34:34,075 - #10 }
 INFO  00:34:34,075 - #10 }
 INFO  00:34:34,112 - Program(
+=======
+
   ProgramName(
    MJProgram
   ) [ProgramName]
@@ -189,6 +192,7 @@ INFO  00:34:34,112 - Program(
     ) [MethodDecl]
   ) [SimpleMethodDeclList]
 ) [Program]
+<<<<<<< HEAD
 INFO  00:34:34,114 - ===================================
 INFO  00:34:34,120 - Deklarisana promenljiva x na liniji 2
 INFO  00:34:34,120 - Deklarisana promenljiva y na liniji 3
@@ -201,3 +205,4 @@ INFO  00:34:34,122 -  Print count calls = 0
 INFO  00:34:34,122 -  Deklarisanih promenljivih ima = 3
 INFO  00:34:34,122 - ===================================
 INFO  00:34:34,122 - Parsiranje uspesno zavrseno!
+=======
