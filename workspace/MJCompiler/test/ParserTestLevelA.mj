@@ -17,7 +17,7 @@ program MJProgram
 			localA++;
 			localA--;
 			y = 1;
-			arr = new int [x % 5];
+			arr = new bool [x % 5];
 			arr[y] = localA *x1;
 		}
 		

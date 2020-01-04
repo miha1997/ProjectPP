@@ -246,30 +246,34 @@ public class SemanticPass extends VisitorAdaptor {
 		Tab.closeScope();
 		currentMethod = null;
 	}
-	
-	public void visit(Designator designator) {
-		Obj designatorObj = Tab.find(designator.getDesignatorName());
-		
-		if (designatorObj == Tab.noObj) 
-			report_error("Greska na liniji " + designator.getLine() + ", promenljiva "
-					+ designator.getDesignatorName() + " nije deklarisana", null);
-		
-		//is array/elem
-		if(designator.getDesignatorArrayPart().getClass().equals(SimpleDesignatorArrayPart.class)) {
-			SimpleDesignatorArrayPart designatorArrayPart = (SimpleDesignatorArrayPart) designator.getDesignatorArrayPart();
-			
-			if (designatorArrayPart.getExpression().obj.getType().getKind() != Struct.Int)
-				report_error("Greska na liniji " + designator.getLine() + ", indeks nije tipa int", null);
-			if (designatorObj.getType().getKind() != Struct.Array)
-				report_error("Greska na liniji " + designator.getLine() + ", promenljiva "
-						+ designator.getDesignatorName() + " nije tipa niza", null);
-			
-			designator.obj = new Obj(Obj.Elem, designator.getDesignatorName(), designatorObj.getType().getElemType());
-		}else {
-			designator.obj = designatorObj;
-		}
-		
-		report_info("Koriscena promenljiva " + report_node(designatorObj), designator);
+
+	public void visit(SimpleDesignator simpleDesignator) {
+		Obj simpleDesObj = Tab.find(simpleDesignator.getLabelDesignatorName());
+
+		if (simpleDesObj == Tab.noObj) {
+			report_error("Greska na liniji " + simpleDesignator.getLine() + ", promenljiva "
+					+ simpleDesignator.getLabelDesignatorName() + " nije deklarisana", null);
+		} else
+			report_info("Koriscena promenljiva " + report_node(simpleDesObj), simpleDesignator);
+
+		simpleDesignator.obj = simpleDesObj;
+	}
+
+	public void visit(DesignatorArray designatorArray) {
+		Obj designatorArrayObj = Tab.find(designatorArray.getLabelDesignatorName());
+
+		if (designatorArrayObj == Tab.noObj)
+			report_error("Greska na liniji " + designatorArray.getLine() + ", promenljiva "
+					+ designatorArray.getLabelDesignatorName() + " nije deklarisana", null);
+		else if (designatorArray.getExpression().obj.getType().getKind() != Struct.Int)
+			report_error("Greska na liniji " + designatorArray.getLine() + ", indeks nije tipa int", null);
+		else if (designatorArrayObj.getType().getKind() != Struct.Array)
+			report_error("Greska na liniji " + designatorArray.getLine() + ", promenljiva "
+					+ designatorArray.getLabelDesignatorName() + " nije tipa niza", null);
+		else
+			report_info("Koriscena promenljiva " + report_node(designatorArrayObj), designatorArray);
+
+		designatorArray.obj = new Obj(Obj.Elem, designatorArray.getLabelDesignatorName(), designatorArrayObj.getType().getElemType());
 	}
 
 	public void visit(SimpleExpression simpleExpression) {

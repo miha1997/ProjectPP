@@ -1,7 +1,7 @@
 program MJProgram
 	int x;
 	int y;
-	int arr[];
+	
 {
 	int test(){
 	
@@ -10,24 +10,18 @@ program MJProgram
 	void main(){
 		//read(x);
 		//y = test();
+		print(true);
+		x = 4;
+		x++;
+		x--;
+		x--;
+		y = (1 + 2);
 		
-		//x = 1;
-		//x++;
-		arr = new int [2];
-		arr[0] = 1;
-		//arr[1] = 2;
-		//print(arr[0]);
+		x = y = 1;
 		
-		
-		//print(x);
-		//x = 4;
-		//x++;
-		//x--;
-		//x--;
-		//y = (1 + 2);
-		//print(y);
-		//print(x);
-		//x = y = 1;
-		//print(x);
+		print(true);
+		print('C');
+		print(3, 2);
+		print(x);
 	}
 }
