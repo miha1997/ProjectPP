@@ -1,11 +1,27 @@
 program MJProgram
 	int x;
-	const int b = 5;
-	const bool c = true;
-	const char m = 'm', n = 'n';
-	int y, a;
+	int y;
+	
 {
+	int test(){
+	
+	}
+
 	void main(){
-		x = x + 1;
+		//read(x);
+		//y = test();
+		print(true);
+		x = 4;
+		x++;
+		x--;
+		x--;
+		y = (1 + 2);
+		
+		x = y = 1;
+		
+		print(true);
+		print('C');
+		print(3, 2);
+		print(x);
 	}
 }

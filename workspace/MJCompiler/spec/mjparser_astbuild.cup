@@ -119,7 +119,7 @@ StatementList ::= (SimpleStatementList)StatementList:S1 Statement:S2 {: RESULT=n
 				
 Statement ::= (SimpleStatement)DesignatorStatement:D1 SEMI {: RESULT=new SimpleStatement(D1); RESULT.setLine(D1left); :}
 			| (PrintStatement)PRINT LPAREN Expression:E1 RPAREN SEMI {: RESULT=new PrintStatement(E1); RESULT.setLine(E1left); :}
-			| (PrintStatementArguments)PRINT LPAREN Expression:E1 COMMA NUMBER:labelNumConst RPAREN SEMI {: RESULT=new PrintStatementArguments(E1, labelNumConst); RESULT.setLine(E1left); :}
+			| (PrintStatementArguments)PRINT LPAREN Expression:E1 COMMA NUMBER:N2 RPAREN SEMI {: RESULT=new PrintStatementArguments(E1, N2); RESULT.setLine(E1left); :}
 			| (ReadStatement)READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new ReadStatement(D1); RESULT.setLine(D1left); :};
 			
 DesignatorStatement ::= (AssignDesignatorStatement)Designator:D1 AssignOp:A2 Expression:E3 {: RESULT=new AssignDesignatorStatement(D1, A2, E3); RESULT.setLine(D1left); :}

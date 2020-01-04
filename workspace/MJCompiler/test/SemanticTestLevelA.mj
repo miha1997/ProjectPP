@@ -1,37 +1,39 @@
-program SemanticTest
+program MJProgram
 	int x, y;
-	int arr [];
+	int arr[];
+	
+	const int x1 = 2, x2 = 3;
+	const char c = 'a';
+	const bool flag = true;
 	
 	{
-	
-		bool fun(){
+		int unutrasnja() {}
 		
+		void main() int a; int localA; int niz[]; bool boolArr[]; {
+			read(a);
+			read(niz[1 + x + y]);
+			print(x + 1, 2);
+			print(x);
+			
+			localA = a + 5;
+			
+			localA++;
+			localA--;
+			y = 1;
+			arr = new int [x % 5];
+			arr[y] = localA * x1;	
+			arr[y++]++;
+			arr[x * y]++;
+			a = (1 + 2);
+			
+			a = unutrasnja();		
 		}
 		
-		int secondFun(){
-		
+		int test1() int localA; {
+			localA++;
 		}
 		
-		void main() int a, b; char c; bool d; {
-			a = 1;
-			a = b;
-			//a = c;
-			c = 'c';
-			c = 'b';
-			//c++;
-			a = a + b - 1 + 2*a;	
-			
-			//arr = 1;
-			arr = new int[10];
-			arr[a+b]++;
-			//a = fun();
-			d= fun();
-			
-			a = (1 + secondFun()) * a % 10;
-			
-			read(d);
-			print(c, 1);
-		}
-	
-	
+		bool test2() {
+		
+		}	
 	}

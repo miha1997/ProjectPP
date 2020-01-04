@@ -19,7 +19,7 @@ public class SemanticPass extends VisitorAdaptor {
 	Struct lastType = Tab.noType;
 	public static final Struct bool = new Struct(Struct.Bool);
 	Logger log = Logger.getLogger(getClass());
-
+	
 	public SemanticPass() {
 		// add bool primitive type in symbol table
 		Tab.insert(Obj.Type, "bool", bool);
@@ -242,9 +242,7 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 
 	public void visit(MethodDecl methodDecl) {
-		if (methodDecl.getMethodVarDeclList().obj != null) {
-			Tab.chainLocalSymbols(currentMethod);
-		}
+		Tab.chainLocalSymbols(currentMethod);
 		Tab.closeScope();
 		currentMethod = null;
 	}

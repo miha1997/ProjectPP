@@ -1,0 +1,446 @@
+INFO  22:16:41,854 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\SemanticTestLevelA.mj
+INFO  22:16:41,963 - #6 program
+INFO  22:16:41,966 - #3 MJProgram
+INFO  22:16:41,967 - #3 int
+INFO  22:16:41,970 - #3 x
+INFO  22:16:41,974 - #14 ,
+INFO  22:16:41,978 - #3 y
+INFO  22:16:41,978 - #12 ;
+INFO  22:16:41,978 - #3 int
+INFO  22:16:41,979 - #3 arr
+INFO  22:16:41,979 - #15 [
+INFO  22:16:41,979 - #16 ]
+INFO  22:16:41,979 - #12 ;
+INFO  22:16:41,981 - #11 const
+INFO  22:16:41,981 - #3 int
+INFO  22:16:41,981 - #3 x1
+INFO  22:16:41,982 - #13 =
+INFO  22:16:41,982 - #2 2
+INFO  22:16:41,984 - #14 ,
+INFO  22:16:41,986 - #3 x2
+INFO  22:16:41,987 - #13 =
+INFO  22:16:41,987 - #2 3
+INFO  22:16:41,989 - #12 ;
+INFO  22:16:41,989 - #11 const
+INFO  22:16:41,991 - #3 char
+INFO  22:16:41,991 - #3 c
+INFO  22:16:41,991 - #13 =
+INFO  22:16:41,991 - #5 'a'
+INFO  22:16:41,991 - #12 ;
+INFO  22:16:41,992 - #11 const
+INFO  22:16:41,992 - #3 bool
+INFO  22:16:41,992 - #3 flag
+INFO  22:16:41,992 - #13 =
+INFO  22:16:41,992 - #4 true
+INFO  22:16:41,992 - #12 ;
+INFO  22:16:41,993 - #9 {
+INFO  22:16:41,993 - #3 int
+INFO  22:16:41,995 - #3 unutrasnja
+INFO  22:16:41,995 - #18 (
+INFO  22:16:41,997 - #19 )
+INFO  22:16:41,997 - #9 {
+INFO  22:16:41,998 - #10 }
+INFO  22:16:42,000 - #17 void
+INFO  22:16:42,002 - #3 main
+INFO  22:16:42,004 - #18 (
+INFO  22:16:42,004 - #19 )
+INFO  22:16:42,004 - #3 int
+INFO  22:16:42,004 - #3 a
+INFO  22:16:42,004 - #12 ;
+INFO  22:16:42,004 - #3 int
+INFO  22:16:42,005 - #3 localA
+INFO  22:16:42,005 - #12 ;
+INFO  22:16:42,005 - #3 int
+INFO  22:16:42,005 - #3 niz
+INFO  22:16:42,005 - #15 [
+INFO  22:16:42,005 - #16 ]
+INFO  22:16:42,006 - #12 ;
+INFO  22:16:42,007 - #3 bool
+INFO  22:16:42,007 - #3 boolArr
+INFO  22:16:42,007 - #15 [
+INFO  22:16:42,007 - #16 ]
+INFO  22:16:42,007 - #12 ;
+INFO  22:16:42,007 - #9 {
+INFO  22:16:42,008 - #8 read
+INFO  22:16:42,008 - #18 (
+INFO  22:16:42,008 - #3 a
+INFO  22:16:42,008 - #19 )
+INFO  22:16:42,008 - #12 ;
+INFO  22:16:42,008 - #8 read
+INFO  22:16:42,009 - #18 (
+INFO  22:16:42,009 - #3 niz
+INFO  22:16:42,009 - #15 [
+INFO  22:16:42,009 - #2 1
+INFO  22:16:42,009 - #22 +
+INFO  22:16:42,010 - #3 x
+INFO  22:16:42,012 - #22 +
+INFO  22:16:42,014 - #3 y
+INFO  22:16:42,015 - #16 ]
+INFO  22:16:42,015 - #19 )
+INFO  22:16:42,015 - #12 ;
+INFO  22:16:42,015 - #7 print
+INFO  22:16:42,015 - #18 (
+INFO  22:16:42,015 - #3 x
+INFO  22:16:42,015 - #22 +
+INFO  22:16:42,016 - #2 1
+INFO  22:16:42,016 - #14 ,
+INFO  22:16:42,016 - #2 2
+INFO  22:16:42,016 - #19 )
+INFO  22:16:42,016 - #12 ;
+INFO  22:16:42,016 - #7 print
+INFO  22:16:42,016 - #18 (
+INFO  22:16:42,017 - #3 x
+INFO  22:16:42,017 - #19 )
+INFO  22:16:42,017 - #12 ;
+INFO  22:16:42,017 - #3 localA
+INFO  22:16:42,018 - #13 =
+INFO  22:16:42,018 - #3 a
+INFO  22:16:42,018 - #22 +
+INFO  22:16:42,018 - #2 5
+INFO  22:16:42,018 - #12 ;
+INFO  22:16:42,019 - #3 localA
+INFO  22:16:42,019 - #20 ++
+INFO  22:16:42,020 - #12 ;
+INFO  22:16:42,027 - #3 localA
+INFO  22:16:42,028 - #21 --
+INFO  22:16:42,028 - #12 ;
+INFO  22:16:42,028 - #3 y
+INFO  22:16:42,029 - #13 =
+INFO  22:16:42,030 - #2 1
+INFO  22:16:42,030 - #12 ;
+INFO  22:16:42,032 - #3 arr
+INFO  22:16:42,032 - #13 =
+INFO  22:16:42,033 - #24 new
+INFO  22:16:42,033 - #3 int
+INFO  22:16:42,033 - #15 [
+INFO  22:16:42,034 - #3 x
+INFO  22:16:42,034 - #27 %
+INFO  22:16:42,034 - #2 5
+INFO  22:16:42,036 - #16 ]
+INFO  22:16:42,038 - #12 ;
+INFO  22:16:42,038 - #3 arr
+INFO  22:16:42,039 - #15 [
+INFO  22:16:42,039 - #3 y
+INFO  22:16:42,039 - #16 ]
+INFO  22:16:42,039 - #13 =
+INFO  22:16:42,039 - #3 localA
+INFO  22:16:42,040 - #25 *
+INFO  22:16:42,042 - #3 x1
+INFO  22:16:42,043 - #12 ;
+INFO  22:16:42,044 - #3 arr
+INFO  22:16:42,044 - #15 [
+INFO  22:16:42,055 - #3 y
+INFO  22:16:42,055 - #20 ++
+ERROR 22:16:42,055 - 
+Sintaksna greska na liniji 25
+INFO  22:16:42,056 - #16 ]
+INFO  22:16:42,056 - #20 ++
+INFO  22:16:42,056 - #12 ;
+INFO  22:16:42,057 - #3 arr
+INFO  22:16:42,058 - #15 [
+INFO  22:16:42,058 - #3 x
+INFO  22:16:42,058 - #25 *
+INFO  22:16:42,058 - #3 y
+INFO  22:16:42,058 - #16 ]
+INFO  22:16:42,058 - #20 ++
+INFO  22:16:42,058 - #12 ;
+INFO  22:16:42,058 - #3 a
+INFO  22:16:42,059 - #13 =
+INFO  22:16:42,059 - #18 (
+INFO  22:16:42,059 - #2 1
+INFO  22:16:42,059 - #22 +
+INFO  22:16:42,059 - #2 2
+INFO  22:16:42,059 - #19 )
+INFO  22:16:42,059 - #12 ;
+INFO  22:16:42,059 - #3 a
+INFO  22:16:42,059 - #13 =
+INFO  22:16:42,059 - #3 unutrasnja
+INFO  22:16:42,060 - #18 (
+INFO  22:16:42,060 - #19 )
+INFO  22:16:42,060 - #12 ;
+INFO  22:16:42,060 - #10 }
+INFO  22:16:42,060 - #3 int
+INFO  22:16:42,060 - #3 test1
+INFO  22:16:42,060 - #18 (
+INFO  22:16:42,060 - #19 )
+INFO  22:16:42,060 - #3 int
+INFO  22:16:42,061 - #3 localA
+INFO  22:16:42,061 - #12 ;
+INFO  22:16:42,061 - #9 {
+ERROR 22:16:42,061 - Sintaksna greska, izvrsen oporavak u liniji 12
+INFO  22:16:42,062 - #3 localA
+INFO  22:16:42,062 - #20 ++
+INFO  22:16:42,062 - #12 ;
+INFO  22:16:42,062 - #10 }
+INFO  22:16:42,063 - #3 bool
+INFO  22:16:42,063 - #3 test2
+INFO  22:16:42,063 - #18 (
+INFO  22:16:42,063 - #19 )
+INFO  22:16:42,063 - #9 {
+INFO  22:16:42,063 - #10 }
+INFO  22:16:42,063 - #10 }
+INFO  22:16:42,107 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        SimpleMultiDeclList(
+          SimpleMultiDeclList(
+            NoMultiDeclList(
+            ) [NoMultiDeclList]
+            MultiVarDecl(
+              SimpleVarDeclNoError(
+                Type(
+                 int
+                ) [Type]
+                SimpleVarDeclList(
+                  OneVarDeclList(
+                    VarDef(
+                     x
+                      NoArrayDef(
+                      ) [NoArrayDef]
+                    ) [VarDef]
+                  ) [OneVarDeclList]
+                  VarDef(
+                   y
+                    NoArrayDef(
+                    ) [NoArrayDef]
+                  ) [VarDef]
+                ) [SimpleVarDeclList]
+              ) [SimpleVarDeclNoError]
+            ) [MultiVarDecl]
+          ) [SimpleMultiDeclList]
+          MultiVarDecl(
+            SimpleVarDeclNoError(
+              Type(
+               int
+              ) [Type]
+              OneVarDeclList(
+                VarDef(
+                 arr
+                  SimpleArrayDef(
+                  ) [SimpleArrayDef]
+                ) [VarDef]
+              ) [OneVarDeclList]
+            ) [SimpleVarDeclNoError]
+          ) [MultiVarDecl]
+        ) [SimpleMultiDeclList]
+        MultiConstDecl(
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+            SimpleConstDeclList(
+              OneConstDeclList(
+                ConstDef(
+                 x1
+                  SimpleAssignOp(
+                  ) [SimpleAssignOp]
+                  ConstantValueNum(
+                   2
+                  ) [ConstantValueNum]
+                ) [ConstDef]
+              ) [OneConstDeclList]
+              ConstDef(
+               x2
+                SimpleAssignOp(
+                ) [SimpleAssignOp]
+                ConstantValueNum(
+                 3
+                ) [ConstantValueNum]
+              ) [ConstDef]
+            ) [SimpleConstDeclList]
+          ) [ConstDecl]
+        ) [MultiConstDecl]
+      ) [SimpleMultiDeclList]
+      MultiConstDecl(
+        ConstDecl(
+          Type(
+           char
+          ) [Type]
+          OneConstDeclList(
+            ConstDef(
+             c
+              SimpleAssignOp(
+              ) [SimpleAssignOp]
+              ConstantValueChar(
+               'a'
+              ) [ConstantValueChar]
+            ) [ConstDef]
+          ) [OneConstDeclList]
+        ) [ConstDecl]
+      ) [MultiConstDecl]
+    ) [SimpleMultiDeclList]
+    MultiConstDecl(
+      ConstDecl(
+        Type(
+         bool
+        ) [Type]
+        OneConstDeclList(
+          ConstDef(
+           flag
+            SimpleAssignOp(
+            ) [SimpleAssignOp]
+            ConstantValueBool(
+             true
+            ) [ConstantValueBool]
+          ) [ConstDef]
+        ) [OneConstDeclList]
+      ) [ConstDecl]
+    ) [MultiConstDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    SimpleMethodDeclList(
+      SimpleMethodDeclList(
+        NoMethodDeclList(
+        ) [NoMethodDeclList]
+        MethodDecl(
+          MethodTypeOther(
+            Type(
+             int
+            ) [Type]
+          ) [MethodTypeOther]
+          MethodName(
+           unutrasnja
+          ) [MethodName]
+          EmptyMethodVariableDeclarationList(
+          ) [EmptyMethodVariableDeclarationList]
+          NoStatementList(
+          ) [NoStatementList]
+        ) [MethodDecl]
+      ) [SimpleMethodDeclList]
+      MethodDecl(
+        MethodTypeVoid(
+        ) [MethodTypeVoid]
+        MethodName(
+         main
+        ) [MethodName]
+        SimpleMethodVarDeclList(
+          SimpleMethodVarDeclList(
+            SimpleMethodVarDeclList(
+              SimpleMethodVarDeclList(
+                SimpleMethodVarDeclList(
+                  SimpleMethodVarDeclList(
+                    EmptyMethodVariableDeclarationList(
+                    ) [EmptyMethodVariableDeclarationList]
+                    SimpleVarDeclNoError(
+                      Type(
+                       int
+                      ) [Type]
+                      OneVarDeclList(
+                        VarDef(
+                         a
+                          NoArrayDef(
+                          ) [NoArrayDef]
+                        ) [VarDef]
+                      ) [OneVarDeclList]
+                    ) [SimpleVarDeclNoError]
+                  ) [SimpleMethodVarDeclList]
+                  SimpleVarDeclNoError(
+                    Type(
+                     int
+                    ) [Type]
+                    OneVarDeclList(
+                      VarDef(
+                       localA
+                        NoArrayDef(
+                        ) [NoArrayDef]
+                      ) [VarDef]
+                    ) [OneVarDeclList]
+                  ) [SimpleVarDeclNoError]
+                ) [SimpleMethodVarDeclList]
+                SimpleVarDeclNoError(
+                  Type(
+                   int
+                  ) [Type]
+                  OneVarDeclList(
+                    VarDef(
+                     niz
+                      SimpleArrayDef(
+                      ) [SimpleArrayDef]
+                    ) [VarDef]
+                  ) [OneVarDeclList]
+                ) [SimpleVarDeclNoError]
+              ) [SimpleMethodVarDeclList]
+              SimpleVarDeclNoError(
+                Type(
+                 bool
+                ) [Type]
+                OneVarDeclList(
+                  VarDef(
+                   boolArr
+                    SimpleArrayDef(
+                    ) [SimpleArrayDef]
+                  ) [VarDef]
+                ) [OneVarDeclList]
+              ) [SimpleVarDeclNoError]
+            ) [SimpleMethodVarDeclList]
+            VarDeclError(
+            ) [VarDeclError]
+          ) [SimpleMethodVarDeclList]
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               localA
+                NoArrayDef(
+                ) [NoArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [SimpleMethodVarDeclList]
+        SimpleStatementList(
+          NoStatementList(
+          ) [NoStatementList]
+          SimpleStatement(
+            DesignatorInc(
+              SimpleDesignator(
+               localA
+              ) [SimpleDesignator]
+            ) [DesignatorInc]
+          ) [SimpleStatement]
+        ) [SimpleStatementList]
+      ) [MethodDecl]
+    ) [SimpleMethodDeclList]
+    MethodDecl(
+      MethodTypeOther(
+        Type(
+         bool
+        ) [Type]
+      ) [MethodTypeOther]
+      MethodName(
+       test2
+      ) [MethodName]
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  22:16:42,108 - ===================================
+INFO  22:16:42,155 - Deklarisana promenljiva x na liniji 2
+INFO  22:16:42,157 - Deklarisana promenljiva y na liniji 2
+INFO  22:16:42,157 - Deklarisana promenljiva arr na liniji 3
+INFO  22:16:42,158 - Deklarisana konstanta x1 na liniji 5
+INFO  22:16:42,158 - Deklarisana konstanta x2 na liniji 5
+INFO  22:16:42,158 - Deklarisana konstanta c na liniji 6
+INFO  22:16:42,158 - Deklarisana konstanta flag na liniji 7
+INFO  22:16:42,158 - Definisana funkcija unutrasnja na liniji 10
+INFO  22:16:42,159 - Definisana funkcija main na liniji 12
+INFO  22:16:42,159 - Deklarisana promenljiva a na liniji 12
+INFO  22:16:42,159 - Deklarisana promenljiva localA na liniji 12
+INFO  22:16:42,159 - Deklarisana promenljiva niz na liniji 12
+INFO  22:16:42,159 - Deklarisana promenljiva boolArr na liniji 12
+ERROR 22:16:42,159 - Greska na liniji 32, promenljiva localA je vec definisana
+
+INFO  22:16:42,160 - Koriscena promenljiva Var localA: int, 1, 1 na liniji 33
+INFO  22:16:42,160 - Definisana funkcija test2 na liniji 36
+INFO  22:16:42,160 -  Print count calls = 0
+INFO  22:16:42,160 -  Deklarisanih promenljivih ima = 7
+INFO  22:16:42,160 - ===================================
+ERROR 22:16:42,162 - Parsiranje NIJE uspesno zavrseno!

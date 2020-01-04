@@ -111,7 +111,7 @@ StatementList ::= (SimpleStatementList)StatementList Statement
 				
 Statement ::= (SimpleStatement)DesignatorStatement SEMI
 			| (PrintStatement)PRINT LPAREN Expression RPAREN SEMI
-			| (PrintStatementArguments)PRINT LPAREN Expression COMMA NUMBER:labelNumConst RPAREN SEMI
+			| (PrintStatementArguments)PRINT LPAREN Expression COMMA NUMBER RPAREN SEMI
 			| (ReadStatement)READ LPAREN Designator RPAREN SEMI;
 			
 DesignatorStatement ::= (AssignDesignatorStatement)Designator AssignOp Expression

@@ -1,0 +1,74 @@
+INFO  21:40:30,832 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  21:40:30,931 - #6 program
+INFO  21:40:30,933 - #3 MJProgram
+INFO  21:40:30,933 - #9 {
+INFO  21:40:30,938 - #17 void
+INFO  21:40:30,939 - #3 main
+INFO  21:40:30,941 - #18 (
+INFO  21:40:30,942 - #19 )
+INFO  21:40:30,942 - #9 {
+INFO  21:40:30,944 - #7 print
+INFO  21:40:30,946 - #18 (
+INFO  21:40:30,946 - #2 1
+INFO  21:40:30,946 - #19 )
+INFO  21:40:30,947 - #12 ;
+INFO  21:40:30,947 - #7 print
+INFO  21:40:30,948 - #18 (
+INFO  21:40:30,949 - #2 2
+INFO  21:40:30,949 - #19 )
+INFO  21:40:30,949 - #12 ;
+INFO  21:40:30,949 - #10 }
+INFO  21:40:30,949 - #10 }
+INFO  21:40:31,011 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  NoMultiDeclList(
+  ) [NoMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      SimpleStatementList(
+        SimpleStatementList(
+          NoStatementList(
+          ) [NoStatementList]
+          PrintStatement(
+            SimpleExpression(
+              SimpleTerm(
+                ConstFactor(
+                  ConstantValueNum(
+                   1
+                  ) [ConstantValueNum]
+                ) [ConstFactor]
+              ) [SimpleTerm]
+            ) [SimpleExpression]
+          ) [PrintStatement]
+        ) [SimpleStatementList]
+        PrintStatement(
+          SimpleExpression(
+            SimpleTerm(
+              ConstFactor(
+                ConstantValueNum(
+                 2
+                ) [ConstantValueNum]
+              ) [ConstFactor]
+            ) [SimpleTerm]
+          ) [SimpleExpression]
+        ) [PrintStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  21:40:31,012 - ===================================
+INFO  21:40:31,034 - Definisana funkcija main na liniji 3
+INFO  21:40:31,035 -  Print count calls = 2
+INFO  21:40:31,037 -  Deklarisanih promenljivih ima = 0
+INFO  21:40:31,037 - ===================================
