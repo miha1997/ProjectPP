@@ -1,0 +1,163 @@
+INFO  20:53:59,733 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  20:53:59,777 - #6 program
+INFO  20:53:59,777 - #3 MJProgram
+INFO  20:53:59,777 - #3 int
+INFO  20:53:59,780 - #3 x
+INFO  20:53:59,781 - #12 ;
+INFO  20:53:59,783 - #3 int
+INFO  20:53:59,784 - #3 y
+INFO  20:53:59,784 - #12 ;
+INFO  20:53:59,784 - #3 int
+INFO  20:53:59,784 - #3 arr
+INFO  20:53:59,784 - #15 [
+INFO  20:53:59,785 - #16 ]
+INFO  20:53:59,786 - #12 ;
+INFO  20:53:59,787 - #9 {
+INFO  20:53:59,787 - #3 int
+INFO  20:53:59,789 - #3 test
+INFO  20:53:59,790 - #18 (
+INFO  20:53:59,791 - #19 )
+INFO  20:53:59,791 - #9 {
+INFO  20:53:59,792 - #10 }
+INFO  20:53:59,793 - #17 void
+INFO  20:53:59,795 - #3 main
+INFO  20:53:59,797 - #18 (
+INFO  20:53:59,797 - #19 )
+INFO  20:53:59,797 - #9 {
+INFO  20:53:59,797 - #3 arr
+INFO  20:53:59,797 - #15 [
+INFO  20:53:59,797 - #2 0
+INFO  20:53:59,797 - #16 ]
+INFO  20:53:59,798 - #13 =
+INFO  20:53:59,799 - #2 1
+INFO  20:53:59,800 - #12 ;
+INFO  20:53:59,800 - #10 }
+INFO  20:53:59,801 - #10 }
+INFO  20:53:59,844 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        NoMultiDeclList(
+        ) [NoMultiDeclList]
+        MultiVarDecl(
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               x
+                NoArrayDef(
+                ) [NoArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [MultiVarDecl]
+      ) [SimpleMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             y
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        OneVarDeclList(
+          VarDef(
+           arr
+            SimpleArrayDef(
+            ) [SimpleArrayDef]
+          ) [VarDef]
+        ) [OneVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    SimpleMethodDeclList(
+      NoMethodDeclList(
+      ) [NoMethodDeclList]
+      MethodDecl(
+        MethodTypeOther(
+          Type(
+           int
+          ) [Type]
+        ) [MethodTypeOther]
+        MethodName(
+         test
+        ) [MethodName]
+        EmptyMethodVariableDeclarationList(
+        ) [EmptyMethodVariableDeclarationList]
+        NoStatementList(
+        ) [NoStatementList]
+      ) [MethodDecl]
+    ) [SimpleMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      SimpleStatementList(
+        NoStatementList(
+        ) [NoStatementList]
+        SimpleStatement(
+          AssignDesignatorStatement(
+            Designator(
+             arr
+              SimpleDesignatorArrayPart(
+                SimpleExpression(
+                  SimpleTerm(
+                    ConstFactor(
+                      ConstantValueNum(
+                       0
+                      ) [ConstantValueNum]
+                    ) [ConstFactor]
+                  ) [SimpleTerm]
+                ) [SimpleExpression]
+              ) [SimpleDesignatorArrayPart]
+            ) [Designator]
+            SimpleAssignOp(
+            ) [SimpleAssignOp]
+            SimpleExpression(
+              SimpleTerm(
+                ConstFactor(
+                  ConstantValueNum(
+                   1
+                  ) [ConstantValueNum]
+                ) [ConstFactor]
+              ) [SimpleTerm]
+            ) [SimpleExpression]
+          ) [AssignDesignatorStatement]
+        ) [SimpleStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  20:53:59,846 - ===================================
+INFO  20:53:59,849 - Deklarisana promenljiva x na liniji 2
+INFO  20:53:59,849 - Deklarisana promenljiva y na liniji 3
+INFO  20:53:59,849 - Deklarisana promenljiva arr na liniji 4
+INFO  20:53:59,849 - Definisana funkcija test na liniji 6
+INFO  20:53:59,850 - Definisana funkcija main na liniji 10
+INFO  20:53:59,850 - Koriscena promenljiva Var arr: array of int, 2, 0 na liniji 17
+INFO  20:53:59,851 -  Print count calls = 0
+INFO  20:53:59,852 -  Deklarisanih promenljivih ima = 3
+INFO  20:53:59,852 - ===================================
+INFO  20:53:59,862 - Parsiranje uspesno zavrseno!

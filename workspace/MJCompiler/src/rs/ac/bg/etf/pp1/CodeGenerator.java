@@ -4,6 +4,7 @@ import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
 import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
 
@@ -67,11 +68,49 @@ public class CodeGenerator extends VisitorAdaptor{
 		Code.store(assignDesignatorStatement.getDesignator().obj);
 	}
 	
-	public void visit(SimpleDesignator simpleDesignator) {
-		if(simpleDesignator.obj.getKind() == Obj.Meth || simpleDesignator.obj.getKind() == Obj.Type)
+	public void visit(Designator designator) {
+		if(designator.obj.getKind() == Obj.Meth || designator.obj.getKind() == Obj.Type)
 			return;
 		
-		Code.load(simpleDesignator.obj);
+		if(designator.getDesignatorArrayPart().getClass().equals(SimpleDesignatorArrayPart.class)) {
+			Obj arrayObj = Tab.find(designator.getDesignatorName());
+			Code.load(arrayObj);
+		}else {
+			Code.load(designator.obj);
+		}
+		
+		//if it is array/elem		
+		if(designator.getDesignatorArrayPart().getClass().equals(SimpleDesignatorArrayPart.class)) {
+			SyntaxNode syntaxNode = designator.getParent();
+			
+			while(syntaxNode != null) {
+				if(syntaxNode instanceof Expression) {
+					if(((Expression) syntaxNode).obj.getType().getKind() == Struct.Char) {
+						Code.put(Code.baload);
+					}
+					else {
+						Code.put(Code.aload);	
+					}
+					
+					return;
+				}	
+				
+				syntaxNode = syntaxNode.getParent();
+			}
+		}
+	}
+	
+	public void visit(NewFactor newFactor) {
+		if(newFactor.obj.getType().getKind() == Struct.Array) {
+			Code.put(Code.newarray);
+			
+			if(newFactor.obj.getType().getElemType().getKind() == Struct.Int || newFactor.obj.getType().getElemType().getKind() == Struct.Bool) {				
+				Code.put(1);
+			}
+			else {
+				Code.put(0);
+			}
+		}
 	}
 	
 	public void visit(DesignatorFactor designatorFactor) {
@@ -115,7 +154,6 @@ public class CodeGenerator extends VisitorAdaptor{
 			Code.put(Code.add);
 			Code.put(Code.astore);
 		}
-		
 	}
 	
 	public void visit(DesignatorDec designatorDec) {
@@ -130,8 +168,6 @@ public class CodeGenerator extends VisitorAdaptor{
 			Code.put(Code.sub);
 			Code.put(Code.astore);
 		}
-		
 	}
-	
 	
 }
