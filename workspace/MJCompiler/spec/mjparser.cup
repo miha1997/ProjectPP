@@ -1,7 +1,4 @@
-
-
 package rs.ac.bg.etf.pp1;
-
 import java_cup.runtime.*;
 import org.apache.log4j.*;
 import rs.ac.bg.etf.pp1.ast.*;
@@ -9,9 +6,6 @@ import rs.ac.bg.etf.pp1.ast.*;
 parser code {:
 
 	Logger log = Logger.getLogger(getClass());
-   
-   
-    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
      
     public void report_fatal_error(String message, Object info) throws java.lang.Exception {
       done_parsing();
@@ -33,7 +27,6 @@ parser code {:
         log.error(msg.toString());
     }
 
-
 :}
 
 
@@ -50,20 +43,18 @@ terminal Boolean BOOLVALUE;
 terminal String CHAR;
 
 terminal PROG, PRINT, READ, LBRACE, RBRACE, CONST, SEMI, ASSIGN, COMMA, LBRACKET, RBRACKET;
-terminal VOID, LPAREN, RPAREN, INC, DEC, ADD, SUB, NEW, MUL, DIV, MOD;
+terminal VOID, LPAREN, RPAREN, INC, DEC, ADD, SUB, NEW, MUL, DIV, MOD, RETURN;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj VarDef, ConstValue, ConstDef, ArrayVarDef;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDecl, MethodName, MethodVarDeclList;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorStatement, Statement, Expression, Designator, Term;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Factor, DesignatorArrayPart;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Factor, DesignatorArrayPart, DesignatorStart;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodType;
 
 nonterminal MultiDeclList, MethodDeclList, MultiDecl, ConstDecl, VarDecl, ConstDeclList;
-nonterminal VarDeclList, StatementList;
-nonterminal Mulop, Addop, FactorMethodPart;
-nonterminal AssignOp;
+nonterminal VarDeclList, StatementList, AssignOp, Mulop, Addop, FactorMethodPart, ExpressionPart;
 
 Program ::= (Program) PROG ProgramName MultiDeclList LBRACE MethodDeclList RBRACE;
 
@@ -112,19 +103,26 @@ StatementList ::= (SimpleStatementList)StatementList Statement
 Statement ::= (SimpleStatement)DesignatorStatement SEMI
 			| (PrintStatement)PRINT LPAREN Expression RPAREN SEMI
 			| (PrintStatementArguments)PRINT LPAREN Expression COMMA NUMBER RPAREN SEMI
-			| (ReadStatement)READ LPAREN Designator RPAREN SEMI;
+			| (ReadStatement)READ LPAREN Designator RPAREN SEMI
+			| (ReturnStatement) RETURN ExpressionPart SEMI;
 			
 DesignatorStatement ::= (AssignDesignatorStatement)Designator AssignOp Expression
 					| (DesignatorInc)Designator INC
-					| (DesignatorDec)Designator DEC;
+					| (DesignatorDec)Designator DEC
+					| (DesignatorStatementFactor) Factor;
 
 AssignOp ::= (SimpleAssignOp) ASSIGN
 		| (AssignOpError) error:labelErrorText {: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft, null); :};
 
-Designator ::= (Designator)IDENT:designatorName DesignatorArrayPart:designatorArrayPart;
+Designator ::= (Designator) DesignatorStart DesignatorArrayPart:designatorArrayPart;
+
+DesignatorStart ::= (DesignatorStart) IDENT:designatorName;
 
 DesignatorArrayPart ::= (SimpleDesignatorArrayPart) LBRACKET Expression RBRACKET
 					|	(NoDesignatorArrayPart) /* epsilon */;
+
+ExpressionPart ::= (FullExpressionPart) Expression
+				| (NoExpressionPart) /* epsilon */;
 			
 Expression ::= (SimpleExpression)Term
 			| (SubExpression)SUB Term
@@ -147,5 +145,4 @@ Addop ::= (AddopAdd) ADD
 Mulop ::= (MulopMul) MUL
 		| (MulopDiv) DIV
 		| (MulopMod) MOD;					 
-
 

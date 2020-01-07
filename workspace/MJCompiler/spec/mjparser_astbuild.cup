@@ -1,7 +1,4 @@
-
-
 package rs.ac.bg.etf.pp1;
-
 import java_cup.runtime.*;
 import org.apache.log4j.*;
 import rs.ac.bg.etf.pp1.ast.*;
@@ -9,9 +6,6 @@ import rs.ac.bg.etf.pp1.ast.*;
 parser code {:
 
 	Logger log = Logger.getLogger(getClass());
-   
-   
-    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
      
     public void report_fatal_error(String message, Object info) throws java.lang.Exception {
       done_parsing();
@@ -33,7 +27,6 @@ parser code {:
         log.error(msg.toString());
     }
 
-
 :}
 
 
@@ -50,13 +43,13 @@ terminal Boolean BOOLVALUE;
 terminal String CHAR;
 
 terminal PROG, PRINT, READ, LBRACE, RBRACE, CONST, SEMI, ASSIGN, COMMA, LBRACKET, RBRACKET;
-terminal VOID, LPAREN, RPAREN, INC, DEC, ADD, SUB, NEW, MUL, DIV, MOD;
+terminal VOID, LPAREN, RPAREN, INC, DEC, ADD, SUB, NEW, MUL, DIV, MOD, RETURN;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj VarDef, ConstValue, ConstDef, ArrayVarDef;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDecl, MethodName, MethodVarDeclList;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorStatement, Statement, Expression, Designator, Term;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Factor, DesignatorArrayPart;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Factor, DesignatorArrayPart, DesignatorStart;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodType;
 
@@ -68,10 +61,11 @@ nonterminal VarDecl VarDecl;
 nonterminal ConstDeclList ConstDeclList;
 nonterminal VarDeclList VarDeclList;
 nonterminal StatementList StatementList;
+nonterminal AssignOp AssignOp;
 nonterminal Mulop Mulop;
 nonterminal Addop Addop;
 nonterminal FactorMethodPart FactorMethodPart;
-nonterminal AssignOp AssignOp;
+nonterminal ExpressionPart ExpressionPart;
 
 Program ::= (Program) PROG ProgramName:P1 MultiDeclList:M2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new Program(P1, M2, M3); RESULT.setLine(P1left); :};
 
@@ -120,19 +114,26 @@ StatementList ::= (SimpleStatementList)StatementList:S1 Statement:S2 {: RESULT=n
 Statement ::= (SimpleStatement)DesignatorStatement:D1 SEMI {: RESULT=new SimpleStatement(D1); RESULT.setLine(D1left); :}
 			| (PrintStatement)PRINT LPAREN Expression:E1 RPAREN SEMI {: RESULT=new PrintStatement(E1); RESULT.setLine(E1left); :}
 			| (PrintStatementArguments)PRINT LPAREN Expression:E1 COMMA NUMBER:N2 RPAREN SEMI {: RESULT=new PrintStatementArguments(E1, N2); RESULT.setLine(E1left); :}
-			| (ReadStatement)READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new ReadStatement(D1); RESULT.setLine(D1left); :};
+			| (ReadStatement)READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new ReadStatement(D1); RESULT.setLine(D1left); :}
+			| (ReturnStatement) RETURN ExpressionPart:E1 SEMI {: RESULT=new ReturnStatement(E1); RESULT.setLine(E1left); :};
 			
 DesignatorStatement ::= (AssignDesignatorStatement)Designator:D1 AssignOp:A2 Expression:E3 {: RESULT=new AssignDesignatorStatement(D1, A2, E3); RESULT.setLine(D1left); :}
 					| (DesignatorInc)Designator:D1 INC {: RESULT=new DesignatorInc(D1); RESULT.setLine(D1left); :}
-					| (DesignatorDec)Designator:D1 DEC {: RESULT=new DesignatorDec(D1); RESULT.setLine(D1left); :};
+					| (DesignatorDec)Designator:D1 DEC {: RESULT=new DesignatorDec(D1); RESULT.setLine(D1left); :}
+					| (DesignatorStatementFactor) Factor:F1 {: RESULT=new DesignatorStatementFactor(F1); RESULT.setLine(F1left); :};
 
 AssignOp ::= (SimpleAssignOp) ASSIGN {: RESULT=new SimpleAssignOp(); :}
 		| (AssignOpError) error:labelErrorText {: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft, null); :} {: RESULT=new AssignOpError(); :};
 
-Designator ::= (Designator)IDENT:designatorName DesignatorArrayPart:designatorArrayPart {: RESULT=new Designator(designatorName, designatorArrayPart); RESULT.setLine(designatorNameleft); :};
+Designator ::= (Designator) DesignatorStart:D1 DesignatorArrayPart:designatorArrayPart {: RESULT=new Designator(D1, designatorArrayPart); RESULT.setLine(D1left); :};
+
+DesignatorStart ::= (DesignatorStart) IDENT:designatorName {: RESULT=new DesignatorStart(designatorName); RESULT.setLine(designatorNameleft); :};
 
 DesignatorArrayPart ::= (SimpleDesignatorArrayPart) LBRACKET Expression:E1 RBRACKET {: RESULT=new SimpleDesignatorArrayPart(E1); RESULT.setLine(E1left); :}
 					|	(NoDesignatorArrayPart) {: RESULT=new NoDesignatorArrayPart(); :} /* epsilon */;
+
+ExpressionPart ::= (FullExpressionPart) Expression:E1 {: RESULT=new FullExpressionPart(E1); RESULT.setLine(E1left); :}
+				| (NoExpressionPart) {: RESULT=new NoExpressionPart(); :} /* epsilon */;
 			
 Expression ::= (SimpleExpression)Term:T1 {: RESULT=new SimpleExpression(T1); RESULT.setLine(T1left); :}
 			| (SubExpression)SUB Term:T1 {: RESULT=new SubExpression(T1); RESULT.setLine(T1left); :}
@@ -155,5 +156,4 @@ Addop ::= (AddopAdd) ADD {: RESULT=new AddopAdd(); :}
 Mulop ::= (MulopMul) MUL {: RESULT=new MulopMul(); :}
 		| (MulopDiv) DIV {: RESULT=new MulopDiv(); :}
 		| (MulopMod) MOD {: RESULT=new MulopMod(); :};					 
-
 

@@ -1,0 +1,413 @@
+INFO  01:40:44,546 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  01:40:44,616 - #6 program
+INFO  01:40:44,616 - #3 MJProgram
+INFO  01:40:44,616 - #3 int
+INFO  01:40:44,619 - #3 x
+INFO  01:40:44,619 - #12 ;
+INFO  01:40:44,621 - #3 int
+INFO  01:40:44,625 - #3 y
+INFO  01:40:44,625 - #12 ;
+INFO  01:40:44,625 - #3 int
+INFO  01:40:44,625 - #3 arr
+INFO  01:40:44,625 - #15 [
+INFO  01:40:44,625 - #16 ]
+INFO  01:40:44,625 - #12 ;
+INFO  01:40:44,625 - #9 {
+INFO  01:40:44,629 - #3 int
+INFO  01:40:44,629 - #3 test
+INFO  01:40:44,629 - #18 (
+INFO  01:40:44,633 - #19 )
+INFO  01:40:44,633 - #9 {
+INFO  01:40:44,633 - #10 }
+INFO  01:40:44,642 - #17 void
+INFO  01:40:44,643 - #3 main
+INFO  01:40:44,646 - #18 (
+INFO  01:40:44,646 - #19 )
+INFO  01:40:44,646 - #9 {
+INFO  01:40:44,646 - #3 arr
+INFO  01:40:44,646 - #13 =
+INFO  01:40:44,649 - #24 new
+INFO  01:40:44,653 - #3 int
+INFO  01:40:44,653 - #15 [
+INFO  01:40:44,653 - #2 2
+INFO  01:40:44,653 - #16 ]
+INFO  01:40:44,654 - #12 ;
+INFO  01:40:44,655 - #3 arr
+INFO  01:40:44,655 - #15 [
+INFO  01:40:44,655 - #2 0
+INFO  01:40:44,655 - #16 ]
+INFO  01:40:44,656 - #13 =
+INFO  01:40:44,657 - #2 1
+INFO  01:40:44,657 - #12 ;
+INFO  01:40:44,658 - #10 }
+INFO  01:40:44,659 - #10 }
+INFO  01:40:44,718 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        NoMultiDeclList(
+        ) [NoMultiDeclList]
+        MultiVarDecl(
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               x
+                NoArrayDef(
+                ) [NoArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [MultiVarDecl]
+      ) [SimpleMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             y
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        OneVarDeclList(
+          VarDef(
+           arr
+            SimpleArrayDef(
+            ) [SimpleArrayDef]
+          ) [VarDef]
+        ) [OneVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    SimpleMethodDeclList(
+      NoMethodDeclList(
+      ) [NoMethodDeclList]
+      MethodDecl(
+        MethodTypeOther(
+          Type(
+           int
+          ) [Type]
+        ) [MethodTypeOther]
+        MethodName(
+         test
+        ) [MethodName]
+        EmptyMethodVariableDeclarationList(
+        ) [EmptyMethodVariableDeclarationList]
+        NoStatementList(
+        ) [NoStatementList]
+      ) [MethodDecl]
+    ) [SimpleMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      SimpleStatementList(
+        SimpleStatementList(
+          NoStatementList(
+          ) [NoStatementList]
+          SimpleStatement(
+            AssignDesignatorStatement(
+              Designator(
+                DesignatorStart(
+                 arr
+                ) [DesignatorStart]
+                NoDesignatorArrayPart(
+                ) [NoDesignatorArrayPart]
+              ) [Designator]
+              SimpleAssignOp(
+              ) [SimpleAssignOp]
+              SimpleExpression(
+                SimpleTerm(
+                  NewFactor(
+                    Type(
+                     int
+                    ) [Type]
+                    SimpleExpression(
+                      SimpleTerm(
+                        ConstFactor(
+                          ConstantValueNum(
+                           2
+                          ) [ConstantValueNum]
+                        ) [ConstFactor]
+                      ) [SimpleTerm]
+                    ) [SimpleExpression]
+                  ) [NewFactor]
+                ) [SimpleTerm]
+              ) [SimpleExpression]
+            ) [AssignDesignatorStatement]
+          ) [SimpleStatement]
+        ) [SimpleStatementList]
+        SimpleStatement(
+          AssignDesignatorStatement(
+            Designator(
+              DesignatorStart(
+               arr
+              ) [DesignatorStart]
+              SimpleDesignatorArrayPart(
+                SimpleExpression(
+                  SimpleTerm(
+                    ConstFactor(
+                      ConstantValueNum(
+                       0
+                      ) [ConstantValueNum]
+                    ) [ConstFactor]
+                  ) [SimpleTerm]
+                ) [SimpleExpression]
+              ) [SimpleDesignatorArrayPart]
+            ) [Designator]
+            SimpleAssignOp(
+            ) [SimpleAssignOp]
+            SimpleExpression(
+              SimpleTerm(
+                ConstFactor(
+                  ConstantValueNum(
+                   1
+                  ) [ConstantValueNum]
+                ) [ConstFactor]
+              ) [SimpleTerm]
+            ) [SimpleExpression]
+          ) [AssignDesignatorStatement]
+        ) [SimpleStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  01:40:44,719 - ===================================
+INFO  01:40:44,747 - Deklarisana promenljiva x na liniji 2
+INFO  01:40:44,753 - Deklarisana promenljiva y na liniji 3
+INFO  01:40:44,757 - Deklarisana promenljiva arr na liniji 4
+INFO  01:40:44,762 - Definisana funkcija test na liniji 6
+INFO  01:40:44,766 - Definisana funkcija main na liniji 10
+INFO  01:40:44,771 - Koriscena promenljiva Var arr: array of int, 2, 0 na liniji 16
+INFO  01:40:44,787 - Koriscena promenljiva Var arr: array of int, 2, 0 na liniji 17
+INFO  01:40:44,790 -  Print count calls = 0
+INFO  01:40:44,791 -  Deklarisanih promenljivih ima = 3
+INFO  01:40:44,791 - ===================================
+INFO  01:52:13,226 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  01:52:13,293 - #6 program
+INFO  01:52:13,293 - #3 MJProgram
+INFO  01:52:13,294 - #3 int
+INFO  01:52:13,296 - #3 x
+INFO  01:52:13,297 - #12 ;
+INFO  01:52:13,299 - #3 int
+INFO  01:52:13,299 - #3 y
+INFO  01:52:13,299 - #12 ;
+INFO  01:52:13,300 - #3 int
+INFO  01:52:13,300 - #3 arr
+INFO  01:52:13,300 - #15 [
+INFO  01:52:13,300 - #16 ]
+INFO  01:52:13,300 - #12 ;
+INFO  01:52:13,302 - #9 {
+INFO  01:52:13,302 - #3 int
+INFO  01:52:13,303 - #3 test
+INFO  01:52:13,303 - #18 (
+INFO  01:52:13,304 - #19 )
+INFO  01:52:13,305 - #9 {
+INFO  01:52:13,305 - #10 }
+INFO  01:52:13,306 - #17 void
+INFO  01:52:13,307 - #3 main
+INFO  01:52:13,308 - #18 (
+INFO  01:52:13,308 - #19 )
+INFO  01:52:13,308 - #9 {
+INFO  01:52:13,308 - #3 arr
+INFO  01:52:13,309 - #13 =
+INFO  01:52:13,311 - #24 new
+INFO  01:52:13,317 - #3 int
+INFO  01:52:13,317 - #15 [
+INFO  01:52:13,317 - #2 2
+INFO  01:52:13,318 - #16 ]
+INFO  01:52:13,318 - #12 ;
+INFO  01:52:13,319 - #3 arr
+INFO  01:52:13,319 - #15 [
+INFO  01:52:13,319 - #2 0
+INFO  01:52:13,319 - #16 ]
+INFO  01:52:13,319 - #13 =
+INFO  01:52:13,320 - #2 1
+INFO  01:52:13,320 - #12 ;
+INFO  01:52:13,320 - #10 }
+INFO  01:52:13,321 - #10 }
+INFO  01:52:13,348 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        NoMultiDeclList(
+        ) [NoMultiDeclList]
+        MultiVarDecl(
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               x
+                NoArrayDef(
+                ) [NoArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [MultiVarDecl]
+      ) [SimpleMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             y
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        OneVarDeclList(
+          VarDef(
+           arr
+            SimpleArrayDef(
+            ) [SimpleArrayDef]
+          ) [VarDef]
+        ) [OneVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    SimpleMethodDeclList(
+      NoMethodDeclList(
+      ) [NoMethodDeclList]
+      MethodDecl(
+        MethodTypeOther(
+          Type(
+           int
+          ) [Type]
+        ) [MethodTypeOther]
+        MethodName(
+         test
+        ) [MethodName]
+        EmptyMethodVariableDeclarationList(
+        ) [EmptyMethodVariableDeclarationList]
+        NoStatementList(
+        ) [NoStatementList]
+      ) [MethodDecl]
+    ) [SimpleMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      SimpleStatementList(
+        SimpleStatementList(
+          NoStatementList(
+          ) [NoStatementList]
+          SimpleStatement(
+            AssignDesignatorStatement(
+              Designator(
+                DesignatorStart(
+                 arr
+                ) [DesignatorStart]
+                NoDesignatorArrayPart(
+                ) [NoDesignatorArrayPart]
+              ) [Designator]
+              SimpleAssignOp(
+              ) [SimpleAssignOp]
+              SimpleExpression(
+                SimpleTerm(
+                  NewFactor(
+                    Type(
+                     int
+                    ) [Type]
+                    SimpleExpression(
+                      SimpleTerm(
+                        ConstFactor(
+                          ConstantValueNum(
+                           2
+                          ) [ConstantValueNum]
+                        ) [ConstFactor]
+                      ) [SimpleTerm]
+                    ) [SimpleExpression]
+                  ) [NewFactor]
+                ) [SimpleTerm]
+              ) [SimpleExpression]
+            ) [AssignDesignatorStatement]
+          ) [SimpleStatement]
+        ) [SimpleStatementList]
+        SimpleStatement(
+          AssignDesignatorStatement(
+            Designator(
+              DesignatorStart(
+               arr
+              ) [DesignatorStart]
+              SimpleDesignatorArrayPart(
+                SimpleExpression(
+                  SimpleTerm(
+                    ConstFactor(
+                      ConstantValueNum(
+                       0
+                      ) [ConstantValueNum]
+                    ) [ConstFactor]
+                  ) [SimpleTerm]
+                ) [SimpleExpression]
+              ) [SimpleDesignatorArrayPart]
+            ) [Designator]
+            SimpleAssignOp(
+            ) [SimpleAssignOp]
+            SimpleExpression(
+              SimpleTerm(
+                ConstFactor(
+                  ConstantValueNum(
+                   1
+                  ) [ConstantValueNum]
+                ) [ConstFactor]
+              ) [SimpleTerm]
+            ) [SimpleExpression]
+          ) [AssignDesignatorStatement]
+        ) [SimpleStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  01:52:13,350 - ===================================
+INFO  01:52:13,361 - Deklarisana promenljiva x na liniji 2
+INFO  01:52:13,362 - Deklarisana promenljiva y na liniji 3
+INFO  01:52:13,362 - Deklarisana promenljiva arr na liniji 4
+INFO  01:52:13,362 - Definisana funkcija test na liniji 6
+INFO  01:52:13,362 - Definisana funkcija main na liniji 10
+INFO  01:52:13,362 - Koriscena promenljiva Var arr: array of int, 2, 0 na liniji 16
+INFO  01:52:13,363 - Koriscena promenljiva Var arr: array of int, 2, 0 na liniji 17
+INFO  01:52:13,363 -  Print count calls = 0
+INFO  01:52:13,363 -  Deklarisanih promenljivih ima = 3
+INFO  01:52:13,363 - ===================================
+INFO  01:52:13,368 - Parsiranje uspesno zavrseno!

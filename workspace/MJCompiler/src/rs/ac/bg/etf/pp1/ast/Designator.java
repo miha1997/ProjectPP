@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 4/0/2020 17:30:8
+// 7/0/2020 10:27:23
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,21 +11,22 @@ public class Designator implements SyntaxNode {
     private int line;
     public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
-    private String designatorName;
+    private DesignatorStart DesignatorStart;
     private DesignatorArrayPart DesignatorArrayPart;
 
-    public Designator (String designatorName, DesignatorArrayPart DesignatorArrayPart) {
-        this.designatorName=designatorName;
+    public Designator (DesignatorStart DesignatorStart, DesignatorArrayPart DesignatorArrayPart) {
+        this.DesignatorStart=DesignatorStart;
+        if(DesignatorStart!=null) DesignatorStart.setParent(this);
         this.DesignatorArrayPart=DesignatorArrayPart;
         if(DesignatorArrayPart!=null) DesignatorArrayPart.setParent(this);
     }
 
-    public String getDesignatorName() {
-        return designatorName;
+    public DesignatorStart getDesignatorStart() {
+        return DesignatorStart;
     }
 
-    public void setDesignatorName(String designatorName) {
-        this.designatorName=designatorName;
+    public void setDesignatorStart(DesignatorStart DesignatorStart) {
+        this.DesignatorStart=DesignatorStart;
     }
 
     public DesignatorArrayPart getDesignatorArrayPart() {
@@ -57,15 +58,18 @@ public class Designator implements SyntaxNode {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(DesignatorStart!=null) DesignatorStart.accept(visitor);
         if(DesignatorArrayPart!=null) DesignatorArrayPart.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(DesignatorStart!=null) DesignatorStart.traverseTopDown(visitor);
         if(DesignatorArrayPart!=null) DesignatorArrayPart.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(DesignatorStart!=null) DesignatorStart.traverseBottomUp(visitor);
         if(DesignatorArrayPart!=null) DesignatorArrayPart.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -75,7 +79,10 @@ public class Designator implements SyntaxNode {
         buffer.append(tab);
         buffer.append("Designator(\n");
 
-        buffer.append(" "+tab+designatorName);
+        if(DesignatorStart!=null)
+            buffer.append(DesignatorStart.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         if(DesignatorArrayPart!=null)

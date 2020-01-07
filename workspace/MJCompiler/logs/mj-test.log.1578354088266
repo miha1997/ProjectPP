@@ -1,0 +1,1384 @@
+INFO  00:33:45,129 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\test301.mj
+INFO  00:33:45,174 - #6 program
+INFO  00:33:45,174 - #3 test301
+INFO  00:33:45,175 - #11 const
+INFO  00:33:45,176 - #3 int
+INFO  00:33:45,176 - #3 nula
+INFO  00:33:45,177 - #13 =
+INFO  00:33:45,177 - #2 0
+INFO  00:33:45,179 - #12 ;
+INFO  00:33:45,180 - #11 const
+INFO  00:33:45,181 - #3 int
+INFO  00:33:45,181 - #3 jedan
+INFO  00:33:45,181 - #13 =
+INFO  00:33:45,181 - #2 1
+INFO  00:33:45,181 - #12 ;
+INFO  00:33:45,181 - #11 const
+INFO  00:33:45,181 - #3 int
+INFO  00:33:45,181 - #3 pet
+INFO  00:33:45,181 - #13 =
+INFO  00:33:45,181 - #2 5
+INFO  00:33:45,181 - #12 ;
+INFO  00:33:45,182 - #3 int
+INFO  00:33:45,182 - #3 niz
+INFO  00:33:45,182 - #15 [
+INFO  00:33:45,182 - #16 ]
+INFO  00:33:45,182 - #12 ;
+INFO  00:33:45,184 - #3 char
+INFO  00:33:45,185 - #3 nizch
+INFO  00:33:45,185 - #15 [
+INFO  00:33:45,185 - #16 ]
+INFO  00:33:45,185 - #12 ;
+INFO  00:33:45,185 - #9 {
+INFO  00:33:45,185 - #17 void
+INFO  00:33:45,186 - #3 incInput
+INFO  00:33:45,187 - #18 (
+INFO  00:33:45,188 - #19 )
+INFO  00:33:45,188 - #3 int
+INFO  00:33:45,188 - #3 i
+INFO  00:33:45,188 - #12 ;
+INFO  00:33:45,189 - #9 {
+INFO  00:33:45,189 - #8 read
+INFO  00:33:45,190 - #18 (
+INFO  00:33:45,190 - #3 i
+INFO  00:33:45,190 - #19 )
+INFO  00:33:45,192 - #12 ;
+INFO  00:33:45,192 - #7 print
+INFO  00:33:45,192 - #18 (
+INFO  00:33:45,193 - #3 i
+INFO  00:33:45,193 - #19 )
+INFO  00:33:45,195 - #12 ;
+INFO  00:33:45,195 - #3 i
+INFO  00:33:45,196 - #20 ++
+INFO  00:33:45,196 - #12 ;
+INFO  00:33:45,196 - #7 print
+INFO  00:33:45,196 - #18 (
+INFO  00:33:45,196 - #3 i
+INFO  00:33:45,196 - #19 )
+INFO  00:33:45,196 - #12 ;
+INFO  00:33:45,196 - #10 }
+INFO  00:33:45,197 - #17 void
+INFO  00:33:45,198 - #3 main
+INFO  00:33:45,198 - #18 (
+INFO  00:33:45,198 - #19 )
+INFO  00:33:45,198 - #3 int
+INFO  00:33:45,198 - #3 bodovi
+INFO  00:33:45,198 - #12 ;
+INFO  00:33:45,198 - #9 {
+INFO  00:33:45,198 - #3 bodovi
+INFO  00:33:45,198 - #13 =
+INFO  00:33:45,199 - #2 0
+INFO  00:33:45,199 - #12 ;
+INFO  00:33:45,199 - #3 bodovi
+INFO  00:33:45,199 - #20 ++
+INFO  00:33:45,199 - #12 ;
+INFO  00:33:45,199 - #3 bodovi
+INFO  00:33:45,199 - #13 =
+INFO  00:33:45,199 - #3 bodovi
+INFO  00:33:45,199 - #22 +
+INFO  00:33:45,200 - #3 jedan
+INFO  00:33:45,201 - #12 ;
+INFO  00:33:45,201 - #3 bodovi
+INFO  00:33:45,201 - #13 =
+INFO  00:33:45,201 - #3 bodovi
+INFO  00:33:45,201 - #25 *
+INFO  00:33:45,201 - #3 pet
+INFO  00:33:45,202 - #12 ;
+INFO  00:33:45,204 - #3 bodovi
+INFO  00:33:45,205 - #21 --
+INFO  00:33:45,205 - #12 ;
+INFO  00:33:45,205 - #7 print
+INFO  00:33:45,205 - #18 (
+INFO  00:33:45,205 - #3 bodovi
+INFO  00:33:45,205 - #19 )
+INFO  00:33:45,205 - #12 ;
+INFO  00:33:45,205 - #3 niz
+INFO  00:33:45,205 - #13 =
+INFO  00:33:45,205 - #24 new
+INFO  00:33:45,205 - #3 int
+INFO  00:33:45,205 - #15 [
+INFO  00:33:45,206 - #2 3
+INFO  00:33:45,206 - #16 ]
+INFO  00:33:45,206 - #12 ;
+INFO  00:33:45,206 - #3 niz
+INFO  00:33:45,206 - #15 [
+INFO  00:33:45,206 - #3 nula
+INFO  00:33:45,206 - #16 ]
+INFO  00:33:45,206 - #13 =
+INFO  00:33:45,206 - #3 jedan
+INFO  00:33:45,207 - #12 ;
+INFO  00:33:45,207 - #3 niz
+INFO  00:33:45,207 - #15 [
+INFO  00:33:45,207 - #2 1
+INFO  00:33:45,207 - #16 ]
+INFO  00:33:45,207 - #13 =
+INFO  00:33:45,207 - #2 2
+INFO  00:33:45,207 - #12 ;
+INFO  00:33:45,207 - #3 niz
+INFO  00:33:45,207 - #15 [
+INFO  00:33:45,207 - #3 niz
+INFO  00:33:45,207 - #15 [
+INFO  00:33:45,207 - #3 jedan
+INFO  00:33:45,207 - #16 ]
+INFO  00:33:45,208 - #16 ]
+INFO  00:33:45,208 - #13 =
+INFO  00:33:45,208 - #3 niz
+INFO  00:33:45,208 - #15 [
+INFO  00:33:45,208 - #3 niz
+INFO  00:33:45,208 - #15 [
+INFO  00:33:45,208 - #2 0
+INFO  00:33:45,208 - #16 ]
+INFO  00:33:45,208 - #16 ]
+INFO  00:33:45,208 - #25 *
+INFO  00:33:45,208 - #2 3
+INFO  00:33:45,208 - #12 ;
+INFO  00:33:45,208 - #3 bodovi
+INFO  00:33:45,209 - #13 =
+INFO  00:33:45,209 - #3 niz
+INFO  00:33:45,209 - #15 [
+INFO  00:33:45,209 - #2 2
+INFO  00:33:45,209 - #16 ]
+INFO  00:33:45,251 - #26 /
+INFO  00:33:45,251 - #3 niz
+INFO  00:33:45,252 - #15 [
+INFO  00:33:45,253 - #2 0
+INFO  00:33:45,253 - #16 ]
+INFO  00:33:45,253 - #12 ;
+INFO  00:33:45,253 - #7 print
+INFO  00:33:45,254 - #18 (
+INFO  00:33:45,254 - #3 bodovi
+INFO  00:33:45,254 - #19 )
+INFO  00:33:45,254 - #12 ;
+INFO  00:33:45,254 - #7 print
+INFO  00:33:45,254 - #18 (
+INFO  00:33:45,254 - #3 niz
+INFO  00:33:45,254 - #15 [
+INFO  00:33:45,254 - #2 2
+INFO  00:33:45,254 - #16 ]
+INFO  00:33:45,255 - #19 )
+INFO  00:33:45,255 - #12 ;
+INFO  00:33:45,255 - #3 nizch
+INFO  00:33:45,255 - #13 =
+INFO  00:33:45,255 - #24 new
+INFO  00:33:45,255 - #3 char
+INFO  00:33:45,255 - #15 [
+INFO  00:33:45,255 - #2 3
+INFO  00:33:45,255 - #16 ]
+INFO  00:33:45,255 - #12 ;
+INFO  00:33:45,255 - #3 nizch
+INFO  00:33:45,256 - #15 [
+INFO  00:33:45,256 - #2 0
+INFO  00:33:45,256 - #16 ]
+INFO  00:33:45,256 - #13 =
+INFO  00:33:45,256 - #5 'a'
+INFO  00:33:45,256 - #12 ;
+INFO  00:33:45,256 - #3 nizch
+INFO  00:33:45,256 - #15 [
+INFO  00:33:45,256 - #3 jedan
+INFO  00:33:45,256 - #16 ]
+INFO  00:33:45,256 - #13 =
+INFO  00:33:45,256 - #5 'b'
+INFO  00:33:45,256 - #12 ;
+INFO  00:33:45,257 - #3 nizch
+INFO  00:33:45,257 - #15 [
+INFO  00:33:45,257 - #3 pet
+INFO  00:33:45,257 - #23 -
+INFO  00:33:45,257 - #2 3
+INFO  00:33:45,258 - #16 ]
+INFO  00:33:45,258 - #13 =
+INFO  00:33:45,258 - #5 'c'
+INFO  00:33:45,258 - #12 ;
+INFO  00:33:45,258 - #7 print
+INFO  00:33:45,258 - #18 (
+INFO  00:33:45,258 - #3 nizch
+INFO  00:33:45,258 - #15 [
+INFO  00:33:45,259 - #2 1
+INFO  00:33:45,259 - #16 ]
+INFO  00:33:45,259 - #19 )
+INFO  00:33:45,269 - #12 ;
+INFO  00:33:45,269 - #7 print
+INFO  00:33:45,269 - #18 (
+INFO  00:33:45,269 - #3 nizch
+INFO  00:33:45,270 - #15 [
+INFO  00:33:45,270 - #3 jedan
+INFO  00:33:45,270 - #25 *
+INFO  00:33:45,270 - #2 2
+INFO  00:33:45,270 - #16 ]
+INFO  00:33:45,270 - #19 )
+INFO  00:33:45,270 - #12 ;
+INFO  00:33:45,270 - #3 bodovi
+INFO  00:33:45,270 - #13 =
+INFO  00:33:45,270 - #3 bodovi
+INFO  00:33:45,270 - #22 +
+INFO  00:33:45,270 - #18 (
+INFO  00:33:45,270 - #3 pet
+INFO  00:33:45,270 - #25 *
+INFO  00:33:45,271 - #3 jedan
+INFO  00:33:45,271 - #23 -
+INFO  00:33:45,271 - #2 1
+INFO  00:33:45,271 - #19 )
+INFO  00:33:45,271 - #25 *
+INFO  00:33:45,271 - #3 bodovi
+INFO  00:33:45,271 - #23 -
+INFO  00:33:45,271 - #18 (
+INFO  00:33:45,271 - #2 3
+INFO  00:33:45,271 - #27 %
+INFO  00:33:45,271 - #2 2
+INFO  00:33:45,272 - #22 +
+INFO  00:33:45,272 - #2 3
+INFO  00:33:45,272 - #25 *
+INFO  00:33:45,273 - #2 2
+INFO  00:33:45,273 - #23 -
+INFO  00:33:45,273 - #2 3
+INFO  00:33:45,273 - #19 )
+INFO  00:33:45,273 - #12 ;
+INFO  00:33:45,273 - #7 print
+INFO  00:33:45,273 - #18 (
+INFO  00:33:45,273 - #3 bodovi
+INFO  00:33:45,273 - #19 )
+INFO  00:33:45,273 - #12 ;
+INFO  00:33:45,273 - #10 }
+INFO  00:33:45,273 - #10 }
+INFO  00:33:45,317 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        SimpleMultiDeclList(
+          SimpleMultiDeclList(
+            NoMultiDeclList(
+            ) [NoMultiDeclList]
+            MultiConstDecl(
+              ConstDecl(
+                Type(
+                 int
+                ) [Type]
+                OneConstDeclList(
+                  ConstDef(
+                   nula
+                    SimpleAssignOp(
+                    ) [SimpleAssignOp]
+                    ConstantValueNum(
+                     0
+                    ) [ConstantValueNum]
+                  ) [ConstDef]
+                ) [OneConstDeclList]
+              ) [ConstDecl]
+            ) [MultiConstDecl]
+          ) [SimpleMultiDeclList]
+          MultiConstDecl(
+            ConstDecl(
+              Type(
+               int
+              ) [Type]
+              OneConstDeclList(
+                ConstDef(
+                 jedan
+                  SimpleAssignOp(
+                  ) [SimpleAssignOp]
+                  ConstantValueNum(
+                   1
+                  ) [ConstantValueNum]
+                ) [ConstDef]
+              ) [OneConstDeclList]
+            ) [ConstDecl]
+          ) [MultiConstDecl]
+        ) [SimpleMultiDeclList]
+        MultiConstDecl(
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+            OneConstDeclList(
+              ConstDef(
+               pet
+                SimpleAssignOp(
+                ) [SimpleAssignOp]
+                ConstantValueNum(
+                 5
+                ) [ConstantValueNum]
+              ) [ConstDef]
+            ) [OneConstDeclList]
+          ) [ConstDecl]
+        ) [MultiConstDecl]
+      ) [SimpleMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             niz
+              SimpleArrayDef(
+              ) [SimpleArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         char
+        ) [Type]
+        OneVarDeclList(
+          VarDef(
+           nizch
+            SimpleArrayDef(
+            ) [SimpleArrayDef]
+          ) [VarDef]
+        ) [OneVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    SimpleMethodDeclList(
+      NoMethodDeclList(
+      ) [NoMethodDeclList]
+      MethodDecl(
+        MethodTypeVoid(
+        ) [MethodTypeVoid]
+        MethodName(
+         incInput
+        ) [MethodName]
+        SimpleMethodVarDeclList(
+          EmptyMethodVariableDeclarationList(
+          ) [EmptyMethodVariableDeclarationList]
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               i
+                NoArrayDef(
+                ) [NoArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [SimpleMethodVarDeclList]
+        SimpleStatementList(
+          SimpleStatementList(
+            SimpleStatementList(
+              SimpleStatementList(
+                NoStatementList(
+                ) [NoStatementList]
+                ReadStatement(
+                  Designator(
+                    DesignatorStart(
+                     i
+                    ) [DesignatorStart]
+                    NoDesignatorArrayPart(
+                    ) [NoDesignatorArrayPart]
+                  ) [Designator]
+                ) [ReadStatement]
+              ) [SimpleStatementList]
+              PrintStatement(
+                SimpleExpression(
+                  SimpleTerm(
+                    DesignatorFactor(
+                      Designator(
+                        DesignatorStart(
+                         i
+                        ) [DesignatorStart]
+                        NoDesignatorArrayPart(
+                        ) [NoDesignatorArrayPart]
+                      ) [Designator]
+                      NoFactorMethodPart(
+                      ) [NoFactorMethodPart]
+                    ) [DesignatorFactor]
+                  ) [SimpleTerm]
+                ) [SimpleExpression]
+              ) [PrintStatement]
+            ) [SimpleStatementList]
+            SimpleStatement(
+              DesignatorInc(
+                Designator(
+                  DesignatorStart(
+                   i
+                  ) [DesignatorStart]
+                  NoDesignatorArrayPart(
+                  ) [NoDesignatorArrayPart]
+                ) [Designator]
+              ) [DesignatorInc]
+            ) [SimpleStatement]
+          ) [SimpleStatementList]
+          PrintStatement(
+            SimpleExpression(
+              SimpleTerm(
+                DesignatorFactor(
+                  Designator(
+                    DesignatorStart(
+                     i
+                    ) [DesignatorStart]
+                    NoDesignatorArrayPart(
+                    ) [NoDesignatorArrayPart]
+                  ) [Designator]
+                  NoFactorMethodPart(
+                  ) [NoFactorMethodPart]
+                ) [DesignatorFactor]
+              ) [SimpleTerm]
+            ) [SimpleExpression]
+          ) [PrintStatement]
+        ) [SimpleStatementList]
+      ) [MethodDecl]
+    ) [SimpleMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      SimpleMethodVarDeclList(
+        EmptyMethodVariableDeclarationList(
+        ) [EmptyMethodVariableDeclarationList]
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             bodovi
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [SimpleMethodVarDeclList]
+      SimpleStatementList(
+        SimpleStatementList(
+          SimpleStatementList(
+            SimpleStatementList(
+              SimpleStatementList(
+                SimpleStatementList(
+                  SimpleStatementList(
+                    SimpleStatementList(
+                      SimpleStatementList(
+                        SimpleStatementList(
+                          SimpleStatementList(
+                            SimpleStatementList(
+                              SimpleStatementList(
+                                SimpleStatementList(
+                                  SimpleStatementList(
+                                    SimpleStatementList(
+                                      SimpleStatementList(
+                                        SimpleStatementList(
+                                          SimpleStatementList(
+                                            SimpleStatementList(
+                                              SimpleStatementList(
+                                                NoStatementList(
+                                                ) [NoStatementList]
+                                                SimpleStatement(
+                                                  AssignDesignatorStatement(
+                                                    Designator(
+                                                      DesignatorStart(
+                                                       bodovi
+                                                      ) [DesignatorStart]
+                                                      NoDesignatorArrayPart(
+                                                      ) [NoDesignatorArrayPart]
+                                                    ) [Designator]
+                                                    SimpleAssignOp(
+                                                    ) [SimpleAssignOp]
+                                                    SimpleExpression(
+                                                      SimpleTerm(
+                                                        ConstFactor(
+                                                          ConstantValueNum(
+                                                           0
+                                                          ) [ConstantValueNum]
+                                                        ) [ConstFactor]
+                                                      ) [SimpleTerm]
+                                                    ) [SimpleExpression]
+                                                  ) [AssignDesignatorStatement]
+                                                ) [SimpleStatement]
+                                              ) [SimpleStatementList]
+                                              SimpleStatement(
+                                                DesignatorInc(
+                                                  Designator(
+                                                    DesignatorStart(
+                                                     bodovi
+                                                    ) [DesignatorStart]
+                                                    NoDesignatorArrayPart(
+                                                    ) [NoDesignatorArrayPart]
+                                                  ) [Designator]
+                                                ) [DesignatorInc]
+                                              ) [SimpleStatement]
+                                            ) [SimpleStatementList]
+                                            SimpleStatement(
+                                              AssignDesignatorStatement(
+                                                Designator(
+                                                  DesignatorStart(
+                                                   bodovi
+                                                  ) [DesignatorStart]
+                                                  NoDesignatorArrayPart(
+                                                  ) [NoDesignatorArrayPart]
+                                                ) [Designator]
+                                                SimpleAssignOp(
+                                                ) [SimpleAssignOp]
+                                                MultiExpression(
+                                                  SimpleExpression(
+                                                    SimpleTerm(
+                                                      DesignatorFactor(
+                                                        Designator(
+                                                          DesignatorStart(
+                                                           bodovi
+                                                          ) [DesignatorStart]
+                                                          NoDesignatorArrayPart(
+                                                          ) [NoDesignatorArrayPart]
+                                                        ) [Designator]
+                                                        NoFactorMethodPart(
+                                                        ) [NoFactorMethodPart]
+                                                      ) [DesignatorFactor]
+                                                    ) [SimpleTerm]
+                                                  ) [SimpleExpression]
+                                                  AddopAdd(
+                                                  ) [AddopAdd]
+                                                  SimpleTerm(
+                                                    DesignatorFactor(
+                                                      Designator(
+                                                        DesignatorStart(
+                                                         jedan
+                                                        ) [DesignatorStart]
+                                                        NoDesignatorArrayPart(
+                                                        ) [NoDesignatorArrayPart]
+                                                      ) [Designator]
+                                                      NoFactorMethodPart(
+                                                      ) [NoFactorMethodPart]
+                                                    ) [DesignatorFactor]
+                                                  ) [SimpleTerm]
+                                                ) [MultiExpression]
+                                              ) [AssignDesignatorStatement]
+                                            ) [SimpleStatement]
+                                          ) [SimpleStatementList]
+                                          SimpleStatement(
+                                            AssignDesignatorStatement(
+                                              Designator(
+                                                DesignatorStart(
+                                                 bodovi
+                                                ) [DesignatorStart]
+                                                NoDesignatorArrayPart(
+                                                ) [NoDesignatorArrayPart]
+                                              ) [Designator]
+                                              SimpleAssignOp(
+                                              ) [SimpleAssignOp]
+                                              SimpleExpression(
+                                                MulTerm(
+                                                  SimpleTerm(
+                                                    DesignatorFactor(
+                                                      Designator(
+                                                        DesignatorStart(
+                                                         bodovi
+                                                        ) [DesignatorStart]
+                                                        NoDesignatorArrayPart(
+                                                        ) [NoDesignatorArrayPart]
+                                                      ) [Designator]
+                                                      NoFactorMethodPart(
+                                                      ) [NoFactorMethodPart]
+                                                    ) [DesignatorFactor]
+                                                  ) [SimpleTerm]
+                                                  MulopMul(
+                                                  ) [MulopMul]
+                                                  DesignatorFactor(
+                                                    Designator(
+                                                      DesignatorStart(
+                                                       pet
+                                                      ) [DesignatorStart]
+                                                      NoDesignatorArrayPart(
+                                                      ) [NoDesignatorArrayPart]
+                                                    ) [Designator]
+                                                    NoFactorMethodPart(
+                                                    ) [NoFactorMethodPart]
+                                                  ) [DesignatorFactor]
+                                                ) [MulTerm]
+                                              ) [SimpleExpression]
+                                            ) [AssignDesignatorStatement]
+                                          ) [SimpleStatement]
+                                        ) [SimpleStatementList]
+                                        SimpleStatement(
+                                          DesignatorDec(
+                                            Designator(
+                                              DesignatorStart(
+                                               bodovi
+                                              ) [DesignatorStart]
+                                              NoDesignatorArrayPart(
+                                              ) [NoDesignatorArrayPart]
+                                            ) [Designator]
+                                          ) [DesignatorDec]
+                                        ) [SimpleStatement]
+                                      ) [SimpleStatementList]
+                                      PrintStatement(
+                                        SimpleExpression(
+                                          SimpleTerm(
+                                            DesignatorFactor(
+                                              Designator(
+                                                DesignatorStart(
+                                                 bodovi
+                                                ) [DesignatorStart]
+                                                NoDesignatorArrayPart(
+                                                ) [NoDesignatorArrayPart]
+                                              ) [Designator]
+                                              NoFactorMethodPart(
+                                              ) [NoFactorMethodPart]
+                                            ) [DesignatorFactor]
+                                          ) [SimpleTerm]
+                                        ) [SimpleExpression]
+                                      ) [PrintStatement]
+                                    ) [SimpleStatementList]
+                                    SimpleStatement(
+                                      AssignDesignatorStatement(
+                                        Designator(
+                                          DesignatorStart(
+                                           niz
+                                          ) [DesignatorStart]
+                                          NoDesignatorArrayPart(
+                                          ) [NoDesignatorArrayPart]
+                                        ) [Designator]
+                                        SimpleAssignOp(
+                                        ) [SimpleAssignOp]
+                                        SimpleExpression(
+                                          SimpleTerm(
+                                            NewFactor(
+                                              Type(
+                                               int
+                                              ) [Type]
+                                              SimpleExpression(
+                                                SimpleTerm(
+                                                  ConstFactor(
+                                                    ConstantValueNum(
+                                                     3
+                                                    ) [ConstantValueNum]
+                                                  ) [ConstFactor]
+                                                ) [SimpleTerm]
+                                              ) [SimpleExpression]
+                                            ) [NewFactor]
+                                          ) [SimpleTerm]
+                                        ) [SimpleExpression]
+                                      ) [AssignDesignatorStatement]
+                                    ) [SimpleStatement]
+                                  ) [SimpleStatementList]
+                                  SimpleStatement(
+                                    AssignDesignatorStatement(
+                                      Designator(
+                                        DesignatorStart(
+                                         niz
+                                        ) [DesignatorStart]
+                                        SimpleDesignatorArrayPart(
+                                          SimpleExpression(
+                                            SimpleTerm(
+                                              DesignatorFactor(
+                                                Designator(
+                                                  DesignatorStart(
+                                                   nula
+                                                  ) [DesignatorStart]
+                                                  NoDesignatorArrayPart(
+                                                  ) [NoDesignatorArrayPart]
+                                                ) [Designator]
+                                                NoFactorMethodPart(
+                                                ) [NoFactorMethodPart]
+                                              ) [DesignatorFactor]
+                                            ) [SimpleTerm]
+                                          ) [SimpleExpression]
+                                        ) [SimpleDesignatorArrayPart]
+                                      ) [Designator]
+                                      SimpleAssignOp(
+                                      ) [SimpleAssignOp]
+                                      SimpleExpression(
+                                        SimpleTerm(
+                                          DesignatorFactor(
+                                            Designator(
+                                              DesignatorStart(
+                                               jedan
+                                              ) [DesignatorStart]
+                                              NoDesignatorArrayPart(
+                                              ) [NoDesignatorArrayPart]
+                                            ) [Designator]
+                                            NoFactorMethodPart(
+                                            ) [NoFactorMethodPart]
+                                          ) [DesignatorFactor]
+                                        ) [SimpleTerm]
+                                      ) [SimpleExpression]
+                                    ) [AssignDesignatorStatement]
+                                  ) [SimpleStatement]
+                                ) [SimpleStatementList]
+                                SimpleStatement(
+                                  AssignDesignatorStatement(
+                                    Designator(
+                                      DesignatorStart(
+                                       niz
+                                      ) [DesignatorStart]
+                                      SimpleDesignatorArrayPart(
+                                        SimpleExpression(
+                                          SimpleTerm(
+                                            ConstFactor(
+                                              ConstantValueNum(
+                                               1
+                                              ) [ConstantValueNum]
+                                            ) [ConstFactor]
+                                          ) [SimpleTerm]
+                                        ) [SimpleExpression]
+                                      ) [SimpleDesignatorArrayPart]
+                                    ) [Designator]
+                                    SimpleAssignOp(
+                                    ) [SimpleAssignOp]
+                                    SimpleExpression(
+                                      SimpleTerm(
+                                        ConstFactor(
+                                          ConstantValueNum(
+                                           2
+                                          ) [ConstantValueNum]
+                                        ) [ConstFactor]
+                                      ) [SimpleTerm]
+                                    ) [SimpleExpression]
+                                  ) [AssignDesignatorStatement]
+                                ) [SimpleStatement]
+                              ) [SimpleStatementList]
+                              SimpleStatement(
+                                AssignDesignatorStatement(
+                                  Designator(
+                                    DesignatorStart(
+                                     niz
+                                    ) [DesignatorStart]
+                                    SimpleDesignatorArrayPart(
+                                      SimpleExpression(
+                                        SimpleTerm(
+                                          DesignatorFactor(
+                                            Designator(
+                                              DesignatorStart(
+                                               niz
+                                              ) [DesignatorStart]
+                                              SimpleDesignatorArrayPart(
+                                                SimpleExpression(
+                                                  SimpleTerm(
+                                                    DesignatorFactor(
+                                                      Designator(
+                                                        DesignatorStart(
+                                                         jedan
+                                                        ) [DesignatorStart]
+                                                        NoDesignatorArrayPart(
+                                                        ) [NoDesignatorArrayPart]
+                                                      ) [Designator]
+                                                      NoFactorMethodPart(
+                                                      ) [NoFactorMethodPart]
+                                                    ) [DesignatorFactor]
+                                                  ) [SimpleTerm]
+                                                ) [SimpleExpression]
+                                              ) [SimpleDesignatorArrayPart]
+                                            ) [Designator]
+                                            NoFactorMethodPart(
+                                            ) [NoFactorMethodPart]
+                                          ) [DesignatorFactor]
+                                        ) [SimpleTerm]
+                                      ) [SimpleExpression]
+                                    ) [SimpleDesignatorArrayPart]
+                                  ) [Designator]
+                                  SimpleAssignOp(
+                                  ) [SimpleAssignOp]
+                                  SimpleExpression(
+                                    MulTerm(
+                                      SimpleTerm(
+                                        DesignatorFactor(
+                                          Designator(
+                                            DesignatorStart(
+                                             niz
+                                            ) [DesignatorStart]
+                                            SimpleDesignatorArrayPart(
+                                              SimpleExpression(
+                                                SimpleTerm(
+                                                  DesignatorFactor(
+                                                    Designator(
+                                                      DesignatorStart(
+                                                       niz
+                                                      ) [DesignatorStart]
+                                                      SimpleDesignatorArrayPart(
+                                                        SimpleExpression(
+                                                          SimpleTerm(
+                                                            ConstFactor(
+                                                              ConstantValueNum(
+                                                               0
+                                                              ) [ConstantValueNum]
+                                                            ) [ConstFactor]
+                                                          ) [SimpleTerm]
+                                                        ) [SimpleExpression]
+                                                      ) [SimpleDesignatorArrayPart]
+                                                    ) [Designator]
+                                                    NoFactorMethodPart(
+                                                    ) [NoFactorMethodPart]
+                                                  ) [DesignatorFactor]
+                                                ) [SimpleTerm]
+                                              ) [SimpleExpression]
+                                            ) [SimpleDesignatorArrayPart]
+                                          ) [Designator]
+                                          NoFactorMethodPart(
+                                          ) [NoFactorMethodPart]
+                                        ) [DesignatorFactor]
+                                      ) [SimpleTerm]
+                                      MulopMul(
+                                      ) [MulopMul]
+                                      ConstFactor(
+                                        ConstantValueNum(
+                                         3
+                                        ) [ConstantValueNum]
+                                      ) [ConstFactor]
+                                    ) [MulTerm]
+                                  ) [SimpleExpression]
+                                ) [AssignDesignatorStatement]
+                              ) [SimpleStatement]
+                            ) [SimpleStatementList]
+                            SimpleStatement(
+                              AssignDesignatorStatement(
+                                Designator(
+                                  DesignatorStart(
+                                   bodovi
+                                  ) [DesignatorStart]
+                                  NoDesignatorArrayPart(
+                                  ) [NoDesignatorArrayPart]
+                                ) [Designator]
+                                SimpleAssignOp(
+                                ) [SimpleAssignOp]
+                                SimpleExpression(
+                                  MulTerm(
+                                    SimpleTerm(
+                                      DesignatorFactor(
+                                        Designator(
+                                          DesignatorStart(
+                                           niz
+                                          ) [DesignatorStart]
+                                          SimpleDesignatorArrayPart(
+                                            SimpleExpression(
+                                              SimpleTerm(
+                                                ConstFactor(
+                                                  ConstantValueNum(
+                                                   2
+                                                  ) [ConstantValueNum]
+                                                ) [ConstFactor]
+                                              ) [SimpleTerm]
+                                            ) [SimpleExpression]
+                                          ) [SimpleDesignatorArrayPart]
+                                        ) [Designator]
+                                        NoFactorMethodPart(
+                                        ) [NoFactorMethodPart]
+                                      ) [DesignatorFactor]
+                                    ) [SimpleTerm]
+                                    MulopDiv(
+                                    ) [MulopDiv]
+                                    DesignatorFactor(
+                                      Designator(
+                                        DesignatorStart(
+                                         niz
+                                        ) [DesignatorStart]
+                                        SimpleDesignatorArrayPart(
+                                          SimpleExpression(
+                                            SimpleTerm(
+                                              ConstFactor(
+                                                ConstantValueNum(
+                                                 0
+                                                ) [ConstantValueNum]
+                                              ) [ConstFactor]
+                                            ) [SimpleTerm]
+                                          ) [SimpleExpression]
+                                        ) [SimpleDesignatorArrayPart]
+                                      ) [Designator]
+                                      NoFactorMethodPart(
+                                      ) [NoFactorMethodPart]
+                                    ) [DesignatorFactor]
+                                  ) [MulTerm]
+                                ) [SimpleExpression]
+                              ) [AssignDesignatorStatement]
+                            ) [SimpleStatement]
+                          ) [SimpleStatementList]
+                          PrintStatement(
+                            SimpleExpression(
+                              SimpleTerm(
+                                DesignatorFactor(
+                                  Designator(
+                                    DesignatorStart(
+                                     bodovi
+                                    ) [DesignatorStart]
+                                    NoDesignatorArrayPart(
+                                    ) [NoDesignatorArrayPart]
+                                  ) [Designator]
+                                  NoFactorMethodPart(
+                                  ) [NoFactorMethodPart]
+                                ) [DesignatorFactor]
+                              ) [SimpleTerm]
+                            ) [SimpleExpression]
+                          ) [PrintStatement]
+                        ) [SimpleStatementList]
+                        PrintStatement(
+                          SimpleExpression(
+                            SimpleTerm(
+                              DesignatorFactor(
+                                Designator(
+                                  DesignatorStart(
+                                   niz
+                                  ) [DesignatorStart]
+                                  SimpleDesignatorArrayPart(
+                                    SimpleExpression(
+                                      SimpleTerm(
+                                        ConstFactor(
+                                          ConstantValueNum(
+                                           2
+                                          ) [ConstantValueNum]
+                                        ) [ConstFactor]
+                                      ) [SimpleTerm]
+                                    ) [SimpleExpression]
+                                  ) [SimpleDesignatorArrayPart]
+                                ) [Designator]
+                                NoFactorMethodPart(
+                                ) [NoFactorMethodPart]
+                              ) [DesignatorFactor]
+                            ) [SimpleTerm]
+                          ) [SimpleExpression]
+                        ) [PrintStatement]
+                      ) [SimpleStatementList]
+                      SimpleStatement(
+                        AssignDesignatorStatement(
+                          Designator(
+                            DesignatorStart(
+                             nizch
+                            ) [DesignatorStart]
+                            NoDesignatorArrayPart(
+                            ) [NoDesignatorArrayPart]
+                          ) [Designator]
+                          SimpleAssignOp(
+                          ) [SimpleAssignOp]
+                          SimpleExpression(
+                            SimpleTerm(
+                              NewFactor(
+                                Type(
+                                 char
+                                ) [Type]
+                                SimpleExpression(
+                                  SimpleTerm(
+                                    ConstFactor(
+                                      ConstantValueNum(
+                                       3
+                                      ) [ConstantValueNum]
+                                    ) [ConstFactor]
+                                  ) [SimpleTerm]
+                                ) [SimpleExpression]
+                              ) [NewFactor]
+                            ) [SimpleTerm]
+                          ) [SimpleExpression]
+                        ) [AssignDesignatorStatement]
+                      ) [SimpleStatement]
+                    ) [SimpleStatementList]
+                    SimpleStatement(
+                      AssignDesignatorStatement(
+                        Designator(
+                          DesignatorStart(
+                           nizch
+                          ) [DesignatorStart]
+                          SimpleDesignatorArrayPart(
+                            SimpleExpression(
+                              SimpleTerm(
+                                ConstFactor(
+                                  ConstantValueNum(
+                                   0
+                                  ) [ConstantValueNum]
+                                ) [ConstFactor]
+                              ) [SimpleTerm]
+                            ) [SimpleExpression]
+                          ) [SimpleDesignatorArrayPart]
+                        ) [Designator]
+                        SimpleAssignOp(
+                        ) [SimpleAssignOp]
+                        SimpleExpression(
+                          SimpleTerm(
+                            ConstFactor(
+                              ConstantValueChar(
+                               'a'
+                              ) [ConstantValueChar]
+                            ) [ConstFactor]
+                          ) [SimpleTerm]
+                        ) [SimpleExpression]
+                      ) [AssignDesignatorStatement]
+                    ) [SimpleStatement]
+                  ) [SimpleStatementList]
+                  SimpleStatement(
+                    AssignDesignatorStatement(
+                      Designator(
+                        DesignatorStart(
+                         nizch
+                        ) [DesignatorStart]
+                        SimpleDesignatorArrayPart(
+                          SimpleExpression(
+                            SimpleTerm(
+                              DesignatorFactor(
+                                Designator(
+                                  DesignatorStart(
+                                   jedan
+                                  ) [DesignatorStart]
+                                  NoDesignatorArrayPart(
+                                  ) [NoDesignatorArrayPart]
+                                ) [Designator]
+                                NoFactorMethodPart(
+                                ) [NoFactorMethodPart]
+                              ) [DesignatorFactor]
+                            ) [SimpleTerm]
+                          ) [SimpleExpression]
+                        ) [SimpleDesignatorArrayPart]
+                      ) [Designator]
+                      SimpleAssignOp(
+                      ) [SimpleAssignOp]
+                      SimpleExpression(
+                        SimpleTerm(
+                          ConstFactor(
+                            ConstantValueChar(
+                             'b'
+                            ) [ConstantValueChar]
+                          ) [ConstFactor]
+                        ) [SimpleTerm]
+                      ) [SimpleExpression]
+                    ) [AssignDesignatorStatement]
+                  ) [SimpleStatement]
+                ) [SimpleStatementList]
+                SimpleStatement(
+                  AssignDesignatorStatement(
+                    Designator(
+                      DesignatorStart(
+                       nizch
+                      ) [DesignatorStart]
+                      SimpleDesignatorArrayPart(
+                        MultiExpression(
+                          SimpleExpression(
+                            SimpleTerm(
+                              DesignatorFactor(
+                                Designator(
+                                  DesignatorStart(
+                                   pet
+                                  ) [DesignatorStart]
+                                  NoDesignatorArrayPart(
+                                  ) [NoDesignatorArrayPart]
+                                ) [Designator]
+                                NoFactorMethodPart(
+                                ) [NoFactorMethodPart]
+                              ) [DesignatorFactor]
+                            ) [SimpleTerm]
+                          ) [SimpleExpression]
+                          AddopSub(
+                          ) [AddopSub]
+                          SimpleTerm(
+                            ConstFactor(
+                              ConstantValueNum(
+                               3
+                              ) [ConstantValueNum]
+                            ) [ConstFactor]
+                          ) [SimpleTerm]
+                        ) [MultiExpression]
+                      ) [SimpleDesignatorArrayPart]
+                    ) [Designator]
+                    SimpleAssignOp(
+                    ) [SimpleAssignOp]
+                    SimpleExpression(
+                      SimpleTerm(
+                        ConstFactor(
+                          ConstantValueChar(
+                           'c'
+                          ) [ConstantValueChar]
+                        ) [ConstFactor]
+                      ) [SimpleTerm]
+                    ) [SimpleExpression]
+                  ) [AssignDesignatorStatement]
+                ) [SimpleStatement]
+              ) [SimpleStatementList]
+              PrintStatement(
+                SimpleExpression(
+                  SimpleTerm(
+                    DesignatorFactor(
+                      Designator(
+                        DesignatorStart(
+                         nizch
+                        ) [DesignatorStart]
+                        SimpleDesignatorArrayPart(
+                          SimpleExpression(
+                            SimpleTerm(
+                              ConstFactor(
+                                ConstantValueNum(
+                                 1
+                                ) [ConstantValueNum]
+                              ) [ConstFactor]
+                            ) [SimpleTerm]
+                          ) [SimpleExpression]
+                        ) [SimpleDesignatorArrayPart]
+                      ) [Designator]
+                      NoFactorMethodPart(
+                      ) [NoFactorMethodPart]
+                    ) [DesignatorFactor]
+                  ) [SimpleTerm]
+                ) [SimpleExpression]
+              ) [PrintStatement]
+            ) [SimpleStatementList]
+            PrintStatement(
+              SimpleExpression(
+                SimpleTerm(
+                  DesignatorFactor(
+                    Designator(
+                      DesignatorStart(
+                       nizch
+                      ) [DesignatorStart]
+                      SimpleDesignatorArrayPart(
+                        SimpleExpression(
+                          MulTerm(
+                            SimpleTerm(
+                              DesignatorFactor(
+                                Designator(
+                                  DesignatorStart(
+                                   jedan
+                                  ) [DesignatorStart]
+                                  NoDesignatorArrayPart(
+                                  ) [NoDesignatorArrayPart]
+                                ) [Designator]
+                                NoFactorMethodPart(
+                                ) [NoFactorMethodPart]
+                              ) [DesignatorFactor]
+                            ) [SimpleTerm]
+                            MulopMul(
+                            ) [MulopMul]
+                            ConstFactor(
+                              ConstantValueNum(
+                               2
+                              ) [ConstantValueNum]
+                            ) [ConstFactor]
+                          ) [MulTerm]
+                        ) [SimpleExpression]
+                      ) [SimpleDesignatorArrayPart]
+                    ) [Designator]
+                    NoFactorMethodPart(
+                    ) [NoFactorMethodPart]
+                  ) [DesignatorFactor]
+                ) [SimpleTerm]
+              ) [SimpleExpression]
+            ) [PrintStatement]
+          ) [SimpleStatementList]
+          SimpleStatement(
+            AssignDesignatorStatement(
+              Designator(
+                DesignatorStart(
+                 bodovi
+                ) [DesignatorStart]
+                NoDesignatorArrayPart(
+                ) [NoDesignatorArrayPart]
+              ) [Designator]
+              SimpleAssignOp(
+              ) [SimpleAssignOp]
+              MultiExpression(
+                MultiExpression(
+                  SimpleExpression(
+                    SimpleTerm(
+                      DesignatorFactor(
+                        Designator(
+                          DesignatorStart(
+                           bodovi
+                          ) [DesignatorStart]
+                          NoDesignatorArrayPart(
+                          ) [NoDesignatorArrayPart]
+                        ) [Designator]
+                        NoFactorMethodPart(
+                        ) [NoFactorMethodPart]
+                      ) [DesignatorFactor]
+                    ) [SimpleTerm]
+                  ) [SimpleExpression]
+                  AddopAdd(
+                  ) [AddopAdd]
+                  MulTerm(
+                    SimpleTerm(
+                      ExpressFactor(
+                        MultiExpression(
+                          SimpleExpression(
+                            MulTerm(
+                              SimpleTerm(
+                                DesignatorFactor(
+                                  Designator(
+                                    DesignatorStart(
+                                     pet
+                                    ) [DesignatorStart]
+                                    NoDesignatorArrayPart(
+                                    ) [NoDesignatorArrayPart]
+                                  ) [Designator]
+                                  NoFactorMethodPart(
+                                  ) [NoFactorMethodPart]
+                                ) [DesignatorFactor]
+                              ) [SimpleTerm]
+                              MulopMul(
+                              ) [MulopMul]
+                              DesignatorFactor(
+                                Designator(
+                                  DesignatorStart(
+                                   jedan
+                                  ) [DesignatorStart]
+                                  NoDesignatorArrayPart(
+                                  ) [NoDesignatorArrayPart]
+                                ) [Designator]
+                                NoFactorMethodPart(
+                                ) [NoFactorMethodPart]
+                              ) [DesignatorFactor]
+                            ) [MulTerm]
+                          ) [SimpleExpression]
+                          AddopSub(
+                          ) [AddopSub]
+                          SimpleTerm(
+                            ConstFactor(
+                              ConstantValueNum(
+                               1
+                              ) [ConstantValueNum]
+                            ) [ConstFactor]
+                          ) [SimpleTerm]
+                        ) [MultiExpression]
+                      ) [ExpressFactor]
+                    ) [SimpleTerm]
+                    MulopMul(
+                    ) [MulopMul]
+                    DesignatorFactor(
+                      Designator(
+                        DesignatorStart(
+                         bodovi
+                        ) [DesignatorStart]
+                        NoDesignatorArrayPart(
+                        ) [NoDesignatorArrayPart]
+                      ) [Designator]
+                      NoFactorMethodPart(
+                      ) [NoFactorMethodPart]
+                    ) [DesignatorFactor]
+                  ) [MulTerm]
+                ) [MultiExpression]
+                AddopSub(
+                ) [AddopSub]
+                SimpleTerm(
+                  ExpressFactor(
+                    MultiExpression(
+                      MultiExpression(
+                        SimpleExpression(
+                          MulTerm(
+                            SimpleTerm(
+                              ConstFactor(
+                                ConstantValueNum(
+                                 3
+                                ) [ConstantValueNum]
+                              ) [ConstFactor]
+                            ) [SimpleTerm]
+                            MulopMod(
+                            ) [MulopMod]
+                            ConstFactor(
+                              ConstantValueNum(
+                               2
+                              ) [ConstantValueNum]
+                            ) [ConstFactor]
+                          ) [MulTerm]
+                        ) [SimpleExpression]
+                        AddopAdd(
+                        ) [AddopAdd]
+                        MulTerm(
+                          SimpleTerm(
+                            ConstFactor(
+                              ConstantValueNum(
+                               3
+                              ) [ConstantValueNum]
+                            ) [ConstFactor]
+                          ) [SimpleTerm]
+                          MulopMul(
+                          ) [MulopMul]
+                          ConstFactor(
+                            ConstantValueNum(
+                             2
+                            ) [ConstantValueNum]
+                          ) [ConstFactor]
+                        ) [MulTerm]
+                      ) [MultiExpression]
+                      AddopSub(
+                      ) [AddopSub]
+                      SimpleTerm(
+                        ConstFactor(
+                          ConstantValueNum(
+                           3
+                          ) [ConstantValueNum]
+                        ) [ConstFactor]
+                      ) [SimpleTerm]
+                    ) [MultiExpression]
+                  ) [ExpressFactor]
+                ) [SimpleTerm]
+              ) [MultiExpression]
+            ) [AssignDesignatorStatement]
+          ) [SimpleStatement]
+        ) [SimpleStatementList]
+        PrintStatement(
+          SimpleExpression(
+            SimpleTerm(
+              DesignatorFactor(
+                Designator(
+                  DesignatorStart(
+                   bodovi
+                  ) [DesignatorStart]
+                  NoDesignatorArrayPart(
+                  ) [NoDesignatorArrayPart]
+                ) [Designator]
+                NoFactorMethodPart(
+                ) [NoFactorMethodPart]
+              ) [DesignatorFactor]
+            ) [SimpleTerm]
+          ) [SimpleExpression]
+        ) [PrintStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  00:33:45,321 - ===================================
+INFO  00:33:45,341 - Deklarisana konstanta nula na liniji 5
+INFO  00:33:45,341 - Deklarisana konstanta jedan na liniji 6
+INFO  00:33:45,342 - Deklarisana konstanta pet na liniji 7
+INFO  00:33:45,342 - Deklarisana promenljiva niz na liniji 9
+INFO  00:33:45,342 - Deklarisana promenljiva nizch na liniji 10
+INFO  00:33:45,342 - Definisana funkcija incInput na liniji 13
+INFO  00:33:45,343 - Deklarisana promenljiva i na liniji 14
+INFO  00:33:45,347 - Koriscena promenljiva Var i: int, 0, 1 na liniji 16
+INFO  00:33:45,347 - Koriscena promenljiva Var i: int, 0, 1 na liniji 17
+INFO  00:33:45,351 - Koriscena promenljiva Var i: int, 0, 1 na liniji 18
+INFO  00:33:45,351 - Koriscena promenljiva Var i: int, 0, 1 na liniji 19
+INFO  00:33:45,352 - Definisana funkcija main na liniji 22
+INFO  00:33:45,352 - Deklarisana promenljiva bodovi na liniji 23
+INFO  00:33:45,353 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 25
+INFO  00:33:45,353 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 26
+INFO  00:33:45,353 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 27
+INFO  00:33:45,353 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 27
+INFO  00:33:45,354 - Koriscena promenljiva Con jedan: int, 1, 0 na liniji 27
+INFO  00:33:45,354 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 28
+INFO  00:33:45,354 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 28
+INFO  00:33:45,354 - Koriscena promenljiva Con pet: int, 5, 0 na liniji 28
+INFO  00:33:45,355 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 29
+INFO  00:33:45,355 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 30
+INFO  00:33:45,355 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 33
+INFO  00:33:45,357 - Koriscena promenljiva Con nula: int, 0, 0 na liniji 34
+INFO  00:33:45,358 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 34
+INFO  00:33:45,358 - Koriscena promenljiva Con jedan: int, 1, 0 na liniji 34
+INFO  00:33:45,358 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 35
+INFO  00:33:45,358 - Koriscena promenljiva Con jedan: int, 1, 0 na liniji 36
+INFO  00:33:45,359 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 36
+INFO  00:33:45,359 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 36
+INFO  00:33:45,359 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 36
+INFO  00:33:45,360 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 36
+INFO  00:33:45,360 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 37
+INFO  00:33:45,361 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 37
+INFO  00:33:45,361 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 37
+INFO  00:33:45,363 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 38
+INFO  00:33:45,363 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 39
+INFO  00:33:45,363 - Koriscena promenljiva Var nizch: array of char, 1, 0 na liniji 42
+INFO  00:33:45,363 - Koriscena promenljiva Var nizch: array of char, 1, 0 na liniji 43
+INFO  00:33:45,363 - Koriscena promenljiva Con jedan: int, 1, 0 na liniji 44
+INFO  00:33:45,364 - Koriscena promenljiva Var nizch: array of char, 1, 0 na liniji 44
+INFO  00:33:45,364 - Koriscena promenljiva Con pet: int, 5, 0 na liniji 45
+INFO  00:33:45,364 - Koriscena promenljiva Var nizch: array of char, 1, 0 na liniji 45
+INFO  00:33:45,364 - Koriscena promenljiva Var nizch: array of char, 1, 0 na liniji 46
+INFO  00:33:45,364 - Koriscena promenljiva Con jedan: int, 1, 0 na liniji 47
+INFO  00:33:45,364 - Koriscena promenljiva Var nizch: array of char, 1, 0 na liniji 47
+INFO  00:33:45,364 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 50
+INFO  00:33:45,365 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 50
+INFO  00:33:45,365 - Koriscena promenljiva Con pet: int, 5, 0 na liniji 50
+INFO  00:33:45,365 - Koriscena promenljiva Con jedan: int, 1, 0 na liniji 50
+INFO  00:33:45,365 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 50
+INFO  00:33:45,365 - Koriscena promenljiva Var bodovi: int, 0, 1 na liniji 51
+INFO  00:33:45,365 -  Print count calls = 8
+INFO  00:33:45,365 -  Deklarisanih promenljivih ima = 4
+INFO  00:33:45,365 - ===================================
+INFO  00:33:45,374 - Parsiranje uspesno zavrseno!

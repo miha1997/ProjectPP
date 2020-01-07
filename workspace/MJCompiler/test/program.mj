@@ -3,22 +3,29 @@ program MJProgram
 	int y;
 	int arr[];
 {
-	int test(){
-	
+	void test(){
+		print(x);
 	}
 
 	void main(){
+		arr = new int [3];
+		arr[0] = 1;
+		arr[arr[0]] = 2;
+		print(arr[1]);
+	
+		x = 2;
+		y = 8;
+		y = 2 + 3* (2 + 2) - x - y;
+		print(y);
+		x = -y;
+		
 		//read(x);
-		//y = test();
+		//test();
 		
 		//x = 1;
+		print(x);
 		//x++;
-		arr = new int [2];
-		arr[0] = 1;
-		//arr[1] = 2;
-		//print(arr[0]);
-		
-		
+			
 		//print(x);
 		//x = 4;
 		//x++;

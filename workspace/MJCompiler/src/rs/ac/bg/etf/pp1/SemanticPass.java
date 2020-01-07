@@ -14,6 +14,7 @@ public class SemanticPass extends VisitorAdaptor {
 	int globalCounter = 0;
 
 	Obj currentMethod = null;
+	boolean hasReturn;
 	boolean isVoid = false;
 
 	Struct lastType = Tab.noType;
@@ -21,7 +22,6 @@ public class SemanticPass extends VisitorAdaptor {
 	Logger log = Logger.getLogger(getClass());
 	
 	public SemanticPass() {
-		// add bool primitive type in symbol table
 		Tab.insert(Obj.Type, "bool", bool);
 	}
 
@@ -132,12 +132,6 @@ public class SemanticPass extends VisitorAdaptor {
 			}
 
 			report_info("Deklarisana promenljiva " + varDef.getVarName(), varDef);
-			
-			if(currentMethod == null)
-				varDef.obj.setLevel(0);
-			else
-				varDef.obj.setLevel(1);
-			
 			varDeclCount++;
 
 		} else {
@@ -215,12 +209,10 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(MethodTypeVoid methodTypeVoid) {
 		lastType = Tab.noType;
 		isVoid = true;
-
 	}
 
 	public void visit(MethodTypeOther methodTypeOther) {
 		lastType = methodTypeOther.getType().struct;
-
 	}
 
 	public void visit(MethodName methodName) {
@@ -230,9 +222,9 @@ public class SemanticPass extends VisitorAdaptor {
 			methodName.obj = Tab.insert(Obj.Meth, methodName.getMethodName(), lastType);
 			currentMethod = methodName.obj;
 			Tab.openScope();
-
+			hasReturn = false;
+			
 			report_info("Definisana funkcija " + methodName.getMethodName(), methodName);
-			// check for method
 
 		} else {
 			report_error("Greska na liniji " + methodName.getLine() + ", ime funkcije " + methodName.getMethodName()
@@ -247,14 +239,41 @@ public class SemanticPass extends VisitorAdaptor {
 		currentMethod = null;
 	}
 	
+	public void visit(ReturnStatement returnStatement) {
+		if(currentMethod != null) {
+			
+			
+			/*if(returnStatement.getExpressionOptional().obj != Tab.noObj) {
+				if(currentMethod.getType() == Tab.noType) {
+					report_error("Error on line " + returnStatement.getLine() + ", void method has no return statement", null);
+				}
+			}
+			else {
+				if(currentMethod.getType() != Tab.noType) {
+					report_error("Error on line " + returnStatement.getLine() + ", method must be declared as void", null);
+				}
+				else if(currentMethod.getType().getKind() == Struct.Int && returnStatement.getExpressionOptional().obj.getType().getKind() == Struct.Enum) {
+					
+				}
+				else if(!currentMethod.getType().compatibleWith(returnStatement.getExpressionOptional().obj.getType())) {
+					report_error("Error on line " + returnStatement.getLine() + ", incompatible method type and return", null);
+				}
+			}
+			
+			hasReturn = true;*/
+		}
+		else {
+			report_error("Greska na liniji " + returnStatement.getLine() + ", return iskaz je van funkcije!", null);
+		}
+	}
+	
 	public void visit(Designator designator) {
-		Obj designatorObj = Tab.find(designator.getDesignatorName());
+		Obj designatorObj = Tab.find(designator.getDesignatorStart().getDesignatorName());
 		
 		if (designatorObj == Tab.noObj) 
 			report_error("Greska na liniji " + designator.getLine() + ", promenljiva "
-					+ designator.getDesignatorName() + " nije deklarisana", null);
+					+ designator.getDesignatorStart().getDesignatorName() + " nije deklarisana", null);
 		
-		//is array/elem
 		if(designator.getDesignatorArrayPart().getClass().equals(SimpleDesignatorArrayPart.class)) {
 			SimpleDesignatorArrayPart designatorArrayPart = (SimpleDesignatorArrayPart) designator.getDesignatorArrayPart();
 			
@@ -262,18 +281,21 @@ public class SemanticPass extends VisitorAdaptor {
 				report_error("Greska na liniji " + designator.getLine() + ", indeks nije tipa int", null);
 			if (designatorObj.getType().getKind() != Struct.Array)
 				report_error("Greska na liniji " + designator.getLine() + ", promenljiva "
-						+ designator.getDesignatorName() + " nije tipa niza", null);
+						+ designator.getDesignatorStart().getDesignatorName() + " nije tipa niza", null);
 			
-			designator.obj = new Obj(Obj.Elem, designator.getDesignatorName(), designatorObj.getType().getElemType());
+			designator.obj = new Obj(Obj.Elem, designator.getDesignatorStart().getDesignatorName(), designatorObj.getType().getElemType());
 		}else {
 			designator.obj = designatorObj;
 		}
 		
 		report_info("Koriscena promenljiva " + report_node(designatorObj), designator);
 	}
-
+	
+	public void visit(DesignatorStart designatorStart) {
+		designatorStart.obj = Tab.find(designatorStart.getDesignatorName());
+	}
+	
 	public void visit(SimpleExpression simpleExpression) {
-		// sacuvati objekat term-a u objektu expression-a
 		simpleExpression.obj = simpleExpression.getTerm().obj;
 	}
 
@@ -380,6 +402,13 @@ public class SemanticPass extends VisitorAdaptor {
 		designatorDec.obj = designatorDec.getDesignator().obj;
 	}
 	
+	public void visit(DesignatorStatementFactor designatorStatementFactor) {
+		if(! designatorStatementFactor.getFactor().getClass().equals(DesignatorFactor.class)) {
+			report_error("Greska na liniji " + designatorStatementFactor.getLine() + ", nedozvoljen izraz", null);
+		}
+	}
+	
+	//PRINT AND READ 
 	public void visit(ReadStatement readStatement) {
 		if(readStatement.getDesignator().obj.getKind() != Obj.Var && readStatement.getDesignator().obj.getKind() != Obj.Elem)
 			report_error("Greska na liniji " + readStatement.getLine() + ", moguce je citati samo elem i var", null);

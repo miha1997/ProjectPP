@@ -1,0 +1,141 @@
+INFO  10:52:41,863 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\program.mj
+INFO  10:52:41,902 - #6 program
+INFO  10:52:41,903 - #3 MJProgram
+INFO  10:52:41,903 - #3 int
+INFO  10:52:41,904 - #3 x
+INFO  10:52:41,905 - #12 ;
+INFO  10:52:41,908 - #3 int
+INFO  10:52:41,909 - #3 y
+INFO  10:52:41,909 - #12 ;
+INFO  10:52:41,909 - #3 int
+INFO  10:52:41,909 - #3 arr
+INFO  10:52:41,909 - #15 [
+INFO  10:52:41,909 - #16 ]
+INFO  10:52:41,910 - #12 ;
+INFO  10:52:41,910 - #9 {
+INFO  10:52:41,910 - #3 int
+INFO  10:52:41,911 - #3 test
+INFO  10:52:41,911 - #18 (
+INFO  10:52:41,912 - #19 )
+INFO  10:52:41,912 - #9 {
+INFO  10:52:41,913 - #10 }
+INFO  10:52:41,913 - #17 void
+INFO  10:52:41,914 - #3 main
+INFO  10:52:41,915 - #18 (
+INFO  10:52:41,915 - #19 )
+INFO  10:52:41,915 - #9 {
+INFO  10:52:41,915 - #3 x
+INFO  10:52:41,915 - #20 ++
+INFO  10:52:41,917 - #12 ;
+INFO  10:52:41,918 - #10 }
+INFO  10:52:41,918 - #10 }
+INFO  10:52:41,943 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        NoMultiDeclList(
+        ) [NoMultiDeclList]
+        MultiVarDecl(
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               x
+                NoArrayDef(
+                ) [NoArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [MultiVarDecl]
+      ) [SimpleMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             y
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        OneVarDeclList(
+          VarDef(
+           arr
+            SimpleArrayDef(
+            ) [SimpleArrayDef]
+          ) [VarDef]
+        ) [OneVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    SimpleMethodDeclList(
+      NoMethodDeclList(
+      ) [NoMethodDeclList]
+      MethodDecl(
+        MethodTypeOther(
+          Type(
+           int
+          ) [Type]
+        ) [MethodTypeOther]
+        MethodName(
+         test
+        ) [MethodName]
+        EmptyMethodVariableDeclarationList(
+        ) [EmptyMethodVariableDeclarationList]
+        NoStatementList(
+        ) [NoStatementList]
+      ) [MethodDecl]
+    ) [SimpleMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      SimpleStatementList(
+        NoStatementList(
+        ) [NoStatementList]
+        SimpleStatement(
+          DesignatorInc(
+            Designator(
+              DesignatorStart(
+               x
+              ) [DesignatorStart]
+              NoDesignatorArrayPart(
+              ) [NoDesignatorArrayPart]
+            ) [Designator]
+          ) [DesignatorInc]
+        ) [SimpleStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  10:52:41,944 - ===================================
+INFO  10:52:41,947 - Deklarisana promenljiva x na liniji 2
+INFO  10:52:41,948 - Deklarisana promenljiva y na liniji 3
+INFO  10:52:41,948 - Deklarisana promenljiva arr na liniji 4
+INFO  10:52:41,948 - Definisana funkcija test na liniji 6
+INFO  10:52:41,948 - Definisana funkcija main na liniji 10
+INFO  10:52:41,948 - Koriscena promenljiva Var x: int, 0, 0 na liniji 15
+INFO  10:52:41,948 -  Print count calls = 0
+INFO  10:52:41,948 -  Deklarisanih promenljivih ima = 3
+INFO  10:52:41,948 - ===================================
+INFO  10:52:41,958 - Parsiranje uspesno zavrseno!
