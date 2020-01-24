@@ -1,0 +1,109 @@
+INFO  00:01:52,870 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\test2.mj
+INFO  00:01:52,915 - #6 program
+INFO  00:01:52,915 - #3 Test2
+INFO  00:01:52,915 - #9 {
+INFO  00:01:52,916 - #17 void
+INFO  00:01:52,917 - #3 main
+INFO  00:01:52,918 - #18 (
+INFO  00:01:52,918 - #19 )
+INFO  00:01:52,918 - #3 char
+INFO  00:01:52,919 - #3 c
+INFO  00:01:52,920 - #13 =
+ERROR 00:01:52,920 - 
+Sintaksna greska na liniji 5
+INFO  00:01:52,921 - #2 20
+INFO  00:01:52,921 - #14 ,
+INFO  00:01:52,921 - #3 b
+INFO  00:01:52,922 - #14 ,
+INFO  00:01:52,922 - #3 r
+ERROR 00:01:52,922 - Sintaksna greska, izvrsen oporavak u liniji 5 u konstrukciji vardecl
+INFO  00:01:52,925 - #14 ,
+INFO  00:01:52,925 - #3 m
+INFO  00:01:52,925 - #20 ++
+ERROR 00:01:52,925 - 
+Sintaksna greska na liniji 5
+INFO  00:01:52,925 - #12 ;
+INFO  00:01:52,926 - #9 {
+INFO  00:01:52,926 - #3 a
+INFO  00:01:52,926 - #13 =
+ERROR 00:01:52,926 - Sintaksna greska, izvrsen oporavak u liniji 5 u konstrukciji vardecl
+INFO  00:01:52,931 - #2 8
+INFO  00:01:52,932 - #3 a
+ERROR 00:01:52,932 - 
+Sintaksna greska na liniji 6
+INFO  00:01:52,932 - #12 ;
+INFO  00:01:52,932 - #10 }
+INFO  00:01:52,932 - #10 }
+ERROR 00:01:52,932 - Sintaksna greska, izvrsen oporavak u liniji 6 u konstrukciji assign
+INFO  00:01:52,972 - Program(
+  ProgramName(
+   Test2
+  ) [ProgramName]
+  NoMultiDeclList(
+  ) [NoMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      SimpleMethodVarDeclList(
+        EmptyMethodVariableDeclarationList(
+        ) [EmptyMethodVariableDeclarationList]
+        SimpleVarDeclNoError(
+          Type(
+           char
+          ) [Type]
+          VarDeclErrorComma(
+          ) [VarDeclErrorComma]
+        ) [SimpleVarDeclNoError]
+      ) [SimpleMethodVarDeclList]
+      SimpleStatementList(
+        NoStatementList(
+        ) [NoStatementList]
+        SimpleStatement(
+          AssignDesignatorStatement(
+            Designator(
+              DesignatorStart(
+               a
+              ) [DesignatorStart]
+              NoDesignatorArrayPart(
+              ) [NoDesignatorArrayPart]
+            ) [Designator]
+            AssignOpError(
+            ) [AssignOpError]
+            SimpleExpression(
+              SimpleTerm(
+                DesignatorFactor(
+                  Designator(
+                    DesignatorStart(
+                     a
+                    ) [DesignatorStart]
+                    NoDesignatorArrayPart(
+                    ) [NoDesignatorArrayPart]
+                  ) [Designator]
+                  NoFactorMethodPart(
+                  ) [NoFactorMethodPart]
+                ) [DesignatorFactor]
+              ) [SimpleTerm]
+            ) [SimpleExpression]
+          ) [AssignDesignatorStatement]
+        ) [SimpleStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  00:01:52,973 - ===================================
+INFO  00:01:52,977 - Definisana funkcija main na liniji 5
+ERROR 00:01:52,978 - Greska na liniji 6, promenljiva a nije deklarisana
+
+INFO  00:01:52,978 - Koriscena promenljiva Var noObj: -1, -1 na liniji 6
+ERROR 00:01:52,978 - Greska na liniji 6, promenljiva a nije deklarisana
+
+INFO  00:01:52,978 - Koriscena promenljiva Var noObj: -1, -1 na liniji 6
+INFO  00:01:52,979 -  Print count calls = 0
+INFO  00:01:52,979 -  Deklarisanih promenljivih ima = 0
+ERROR 00:01:52,982 - Parsiranje NIJE uspesno zavrseno!

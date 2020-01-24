@@ -1,0 +1,67 @@
+INFO  00:11:08,085 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\test3.mj
+INFO  00:11:08,142 - #6 program
+INFO  00:11:08,142 - #3 test3
+INFO  00:11:08,142 - #3 int
+INFO  00:11:08,144 - #3 char
+INFO  00:11:08,145 - #3 greska
+ERROR 00:11:08,145 - 
+Sintaksna greska na liniji 2
+INFO  00:11:08,145 - #12 ;
+INFO  00:11:08,145 - #3 boolean
+INFO  00:11:08,145 - #3 flag
+INFO  00:11:08,146 - #12 ;
+ERROR 00:11:08,146 - Sintaksna greska, izvrsen oporavak u liniji 2 u konstrukciji vardecl
+INFO  00:11:08,149 - #11 const
+INFO  00:11:08,149 - #3 boolean
+INFO  00:11:08,149 - #3 constFlag
+INFO  00:11:08,149 - #12 ;
+ERROR 00:11:08,149 - 
+Sintaksna greska na liniji 4
+INFO  00:11:08,150 - #9 {
+INFO  00:11:08,150 - #17 void
+INFO  00:11:08,150 - #3 main
+INFO  00:11:08,150 - #18 (
+INFO  00:11:08,150 - #19 )
+INFO  00:11:08,150 - #9 {
+INFO  00:11:08,151 - #10 }
+INFO  00:11:08,151 - #3 int
+INFO  00:11:08,151 - #3 func
+INFO  00:11:08,151 - #18 (
+INFO  00:11:08,151 - #19 )
+INFO  00:11:08,151 - #3 int
+INFO  00:11:08,151 - #3 a
+INFO  00:11:08,152 - #12 ;
+INFO  00:11:08,152 - #3 int
+INFO  00:11:08,152 - #3 arr
+INFO  00:11:08,152 - #15 [
+INFO  00:11:08,152 - #16 ]
+INFO  00:11:08,152 - #12 ;
+INFO  00:11:08,153 - #9 {
+INFO  00:11:08,153 - #3 flag
+INFO  00:11:08,153 - #13 =
+INFO  00:11:08,153 - #2 1
+INFO  00:11:08,153 - #12 ;
+INFO  00:11:08,153 - #3 flag
+INFO  00:11:08,153 - #13 =
+ERROR 00:11:08,155 - Sintaksna greska, izvrsen oporavak u liniji 4 u konstrukciji assign
+ERROR 00:11:08,157 - 
+Sintaksna greska na liniji 13
+INFO  00:11:08,158 - #4 true
+INFO  00:11:08,158 - #12 ;
+INFO  00:11:08,158 - #3 constFlag
+INFO  00:11:08,158 - #13 =
+INFO  00:11:08,158 - #4 true
+INFO  00:11:08,158 - #12 ;
+INFO  00:11:08,158 - #3 arr
+INFO  00:11:08,158 - #15 [
+INFO  00:11:08,158 - #3 a
+INFO  00:11:08,158 - #16 ]
+INFO  00:11:08,159 - #13 =
+INFO  00:11:08,159 - #3 a
+INFO  00:11:08,159 - #12 ;
+INFO  00:11:08,159 - #28 return
+INFO  00:11:08,159 - #5 'c'
+INFO  00:11:08,159 - #12 ;
+INFO  00:11:08,159 - #10 }
+INFO  00:11:08,159 - #10 }
+ERROR 00:11:08,160 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 23

@@ -1,0 +1,174 @@
+INFO  00:08:52,499 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\test3.mj
+INFO  00:08:52,540 - #6 program
+INFO  00:08:52,541 - #3 test3
+INFO  00:08:52,541 - #3 int
+INFO  00:08:52,542 - #3 char
+INFO  00:08:52,543 - #3 greska
+ERROR 00:08:52,543 - 
+Sintaksna greska na liniji 2
+INFO  00:08:52,543 - #12 ;
+INFO  00:08:52,543 - #9 {
+INFO  00:08:52,543 - #3 int
+INFO  00:08:52,544 - #3 main
+ERROR 00:08:52,545 - Sintaksna greska, izvrsen oporavak u liniji 2 u konstrukciji vardecl
+INFO  00:08:52,546 - #18 (
+INFO  00:08:52,547 - #19 )
+INFO  00:08:52,547 - #3 int
+INFO  00:08:52,548 - #3 a
+INFO  00:08:52,548 - #12 ;
+INFO  00:08:52,550 - #3 int
+INFO  00:08:52,551 - #3 arr
+INFO  00:08:52,552 - #15 [
+INFO  00:08:52,552 - #16 ]
+INFO  00:08:52,552 - #12 ;
+INFO  00:08:52,553 - #9 {
+INFO  00:08:52,553 - #3 arr
+INFO  00:08:52,554 - #15 [
+INFO  00:08:52,555 - #3 a
+INFO  00:08:52,555 - #16 ]
+INFO  00:08:52,559 - #13 =
+INFO  00:08:52,559 - #3 a
+INFO  00:08:52,561 - #12 ;
+INFO  00:08:52,562 - #28 return
+INFO  00:08:52,562 - #5 'c'
+INFO  00:08:52,562 - #12 ;
+INFO  00:08:52,563 - #10 }
+INFO  00:08:52,563 - #10 }
+INFO  00:08:52,601 - Program(
+  ProgramName(
+   test3
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    NoMultiDeclList(
+    ) [NoMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        VarDeclErrorComma(
+        ) [VarDeclErrorComma]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeOther(
+        Type(
+         int
+        ) [Type]
+      ) [MethodTypeOther]
+      MethodName(
+       main
+      ) [MethodName]
+      SimpleMethodVarDeclList(
+        SimpleMethodVarDeclList(
+          EmptyMethodVariableDeclarationList(
+          ) [EmptyMethodVariableDeclarationList]
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               a
+                NoArrayDef(
+                ) [NoArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [SimpleMethodVarDeclList]
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             arr
+              SimpleArrayDef(
+              ) [SimpleArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [SimpleMethodVarDeclList]
+      SimpleStatementList(
+        SimpleStatementList(
+          NoStatementList(
+          ) [NoStatementList]
+          SimpleStatement(
+            AssignDesignatorStatement(
+              Designator(
+                DesignatorStart(
+                 arr
+                ) [DesignatorStart]
+                SimpleDesignatorArrayPart(
+                  SimpleExpression(
+                    SimpleTerm(
+                      DesignatorFactor(
+                        Designator(
+                          DesignatorStart(
+                           a
+                          ) [DesignatorStart]
+                          NoDesignatorArrayPart(
+                          ) [NoDesignatorArrayPart]
+                        ) [Designator]
+                        NoFactorMethodPart(
+                        ) [NoFactorMethodPart]
+                      ) [DesignatorFactor]
+                    ) [SimpleTerm]
+                  ) [SimpleExpression]
+                ) [SimpleDesignatorArrayPart]
+              ) [Designator]
+              SimpleAssignOp(
+              ) [SimpleAssignOp]
+              SimpleExpression(
+                SimpleTerm(
+                  DesignatorFactor(
+                    Designator(
+                      DesignatorStart(
+                       a
+                      ) [DesignatorStart]
+                      NoDesignatorArrayPart(
+                      ) [NoDesignatorArrayPart]
+                    ) [Designator]
+                    NoFactorMethodPart(
+                    ) [NoFactorMethodPart]
+                  ) [DesignatorFactor]
+                ) [SimpleTerm]
+              ) [SimpleExpression]
+            ) [AssignDesignatorStatement]
+          ) [SimpleStatement]
+        ) [SimpleStatementList]
+        ReturnStatement(
+          FullExpressionPart(
+            SimpleExpression(
+              SimpleTerm(
+                ConstFactor(
+                  ConstantValueChar(
+                   'c'
+                  ) [ConstantValueChar]
+                ) [ConstFactor]
+              ) [SimpleTerm]
+            ) [SimpleExpression]
+          ) [FullExpressionPart]
+        ) [ReturnStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  00:08:52,602 - ===================================
+INFO  00:08:52,605 - Definisana funkcija main na liniji 4
+INFO  00:08:52,605 - Deklarisana promenljiva a na liniji 4
+INFO  00:08:52,606 - Deklarisana promenljiva arr na liniji 4
+INFO  00:08:52,606 - Koriscena promenljiva Var a: int, 0, 1 na liniji 6
+INFO  00:08:52,606 - Koriscena promenljiva Var arr: array of int, 1, 1 na liniji 6
+INFO  00:08:52,606 - Koriscena promenljiva Var a: int, 0, 1 na liniji 6
+ERROR 00:08:52,607 - Greska na liniji 8, return nije odgovarajuceg tipa!
+
+ERROR 00:08:52,607 - Ne postoji main funkcija!
+
+INFO  00:08:52,607 -  Print count calls = 0
+INFO  00:08:52,607 -  Deklarisanih promenljivih ima = 2
+ERROR 00:08:52,612 - Parsiranje NIJE uspesno zavrseno!

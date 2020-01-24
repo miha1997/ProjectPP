@@ -1,0 +1,386 @@
+INFO  23:15:16,307 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\mytestA1.mj
+INFO  23:15:16,350 - #6 program
+INFO  23:15:16,350 - #3 p1
+INFO  23:15:16,351 - #3 char
+INFO  23:15:16,352 - #3 c
+INFO  23:15:16,359 - #12 ;
+INFO  23:15:16,360 - #9 {
+INFO  23:15:16,361 - #17 void
+INFO  23:15:16,361 - #3 main
+INFO  23:15:16,362 - #18 (
+INFO  23:15:16,363 - #19 )
+INFO  23:15:16,363 - #3 int
+INFO  23:15:16,364 - #3 a
+INFO  23:15:16,364 - #15 [
+INFO  23:15:16,364 - #16 ]
+INFO  23:15:16,364 - #12 ;
+INFO  23:15:16,365 - #3 int
+INFO  23:15:16,365 - #3 kk
+INFO  23:15:16,365 - #12 ;
+INFO  23:15:16,365 - #9 {
+INFO  23:15:16,365 - #8 read
+INFO  23:15:16,366 - #18 (
+INFO  23:15:16,366 - #3 c
+INFO  23:15:16,366 - #19 )
+INFO  23:15:16,368 - #12 ;
+INFO  23:15:16,368 - #3 c
+INFO  23:15:16,369 - #20 ++
+INFO  23:15:16,369 - #12 ;
+INFO  23:15:16,369 - #7 print
+INFO  23:15:16,369 - #18 (
+INFO  23:15:16,369 - #3 bodovi
+INFO  23:15:16,369 - #19 )
+INFO  23:15:16,371 - #12 ;
+INFO  23:15:16,371 - #3 kk
+INFO  23:15:16,371 - #13 =
+INFO  23:15:16,372 - #2 0
+INFO  23:15:16,373 - #12 ;
+INFO  23:15:16,373 - #3 kk
+INFO  23:15:16,373 - #20 ++
+INFO  23:15:16,373 - #12 ;
+INFO  23:15:16,373 - #3 a
+INFO  23:15:16,374 - #13 =
+INFO  23:15:16,374 - #24 new
+INFO  23:15:16,374 - #3 int
+INFO  23:15:16,374 - #15 [
+INFO  23:15:16,374 - #2 15
+INFO  23:15:16,374 - #16 ]
+INFO  23:15:16,374 - #12 ;
+INFO  23:15:16,375 - #3 a
+INFO  23:15:16,375 - #15 [
+INFO  23:15:16,375 - #3 kk
+INFO  23:15:16,375 - #16 ]
+INFO  23:15:16,375 - #20 ++
+INFO  23:15:16,375 - #12 ;
+INFO  23:15:16,375 - #3 a
+INFO  23:15:16,375 - #20 ++
+INFO  23:15:16,376 - #12 ;
+INFO  23:15:16,376 - #3 a
+INFO  23:15:16,376 - #15 [
+INFO  23:15:16,376 - #3 c
+INFO  23:15:16,376 - #16 ]
+INFO  23:15:16,376 - #20 ++
+INFO  23:15:16,376 - #12 ;
+INFO  23:15:16,376 - #3 a
+INFO  23:15:16,377 - #20 ++
+INFO  23:15:16,377 - #12 ;
+INFO  23:15:16,377 - #7 print
+INFO  23:15:16,377 - #18 (
+INFO  23:15:16,377 - #3 c
+INFO  23:15:16,377 - #19 )
+INFO  23:15:16,377 - #12 ;
+INFO  23:15:16,377 - #10 }
+INFO  23:15:16,377 - #10 }
+INFO  23:15:16,408 - Program(
+  ProgramName(
+   p1
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    NoMultiDeclList(
+    ) [NoMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         char
+        ) [Type]
+        OneVarDeclList(
+          VarDef(
+           c
+            NoArrayDef(
+            ) [NoArrayDef]
+          ) [VarDef]
+        ) [OneVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      SimpleMethodVarDeclList(
+        SimpleMethodVarDeclList(
+          EmptyMethodVariableDeclarationList(
+          ) [EmptyMethodVariableDeclarationList]
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               a
+                SimpleArrayDef(
+                ) [SimpleArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [SimpleMethodVarDeclList]
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             kk
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [SimpleMethodVarDeclList]
+      SimpleStatementList(
+        SimpleStatementList(
+          SimpleStatementList(
+            SimpleStatementList(
+              SimpleStatementList(
+                SimpleStatementList(
+                  SimpleStatementList(
+                    SimpleStatementList(
+                      SimpleStatementList(
+                        SimpleStatementList(
+                          SimpleStatementList(
+                            NoStatementList(
+                            ) [NoStatementList]
+                            ReadStatement(
+                              Designator(
+                                DesignatorStart(
+                                 c
+                                ) [DesignatorStart]
+                                NoDesignatorArrayPart(
+                                ) [NoDesignatorArrayPart]
+                              ) [Designator]
+                            ) [ReadStatement]
+                          ) [SimpleStatementList]
+                          SimpleStatement(
+                            DesignatorInc(
+                              Designator(
+                                DesignatorStart(
+                                 c
+                                ) [DesignatorStart]
+                                NoDesignatorArrayPart(
+                                ) [NoDesignatorArrayPart]
+                              ) [Designator]
+                            ) [DesignatorInc]
+                          ) [SimpleStatement]
+                        ) [SimpleStatementList]
+                        PrintStatement(
+                          SimpleExpression(
+                            SimpleTerm(
+                              DesignatorFactor(
+                                Designator(
+                                  DesignatorStart(
+                                   bodovi
+                                  ) [DesignatorStart]
+                                  NoDesignatorArrayPart(
+                                  ) [NoDesignatorArrayPart]
+                                ) [Designator]
+                                NoFactorMethodPart(
+                                ) [NoFactorMethodPart]
+                              ) [DesignatorFactor]
+                            ) [SimpleTerm]
+                          ) [SimpleExpression]
+                        ) [PrintStatement]
+                      ) [SimpleStatementList]
+                      SimpleStatement(
+                        AssignDesignatorStatement(
+                          Designator(
+                            DesignatorStart(
+                             kk
+                            ) [DesignatorStart]
+                            NoDesignatorArrayPart(
+                            ) [NoDesignatorArrayPart]
+                          ) [Designator]
+                          SimpleAssignOp(
+                          ) [SimpleAssignOp]
+                          SimpleExpression(
+                            SimpleTerm(
+                              ConstFactor(
+                                ConstantValueNum(
+                                 0
+                                ) [ConstantValueNum]
+                              ) [ConstFactor]
+                            ) [SimpleTerm]
+                          ) [SimpleExpression]
+                        ) [AssignDesignatorStatement]
+                      ) [SimpleStatement]
+                    ) [SimpleStatementList]
+                    SimpleStatement(
+                      DesignatorInc(
+                        Designator(
+                          DesignatorStart(
+                           kk
+                          ) [DesignatorStart]
+                          NoDesignatorArrayPart(
+                          ) [NoDesignatorArrayPart]
+                        ) [Designator]
+                      ) [DesignatorInc]
+                    ) [SimpleStatement]
+                  ) [SimpleStatementList]
+                  SimpleStatement(
+                    AssignDesignatorStatement(
+                      Designator(
+                        DesignatorStart(
+                         a
+                        ) [DesignatorStart]
+                        NoDesignatorArrayPart(
+                        ) [NoDesignatorArrayPart]
+                      ) [Designator]
+                      SimpleAssignOp(
+                      ) [SimpleAssignOp]
+                      SimpleExpression(
+                        SimpleTerm(
+                          NewFactor(
+                            Type(
+                             int
+                            ) [Type]
+                            SimpleExpression(
+                              SimpleTerm(
+                                ConstFactor(
+                                  ConstantValueNum(
+                                   15
+                                  ) [ConstantValueNum]
+                                ) [ConstFactor]
+                              ) [SimpleTerm]
+                            ) [SimpleExpression]
+                          ) [NewFactor]
+                        ) [SimpleTerm]
+                      ) [SimpleExpression]
+                    ) [AssignDesignatorStatement]
+                  ) [SimpleStatement]
+                ) [SimpleStatementList]
+                SimpleStatement(
+                  DesignatorInc(
+                    Designator(
+                      DesignatorStart(
+                       a
+                      ) [DesignatorStart]
+                      SimpleDesignatorArrayPart(
+                        SimpleExpression(
+                          SimpleTerm(
+                            DesignatorFactor(
+                              Designator(
+                                DesignatorStart(
+                                 kk
+                                ) [DesignatorStart]
+                                NoDesignatorArrayPart(
+                                ) [NoDesignatorArrayPart]
+                              ) [Designator]
+                              NoFactorMethodPart(
+                              ) [NoFactorMethodPart]
+                            ) [DesignatorFactor]
+                          ) [SimpleTerm]
+                        ) [SimpleExpression]
+                      ) [SimpleDesignatorArrayPart]
+                    ) [Designator]
+                  ) [DesignatorInc]
+                ) [SimpleStatement]
+              ) [SimpleStatementList]
+              SimpleStatement(
+                DesignatorInc(
+                  Designator(
+                    DesignatorStart(
+                     a
+                    ) [DesignatorStart]
+                    NoDesignatorArrayPart(
+                    ) [NoDesignatorArrayPart]
+                  ) [Designator]
+                ) [DesignatorInc]
+              ) [SimpleStatement]
+            ) [SimpleStatementList]
+            SimpleStatement(
+              DesignatorInc(
+                Designator(
+                  DesignatorStart(
+                   a
+                  ) [DesignatorStart]
+                  SimpleDesignatorArrayPart(
+                    SimpleExpression(
+                      SimpleTerm(
+                        DesignatorFactor(
+                          Designator(
+                            DesignatorStart(
+                             c
+                            ) [DesignatorStart]
+                            NoDesignatorArrayPart(
+                            ) [NoDesignatorArrayPart]
+                          ) [Designator]
+                          NoFactorMethodPart(
+                          ) [NoFactorMethodPart]
+                        ) [DesignatorFactor]
+                      ) [SimpleTerm]
+                    ) [SimpleExpression]
+                  ) [SimpleDesignatorArrayPart]
+                ) [Designator]
+              ) [DesignatorInc]
+            ) [SimpleStatement]
+          ) [SimpleStatementList]
+          SimpleStatement(
+            DesignatorInc(
+              Designator(
+                DesignatorStart(
+                 a
+                ) [DesignatorStart]
+                NoDesignatorArrayPart(
+                ) [NoDesignatorArrayPart]
+              ) [Designator]
+            ) [DesignatorInc]
+          ) [SimpleStatement]
+        ) [SimpleStatementList]
+        PrintStatement(
+          SimpleExpression(
+            SimpleTerm(
+              DesignatorFactor(
+                Designator(
+                  DesignatorStart(
+                   c
+                  ) [DesignatorStart]
+                  NoDesignatorArrayPart(
+                  ) [NoDesignatorArrayPart]
+                ) [Designator]
+                NoFactorMethodPart(
+                ) [NoFactorMethodPart]
+              ) [DesignatorFactor]
+            ) [SimpleTerm]
+          ) [SimpleExpression]
+        ) [PrintStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  23:15:16,419 - ===================================
+INFO  23:15:16,424 - Deklarisana promenljiva c na liniji 2
+INFO  23:15:16,424 - Definisana funkcija main na liniji 4
+INFO  23:15:16,425 - Deklarisana promenljiva a na liniji 5
+INFO  23:15:16,425 - Deklarisana promenljiva kk na liniji 6
+INFO  23:15:16,428 - Koriscena promenljiva Var c: char, 0, 0 na liniji 8
+INFO  23:15:16,428 - Koriscena promenljiva Var c: char, 0, 0 na liniji 9
+ERROR 23:15:16,428 - Greska na liniji 9, moguce je inkrementirati samo tip int
+
+ERROR 23:15:16,428 - Greska na liniji 10, promenljiva bodovi nije deklarisana
+
+INFO  23:15:16,428 - Koriscena promenljiva Var noObj: -1, -1 na liniji 10
+ERROR 23:15:16,428 - Greska na liniji 10, dati tip se ne moze ispisati
+
+INFO  23:15:16,428 - Koriscena promenljiva Var kk: int, 1, 1 na liniji 12
+INFO  23:15:16,428 - Koriscena promenljiva Var kk: int, 1, 1 na liniji 13
+INFO  23:15:16,428 - Koriscena promenljiva Var a: array of int, 0, 1 na liniji 14
+INFO  23:15:16,428 - Koriscena promenljiva Var kk: int, 1, 1 na liniji 15
+INFO  23:15:16,429 - Koriscena promenljiva Var a: array of int, 0, 1 na liniji 15
+INFO  23:15:16,429 - Koriscena promenljiva Var a: array of int, 0, 1 na liniji 17
+ERROR 23:15:16,429 - Greska na liniji 17, moguce je inkrementirati samo tip int
+
+INFO  23:15:16,429 - Koriscena promenljiva Var c: char, 0, 0 na liniji 19
+ERROR 23:15:16,429 - Greska na liniji 19, indeks nije tipa int
+
+INFO  23:15:16,429 - Koriscena promenljiva Var a: array of int, 0, 1 na liniji 19
+INFO  23:15:16,429 - Koriscena promenljiva Var a: array of int, 0, 1 na liniji 22
+ERROR 23:15:16,429 - Greska na liniji 22, moguce je inkrementirati samo tip int
+
+INFO  23:15:16,429 - Koriscena promenljiva Var c: char, 0, 0 na liniji 24
+INFO  23:15:16,429 -  Print count calls = 2
+INFO  23:15:16,429 -  Deklarisanih promenljivih ima = 3
+ERROR 23:15:16,430 - Parsiranje NIJE uspesno zavrseno!

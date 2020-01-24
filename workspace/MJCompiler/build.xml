@@ -68,7 +68,7 @@
 		</java>
 	</target>
 
-	<target name="runObj">
+	<target name="runObj" depends="disasm">
 		<java classname="rs.etf.pp1.mj.runtime.Run">
 			<arg value="test/program.obj" />
 			<classpath>

@@ -1,0 +1,79 @@
+INFO  23:37:32,010 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\test1.mj
+INFO  23:37:32,057 - #6 program
+INFO  23:37:32,057 - #3 Test1
+INFO  23:37:32,057 - #3 int
+INFO  23:37:32,062 - #3 niz
+INFO  23:37:32,064 - #15 [
+INFO  23:37:32,064 - #16 ]
+INFO  23:37:32,064 - #12 ;
+INFO  23:37:32,066 - #9 {
+INFO  23:37:32,067 - #17 void
+INFO  23:37:32,067 - #3 main
+INFO  23:37:32,069 - #18 (
+INFO  23:37:32,070 - #19 )
+INFO  23:37:32,070 - #9 {
+INFO  23:37:32,072 - #3 niz
+INFO  23:37:32,072 - #20 ++
+INFO  23:37:32,074 - #12 ;
+INFO  23:37:32,075 - #10 }
+INFO  23:37:32,075 - #10 }
+INFO  23:37:32,092 - Program(
+  ProgramName(
+   Test1
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    NoMultiDeclList(
+    ) [NoMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        OneVarDeclList(
+          VarDef(
+           niz
+            SimpleArrayDef(
+            ) [SimpleArrayDef]
+          ) [VarDef]
+        ) [OneVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      SimpleStatementList(
+        NoStatementList(
+        ) [NoStatementList]
+        SimpleStatement(
+          DesignatorInc(
+            Designator(
+              DesignatorStart(
+               niz
+              ) [DesignatorStart]
+              NoDesignatorArrayPart(
+              ) [NoDesignatorArrayPart]
+            ) [Designator]
+          ) [DesignatorInc]
+        ) [SimpleStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  23:37:32,093 - ===================================
+INFO  23:37:32,098 - Deklarisana promenljiva niz na liniji 2
+INFO  23:37:32,099 - Definisana funkcija main na liniji 4
+INFO  23:37:32,099 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 5
+ERROR 23:37:32,099 - Greska na liniji 5, moguce je inkrementirati samo tip int
+
+INFO  23:37:32,099 -  Print count calls = 0
+INFO  23:37:32,099 -  Deklarisanih promenljivih ima = 1
+ERROR 23:37:32,100 - Parsiranje NIJE uspesno zavrseno!

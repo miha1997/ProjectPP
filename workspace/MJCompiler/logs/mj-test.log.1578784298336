@@ -1,0 +1,336 @@
+INFO  00:11:23,025 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\test3.mj
+INFO  00:11:23,078 - #6 program
+INFO  00:11:23,078 - #3 test3
+INFO  00:11:23,078 - #3 int
+INFO  00:11:23,080 - #3 char
+INFO  00:11:23,081 - #3 greska
+ERROR 00:11:23,081 - 
+Sintaksna greska na liniji 2
+INFO  00:11:23,081 - #12 ;
+INFO  00:11:23,081 - #3 boolean
+INFO  00:11:23,082 - #3 flag
+INFO  00:11:23,082 - #12 ;
+ERROR 00:11:23,083 - Sintaksna greska, izvrsen oporavak u liniji 2 u konstrukciji vardecl
+INFO  00:11:23,086 - #11 const
+INFO  00:11:23,086 - #3 boolean
+INFO  00:11:23,086 - #3 constFlag
+INFO  00:11:23,087 - #13 =
+INFO  00:11:23,087 - #4 true
+INFO  00:11:23,089 - #12 ;
+INFO  00:11:23,091 - #9 {
+INFO  00:11:23,092 - #17 void
+INFO  00:11:23,093 - #3 main
+INFO  00:11:23,093 - #18 (
+INFO  00:11:23,094 - #19 )
+INFO  00:11:23,094 - #9 {
+INFO  00:11:23,095 - #10 }
+INFO  00:11:23,096 - #3 int
+INFO  00:11:23,097 - #3 func
+INFO  00:11:23,097 - #18 (
+INFO  00:11:23,098 - #19 )
+INFO  00:11:23,098 - #3 int
+INFO  00:11:23,098 - #3 a
+INFO  00:11:23,098 - #12 ;
+INFO  00:11:23,098 - #3 int
+INFO  00:11:23,098 - #3 arr
+INFO  00:11:23,098 - #15 [
+INFO  00:11:23,098 - #16 ]
+INFO  00:11:23,098 - #12 ;
+INFO  00:11:23,099 - #9 {
+INFO  00:11:23,099 - #3 flag
+INFO  00:11:23,099 - #13 =
+INFO  00:11:23,102 - #2 1
+INFO  00:11:23,102 - #12 ;
+INFO  00:11:23,102 - #3 flag
+INFO  00:11:23,103 - #13 =
+INFO  00:11:23,103 - #4 true
+INFO  00:11:23,103 - #12 ;
+INFO  00:11:23,104 - #3 constFlag
+INFO  00:11:23,104 - #13 =
+INFO  00:11:23,104 - #4 true
+INFO  00:11:23,104 - #12 ;
+INFO  00:11:23,105 - #3 arr
+INFO  00:11:23,105 - #15 [
+INFO  00:11:23,105 - #3 a
+INFO  00:11:23,105 - #16 ]
+INFO  00:11:23,106 - #13 =
+INFO  00:11:23,110 - #3 a
+INFO  00:11:23,110 - #12 ;
+INFO  00:11:23,113 - #28 return
+INFO  00:11:23,113 - #5 'c'
+INFO  00:11:23,113 - #12 ;
+INFO  00:11:23,113 - #10 }
+INFO  00:11:23,114 - #10 }
+INFO  00:11:23,146 - Program(
+  ProgramName(
+   test3
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        NoMultiDeclList(
+        ) [NoMultiDeclList]
+        MultiVarDecl(
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            VarDeclErrorComma(
+            ) [VarDeclErrorComma]
+          ) [SimpleVarDeclNoError]
+        ) [MultiVarDecl]
+      ) [SimpleMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           boolean
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             flag
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiConstDecl(
+      ConstDecl(
+        Type(
+         boolean
+        ) [Type]
+        OneConstDeclList(
+          ConstDef(
+           constFlag
+            SimpleAssignOp(
+            ) [SimpleAssignOp]
+            ConstantValueBool(
+             true
+            ) [ConstantValueBool]
+          ) [ConstDef]
+        ) [OneConstDeclList]
+      ) [ConstDecl]
+    ) [MultiConstDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    SimpleMethodDeclList(
+      NoMethodDeclList(
+      ) [NoMethodDeclList]
+      MethodDecl(
+        MethodTypeVoid(
+        ) [MethodTypeVoid]
+        MethodName(
+         main
+        ) [MethodName]
+        EmptyMethodVariableDeclarationList(
+        ) [EmptyMethodVariableDeclarationList]
+        NoStatementList(
+        ) [NoStatementList]
+      ) [MethodDecl]
+    ) [SimpleMethodDeclList]
+    MethodDecl(
+      MethodTypeOther(
+        Type(
+         int
+        ) [Type]
+      ) [MethodTypeOther]
+      MethodName(
+       func
+      ) [MethodName]
+      SimpleMethodVarDeclList(
+        SimpleMethodVarDeclList(
+          EmptyMethodVariableDeclarationList(
+          ) [EmptyMethodVariableDeclarationList]
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               a
+                NoArrayDef(
+                ) [NoArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [SimpleMethodVarDeclList]
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             arr
+              SimpleArrayDef(
+              ) [SimpleArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [SimpleMethodVarDeclList]
+      SimpleStatementList(
+        SimpleStatementList(
+          SimpleStatementList(
+            SimpleStatementList(
+              SimpleStatementList(
+                NoStatementList(
+                ) [NoStatementList]
+                SimpleStatement(
+                  AssignDesignatorStatement(
+                    Designator(
+                      DesignatorStart(
+                       flag
+                      ) [DesignatorStart]
+                      NoDesignatorArrayPart(
+                      ) [NoDesignatorArrayPart]
+                    ) [Designator]
+                    SimpleAssignOp(
+                    ) [SimpleAssignOp]
+                    SimpleExpression(
+                      SimpleTerm(
+                        ConstFactor(
+                          ConstantValueNum(
+                           1
+                          ) [ConstantValueNum]
+                        ) [ConstFactor]
+                      ) [SimpleTerm]
+                    ) [SimpleExpression]
+                  ) [AssignDesignatorStatement]
+                ) [SimpleStatement]
+              ) [SimpleStatementList]
+              SimpleStatement(
+                AssignDesignatorStatement(
+                  Designator(
+                    DesignatorStart(
+                     flag
+                    ) [DesignatorStart]
+                    NoDesignatorArrayPart(
+                    ) [NoDesignatorArrayPart]
+                  ) [Designator]
+                  SimpleAssignOp(
+                  ) [SimpleAssignOp]
+                  SimpleExpression(
+                    SimpleTerm(
+                      ConstFactor(
+                        ConstantValueBool(
+                         true
+                        ) [ConstantValueBool]
+                      ) [ConstFactor]
+                    ) [SimpleTerm]
+                  ) [SimpleExpression]
+                ) [AssignDesignatorStatement]
+              ) [SimpleStatement]
+            ) [SimpleStatementList]
+            SimpleStatement(
+              AssignDesignatorStatement(
+                Designator(
+                  DesignatorStart(
+                   constFlag
+                  ) [DesignatorStart]
+                  NoDesignatorArrayPart(
+                  ) [NoDesignatorArrayPart]
+                ) [Designator]
+                SimpleAssignOp(
+                ) [SimpleAssignOp]
+                SimpleExpression(
+                  SimpleTerm(
+                    ConstFactor(
+                      ConstantValueBool(
+                       true
+                      ) [ConstantValueBool]
+                    ) [ConstFactor]
+                  ) [SimpleTerm]
+                ) [SimpleExpression]
+              ) [AssignDesignatorStatement]
+            ) [SimpleStatement]
+          ) [SimpleStatementList]
+          SimpleStatement(
+            AssignDesignatorStatement(
+              Designator(
+                DesignatorStart(
+                 arr
+                ) [DesignatorStart]
+                SimpleDesignatorArrayPart(
+                  SimpleExpression(
+                    SimpleTerm(
+                      DesignatorFactor(
+                        Designator(
+                          DesignatorStart(
+                           a
+                          ) [DesignatorStart]
+                          NoDesignatorArrayPart(
+                          ) [NoDesignatorArrayPart]
+                        ) [Designator]
+                        NoFactorMethodPart(
+                        ) [NoFactorMethodPart]
+                      ) [DesignatorFactor]
+                    ) [SimpleTerm]
+                  ) [SimpleExpression]
+                ) [SimpleDesignatorArrayPart]
+              ) [Designator]
+              SimpleAssignOp(
+              ) [SimpleAssignOp]
+              SimpleExpression(
+                SimpleTerm(
+                  DesignatorFactor(
+                    Designator(
+                      DesignatorStart(
+                       a
+                      ) [DesignatorStart]
+                      NoDesignatorArrayPart(
+                      ) [NoDesignatorArrayPart]
+                    ) [Designator]
+                    NoFactorMethodPart(
+                    ) [NoFactorMethodPart]
+                  ) [DesignatorFactor]
+                ) [SimpleTerm]
+              ) [SimpleExpression]
+            ) [AssignDesignatorStatement]
+          ) [SimpleStatement]
+        ) [SimpleStatementList]
+        ReturnStatement(
+          FullExpressionPart(
+            SimpleExpression(
+              SimpleTerm(
+                ConstFactor(
+                  ConstantValueChar(
+                   'c'
+                  ) [ConstantValueChar]
+                ) [ConstFactor]
+              ) [SimpleTerm]
+            ) [SimpleExpression]
+          ) [FullExpressionPart]
+        ) [ReturnStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  00:11:23,149 - ===================================
+ERROR 00:11:23,157 - Greska na liniji 3, tip boolean ne postoji u tabeli simbola!
+
+INFO  00:11:23,157 - Deklarisana promenljiva flag na liniji 3
+ERROR 00:11:23,157 - Greska na liniji 4, tip boolean ne postoji u tabeli simbola!
+
+ERROR 00:11:23,158 - Greska na liniji 4, konstanta constFlag nije odgovarajuceg tipa!
+
+INFO  00:11:23,167 - Definisana funkcija main na liniji 7
+INFO  00:11:23,167 - Definisana funkcija func na liniji 11
+INFO  00:11:23,168 - Deklarisana promenljiva a na liniji 11
+INFO  00:11:23,169 - Deklarisana promenljiva arr na liniji 11
+INFO  00:11:23,169 - Koriscena promenljiva Var flag: int, 0, 0 na liniji 12
+INFO  00:11:23,169 - Koriscena promenljiva Var flag: int, 0, 0 na liniji 13
+ERROR 00:11:23,169 - Greska na liniji 13, tipovi nisu kompatibilni
+
+ERROR 00:11:23,169 - Greska na liniji 14, promenljiva constFlag nije deklarisana
+
+INFO  00:11:23,169 - Koriscena promenljiva Var noObj: -1, -1 na liniji 14
+ERROR 00:11:23,170 - Greska na liniji 14, tipovi nisu kompatibilni
+
+INFO  00:11:23,170 - Koriscena promenljiva Var a: int, 0, 1 na liniji 17
+INFO  00:11:23,170 - Koriscena promenljiva Var arr: array of int, 1, 1 na liniji 17
+INFO  00:11:23,170 - Koriscena promenljiva Var a: int, 0, 1 na liniji 17
+ERROR 00:11:23,170 - Greska na liniji 19, return nije odgovarajuceg tipa!
+
+INFO  00:11:23,170 -  Print count calls = 0
+INFO  00:11:23,170 -  Deklarisanih promenljivih ima = 3
+ERROR 00:11:23,171 - Parsiranje NIJE uspesno zavrseno!

@@ -9,24 +9,32 @@ program MJProgram
 	{
 		void main() int a; int localA; bool boolArr [];{
 			read(a);
+			x = 4;
+			localA = 8;
+			
 			print(x + 1, 2);
 			print(x);
 			
 			a = localA + x1;
+			print(a);
 			
 			localA++;
 			localA--;
 			y = 1;
 			arr = new int [x % 5];
 			arr[y] = localA *x1;
+			print(arr[y]);
 		}
 		
 		int test1() int localA;{
+			localA = 1;
 			localA++;
+			
+			return localA;
 		}
 		
 		bool test2(){
-		
+			return true;
 		}
 		
 	}

@@ -1,0 +1,529 @@
+INFO  22:23:49,389 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\mytestA3.mj
+INFO  22:23:49,523 - #6 program
+INFO  22:23:49,523 - #3 p1
+INFO  22:23:49,523 - #11 const
+INFO  22:23:49,525 - #3 int
+INFO  22:23:49,526 - #3 v
+INFO  22:23:49,528 - #13 =
+INFO  22:23:49,528 - #2 1
+INFO  22:23:49,531 - #12 ;
+INFO  22:23:49,532 - #9 {
+INFO  22:23:49,534 - #17 void
+INFO  22:23:49,536 - #3 main
+INFO  22:23:49,537 - #18 (
+INFO  22:23:49,539 - #19 )
+INFO  22:23:49,539 - #3 int
+INFO  22:23:49,539 - #3 kk
+INFO  22:23:49,539 - #13 =
+ERROR 22:23:49,540 - 
+Sintaksna greska na liniji 5
+INFO  22:23:49,540 - #2 1
+INFO  22:23:49,540 - #14 ,
+INFO  22:23:49,540 - #3 s
+INFO  22:23:49,541 - #14 ,
+INFO  22:23:49,541 - #3 g
+ERROR 22:23:49,541 - Sintaksna greska, izvrsen oporavak u liniji 5 u konstrukciji vardecl
+INFO  22:23:49,545 - #14 ,
+INFO  22:23:49,545 - #3 r
+INFO  22:23:49,545 - #14 ,
+INFO  22:23:49,545 - #3 qqqqq0
+INFO  22:23:49,545 - #21 --
+ERROR 22:23:49,545 - 
+Sintaksna greska na liniji 5
+INFO  22:23:49,547 - #23 -
+INFO  22:23:49,547 - #12 ;
+INFO  22:23:49,547 - #9 {
+INFO  22:23:49,547 - #8 read
+INFO  22:23:49,548 - #18 (
+ERROR 22:23:49,548 - Sintaksna greska, izvrsen oporavak u liniji 5 u konstrukciji vardecl
+INFO  22:23:49,550 - #3 kk
+INFO  22:23:49,550 - #19 )
+INFO  22:23:49,558 - #12 ;
+INFO  22:23:49,558 - #3 kk
+INFO  22:23:49,559 - #13 =
+INFO  22:23:49,559 - #13 =
+ERROR 22:23:49,559 - 
+Sintaksna greska na liniji 9
+INFO  22:23:49,559 - #12 ;
+INFO  22:23:49,559 - #7 print
+INFO  22:23:49,559 - #18 (
+INFO  22:23:49,559 - #3 kk
+INFO  22:23:49,559 - #19 )
+INFO  22:23:49,560 - #12 ;
+ERROR 22:23:49,560 - Sintaksna greska, izvrsen oporavak u liniji 9 u konstrukciji assign
+INFO  22:23:49,567 - #7 print
+INFO  22:23:49,568 - #18 (
+INFO  22:23:49,568 - #5 ' '
+INFO  22:23:49,570 - #19 )
+INFO  22:23:49,570 - #12 ;
+INFO  22:23:49,570 - #7 print
+INFO  22:23:49,570 - #18 (
+INFO  22:23:49,570 - #5 'r'
+INFO  22:23:49,570 - #19 )
+INFO  22:23:49,571 - #12 ;
+INFO  22:23:49,571 - #7 print
+INFO  22:23:49,571 - #18 (
+INFO  22:23:49,571 - #5 'e'
+INFO  22:23:49,571 - #19 )
+INFO  22:23:49,571 - #12 ;
+INFO  22:23:49,571 - #7 print
+INFO  22:23:49,571 - #18 (
+INFO  22:23:49,571 - #5 's'
+INFO  22:23:49,571 - #19 )
+INFO  22:23:49,571 - #12 ;
+INFO  22:23:49,572 - #7 print
+INFO  22:23:49,572 - #18 (
+INFO  22:23:49,572 - #5 'e'
+INFO  22:23:49,572 - #19 )
+INFO  22:23:49,572 - #12 ;
+INFO  22:23:49,572 - #7 print
+INFO  22:23:49,572 - #18 (
+INFO  22:23:49,572 - #5 'n'
+INFO  22:23:49,572 - #19 )
+INFO  22:23:49,573 - #12 ;
+INFO  22:23:49,573 - #7 print
+INFO  22:23:49,573 - #18 (
+INFO  22:23:49,573 - #5 'j'
+INFO  22:23:49,573 - #19 )
+INFO  22:23:49,573 - #12 ;
+INFO  22:23:49,574 - #7 print
+INFO  22:23:49,574 - #18 (
+INFO  22:23:49,574 - #5 'e'
+INFO  22:23:49,574 - #19 )
+INFO  22:23:49,574 - #12 ;
+INFO  22:23:49,574 - #7 print
+INFO  22:23:49,574 - #18 (
+INFO  22:23:49,574 - #5 ':'
+INFO  22:23:49,574 - #19 )
+INFO  22:23:49,574 - #12 ;
+INFO  22:23:49,575 - #3 kk
+INFO  22:23:49,575 - #13 =
+INFO  22:23:49,575 - #2 1
+INFO  22:23:49,575 - #12 ;
+INFO  22:23:49,575 - #3 kk
+INFO  22:23:49,575 - #13 =
+INFO  22:23:49,575 - #2 888
+INFO  22:23:49,577 - #3 a
+ERROR 22:23:49,577 - 
+Sintaksna greska na liniji 26
+INFO  22:23:49,577 - #12 ;
+INFO  22:23:49,577 - #3 kk
+INFO  22:23:49,577 - #13 =
+ERROR 22:23:49,577 - Sintaksna greska, izvrsen oporavak u liniji 26 u konstrukciji assign
+INFO  22:23:49,577 - #2 2
+INFO  22:23:49,577 - #25 *
+INFO  22:23:49,577 - #3 kk
+INFO  22:23:49,580 - #22 +
+INFO  22:23:49,580 - #2 1
+INFO  22:23:49,583 - #23 -
+INFO  22:23:49,583 - #2 3
+INFO  22:23:49,585 - #25 *
+INFO  22:23:49,585 - #2 4
+INFO  22:23:49,585 - #12 ;
+INFO  22:23:49,585 - #7 print
+INFO  22:23:49,585 - #18 (
+INFO  22:23:49,585 - #3 kk
+INFO  22:23:49,585 - #19 )
+INFO  22:23:49,585 - #12 ;
+INFO  22:23:49,585 - #10 }
+INFO  22:23:49,585 - #10 }
+INFO  22:23:49,614 - Program(
+  ProgramName(
+   p1
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    NoMultiDeclList(
+    ) [NoMultiDeclList]
+    MultiConstDecl(
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        OneConstDeclList(
+          ConstDef(
+           v
+            SimpleAssignOp(
+            ) [SimpleAssignOp]
+            ConstantValueNum(
+             1
+            ) [ConstantValueNum]
+          ) [ConstDef]
+        ) [OneConstDeclList]
+      ) [ConstDecl]
+    ) [MultiConstDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      SimpleMethodVarDeclList(
+        EmptyMethodVariableDeclarationList(
+        ) [EmptyMethodVariableDeclarationList]
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          VarDeclErrorComma(
+          ) [VarDeclErrorComma]
+        ) [SimpleVarDeclNoError]
+      ) [SimpleMethodVarDeclList]
+      SimpleStatementList(
+        SimpleStatementList(
+          SimpleStatementList(
+            SimpleStatementList(
+              SimpleStatementList(
+                SimpleStatementList(
+                  SimpleStatementList(
+                    SimpleStatementList(
+                      SimpleStatementList(
+                        SimpleStatementList(
+                          SimpleStatementList(
+                            SimpleStatementList(
+                              SimpleStatementList(
+                                SimpleStatementList(
+                                  SimpleStatementList(
+                                    NoStatementList(
+                                    ) [NoStatementList]
+                                    ReadStatement(
+                                      Designator(
+                                        DesignatorStart(
+                                         kk
+                                        ) [DesignatorStart]
+                                        NoDesignatorArrayPart(
+                                        ) [NoDesignatorArrayPart]
+                                      ) [Designator]
+                                    ) [ReadStatement]
+                                  ) [SimpleStatementList]
+                                  SimpleStatement(
+                                    AssignDesignatorStatement(
+                                      Designator(
+                                        DesignatorStart(
+                                         kk
+                                        ) [DesignatorStart]
+                                        NoDesignatorArrayPart(
+                                        ) [NoDesignatorArrayPart]
+                                      ) [Designator]
+                                      AssignOpError(
+                                      ) [AssignOpError]
+                                      SimpleExpression(
+                                        SimpleTerm(
+                                          ExpressFactor(
+                                            SimpleExpression(
+                                              SimpleTerm(
+                                                DesignatorFactor(
+                                                  Designator(
+                                                    DesignatorStart(
+                                                     kk
+                                                    ) [DesignatorStart]
+                                                    NoDesignatorArrayPart(
+                                                    ) [NoDesignatorArrayPart]
+                                                  ) [Designator]
+                                                  NoFactorMethodPart(
+                                                  ) [NoFactorMethodPart]
+                                                ) [DesignatorFactor]
+                                              ) [SimpleTerm]
+                                            ) [SimpleExpression]
+                                          ) [ExpressFactor]
+                                        ) [SimpleTerm]
+                                      ) [SimpleExpression]
+                                    ) [AssignDesignatorStatement]
+                                  ) [SimpleStatement]
+                                ) [SimpleStatementList]
+                                PrintStatement(
+                                  SimpleExpression(
+                                    SimpleTerm(
+                                      ConstFactor(
+                                        ConstantValueChar(
+                                         ' '
+                                        ) [ConstantValueChar]
+                                      ) [ConstFactor]
+                                    ) [SimpleTerm]
+                                  ) [SimpleExpression]
+                                ) [PrintStatement]
+                              ) [SimpleStatementList]
+                              PrintStatement(
+                                SimpleExpression(
+                                  SimpleTerm(
+                                    ConstFactor(
+                                      ConstantValueChar(
+                                       'r'
+                                      ) [ConstantValueChar]
+                                    ) [ConstFactor]
+                                  ) [SimpleTerm]
+                                ) [SimpleExpression]
+                              ) [PrintStatement]
+                            ) [SimpleStatementList]
+                            PrintStatement(
+                              SimpleExpression(
+                                SimpleTerm(
+                                  ConstFactor(
+                                    ConstantValueChar(
+                                     'e'
+                                    ) [ConstantValueChar]
+                                  ) [ConstFactor]
+                                ) [SimpleTerm]
+                              ) [SimpleExpression]
+                            ) [PrintStatement]
+                          ) [SimpleStatementList]
+                          PrintStatement(
+                            SimpleExpression(
+                              SimpleTerm(
+                                ConstFactor(
+                                  ConstantValueChar(
+                                   's'
+                                  ) [ConstantValueChar]
+                                ) [ConstFactor]
+                              ) [SimpleTerm]
+                            ) [SimpleExpression]
+                          ) [PrintStatement]
+                        ) [SimpleStatementList]
+                        PrintStatement(
+                          SimpleExpression(
+                            SimpleTerm(
+                              ConstFactor(
+                                ConstantValueChar(
+                                 'e'
+                                ) [ConstantValueChar]
+                              ) [ConstFactor]
+                            ) [SimpleTerm]
+                          ) [SimpleExpression]
+                        ) [PrintStatement]
+                      ) [SimpleStatementList]
+                      PrintStatement(
+                        SimpleExpression(
+                          SimpleTerm(
+                            ConstFactor(
+                              ConstantValueChar(
+                               'n'
+                              ) [ConstantValueChar]
+                            ) [ConstFactor]
+                          ) [SimpleTerm]
+                        ) [SimpleExpression]
+                      ) [PrintStatement]
+                    ) [SimpleStatementList]
+                    PrintStatement(
+                      SimpleExpression(
+                        SimpleTerm(
+                          ConstFactor(
+                            ConstantValueChar(
+                             'j'
+                            ) [ConstantValueChar]
+                          ) [ConstFactor]
+                        ) [SimpleTerm]
+                      ) [SimpleExpression]
+                    ) [PrintStatement]
+                  ) [SimpleStatementList]
+                  PrintStatement(
+                    SimpleExpression(
+                      SimpleTerm(
+                        ConstFactor(
+                          ConstantValueChar(
+                           'e'
+                          ) [ConstantValueChar]
+                        ) [ConstFactor]
+                      ) [SimpleTerm]
+                    ) [SimpleExpression]
+                  ) [PrintStatement]
+                ) [SimpleStatementList]
+                PrintStatement(
+                  SimpleExpression(
+                    SimpleTerm(
+                      ConstFactor(
+                        ConstantValueChar(
+                         ':'
+                        ) [ConstantValueChar]
+                      ) [ConstFactor]
+                    ) [SimpleTerm]
+                  ) [SimpleExpression]
+                ) [PrintStatement]
+              ) [SimpleStatementList]
+              SimpleStatement(
+                AssignDesignatorStatement(
+                  Designator(
+                    DesignatorStart(
+                     kk
+                    ) [DesignatorStart]
+                    NoDesignatorArrayPart(
+                    ) [NoDesignatorArrayPart]
+                  ) [Designator]
+                  SimpleAssignOp(
+                  ) [SimpleAssignOp]
+                  SimpleExpression(
+                    SimpleTerm(
+                      ConstFactor(
+                        ConstantValueNum(
+                         1
+                        ) [ConstantValueNum]
+                      ) [ConstFactor]
+                    ) [SimpleTerm]
+                  ) [SimpleExpression]
+                ) [AssignDesignatorStatement]
+              ) [SimpleStatement]
+            ) [SimpleStatementList]
+            SimpleStatement(
+              AssignDesignatorStatement(
+                Designator(
+                  DesignatorStart(
+                   kk
+                  ) [DesignatorStart]
+                  NoDesignatorArrayPart(
+                  ) [NoDesignatorArrayPart]
+                ) [Designator]
+                AssignOpError(
+                ) [AssignOpError]
+                SimpleExpression(
+                  SimpleTerm(
+                    DesignatorFactor(
+                      Designator(
+                        DesignatorStart(
+                         a
+                        ) [DesignatorStart]
+                        NoDesignatorArrayPart(
+                        ) [NoDesignatorArrayPart]
+                      ) [Designator]
+                      NoFactorMethodPart(
+                      ) [NoFactorMethodPart]
+                    ) [DesignatorFactor]
+                  ) [SimpleTerm]
+                ) [SimpleExpression]
+              ) [AssignDesignatorStatement]
+            ) [SimpleStatement]
+          ) [SimpleStatementList]
+          SimpleStatement(
+            AssignDesignatorStatement(
+              Designator(
+                DesignatorStart(
+                 kk
+                ) [DesignatorStart]
+                NoDesignatorArrayPart(
+                ) [NoDesignatorArrayPart]
+              ) [Designator]
+              SimpleAssignOp(
+              ) [SimpleAssignOp]
+              MultiExpression(
+                MultiExpression(
+                  SimpleExpression(
+                    MulTerm(
+                      SimpleTerm(
+                        ConstFactor(
+                          ConstantValueNum(
+                           2
+                          ) [ConstantValueNum]
+                        ) [ConstFactor]
+                      ) [SimpleTerm]
+                      MulopMul(
+                      ) [MulopMul]
+                      DesignatorFactor(
+                        Designator(
+                          DesignatorStart(
+                           kk
+                          ) [DesignatorStart]
+                          NoDesignatorArrayPart(
+                          ) [NoDesignatorArrayPart]
+                        ) [Designator]
+                        NoFactorMethodPart(
+                        ) [NoFactorMethodPart]
+                      ) [DesignatorFactor]
+                    ) [MulTerm]
+                  ) [SimpleExpression]
+                  AddopAdd(
+                  ) [AddopAdd]
+                  SimpleTerm(
+                    ConstFactor(
+                      ConstantValueNum(
+                       1
+                      ) [ConstantValueNum]
+                    ) [ConstFactor]
+                  ) [SimpleTerm]
+                ) [MultiExpression]
+                AddopSub(
+                ) [AddopSub]
+                MulTerm(
+                  SimpleTerm(
+                    ConstFactor(
+                      ConstantValueNum(
+                       3
+                      ) [ConstantValueNum]
+                    ) [ConstFactor]
+                  ) [SimpleTerm]
+                  MulopMul(
+                  ) [MulopMul]
+                  ConstFactor(
+                    ConstantValueNum(
+                     4
+                    ) [ConstantValueNum]
+                  ) [ConstFactor]
+                ) [MulTerm]
+              ) [MultiExpression]
+            ) [AssignDesignatorStatement]
+          ) [SimpleStatement]
+        ) [SimpleStatementList]
+        PrintStatement(
+          SimpleExpression(
+            SimpleTerm(
+              DesignatorFactor(
+                Designator(
+                  DesignatorStart(
+                   kk
+                  ) [DesignatorStart]
+                  NoDesignatorArrayPart(
+                  ) [NoDesignatorArrayPart]
+                ) [Designator]
+                NoFactorMethodPart(
+                ) [NoFactorMethodPart]
+              ) [DesignatorFactor]
+            ) [SimpleTerm]
+          ) [SimpleExpression]
+        ) [PrintStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  22:23:49,628 - ===================================
+INFO  22:23:49,634 - Deklarisana konstanta v na liniji 2
+INFO  22:23:49,635 - Definisana funkcija main na liniji 4
+ERROR 22:23:49,635 - Greska na liniji 7, promenljiva kk nije deklarisana
+
+INFO  22:23:49,635 - Koriscena promenljiva Var noObj: -1, -1 na liniji 7
+ERROR 22:23:49,635 - Greska na liniji 7, dati tip se ne moze procitati
+
+ERROR 22:23:49,643 - Greska na liniji 9, promenljiva kk nije deklarisana
+
+INFO  22:23:49,643 - Koriscena promenljiva Var noObj: -1, -1 na liniji 9
+ERROR 22:23:49,643 - Greska na liniji 11, promenljiva kk nije deklarisana
+
+INFO  22:23:49,643 - Koriscena promenljiva Var noObj: -1, -1 na liniji 11
+ERROR 22:23:49,644 - Greska na liniji 24, promenljiva kk nije deklarisana
+
+INFO  22:23:49,644 - Koriscena promenljiva Var noObj: -1, -1 na liniji 24
+ERROR 22:23:49,644 - Greska na liniji 24, tipovi nisu kompatibilni
+
+ERROR 22:23:49,644 - Greska na liniji 26, promenljiva kk nije deklarisana
+
+INFO  22:23:49,644 - Koriscena promenljiva Var noObj: -1, -1 na liniji 26
+ERROR 22:23:49,644 - Greska na liniji 26, promenljiva a nije deklarisana
+
+INFO  22:23:49,644 - Koriscena promenljiva Var noObj: -1, -1 na liniji 26
+ERROR 22:23:49,644 - Greska na liniji 28, promenljiva kk nije deklarisana
+
+INFO  22:23:49,644 - Koriscena promenljiva Var noObj: -1, -1 na liniji 28
+ERROR 22:23:49,644 - Greska na liniji 28, promenljiva kk nije deklarisana
+
+INFO  22:23:49,644 - Koriscena promenljiva Var noObj: -1, -1 na liniji 28
+ERROR 22:23:49,644 - Greska na liniji 28, izraz nije tipa int
+
+ERROR 22:23:49,644 - Greska na liniji 28, tipovi nisu kompatibilni
+
+ERROR 22:23:49,644 - Greska na liniji 30, promenljiva kk nije deklarisana
+
+INFO  22:23:49,644 - Koriscena promenljiva Var noObj: -1, -1 na liniji 30
+ERROR 22:23:49,644 - Greska na liniji 30, dati tip se ne moze ispisati
+
+INFO  22:23:49,644 -  Print count calls = 10
+INFO  22:23:49,645 -  Deklarisanih promenljivih ima = 0
+ERROR 22:23:49,645 - Parsiranje NIJE uspesno zavrseno!

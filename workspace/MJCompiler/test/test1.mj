@@ -1,0 +1,26 @@
+program Test1
+	int niz[];
+	//los tip
+	smth go;
+	
+	const char c = 'a';
+	{
+		void main() char c;{
+			//niz inkrement
+			niz++;
+			
+			//indeks nije validan
+			niz[c]++;
+			
+			//nedeklarisana promenljiva
+			a++;
+			
+			//funkcija kasno deklarisana
+			func();
+		}
+		
+		//nema return naredbe
+		int func(){
+		
+		}
+	}

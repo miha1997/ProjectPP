@@ -1,0 +1,23 @@
+program test3
+	int char greska;
+	bool flag;
+	const bool constFlag = true;
+	{
+	
+		void main(){
+		
+		}
+		
+		int func() int a; int arr[];{
+			flag = 1;
+			flag = true;
+			constFlag = true;
+			
+			
+			arr[a] = a;
+			
+			return 'c';
+		}
+		
+
+	}

@@ -1,0 +1,66 @@
+INFO  23:52:08,531 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\test2.mj
+INFO  23:52:08,581 - #6 program
+INFO  23:52:08,582 - #3 Test2
+INFO  23:52:08,582 - #3 int
+INFO  23:52:08,583 - #3 x
+INFO  23:52:08,584 - #14 ,
+INFO  23:52:08,587 - #3 c
+INFO  23:52:08,587 - #3 y
+ERROR 23:52:08,587 - 
+Sintaksna greska na liniji 3
+INFO  23:52:08,588 - #20 ++
+INFO  23:52:08,588 - #14 ,
+INFO  23:52:08,588 - #3 a
+INFO  23:52:08,590 - #20 ++
+INFO  23:52:08,590 - #3 b
+INFO  23:52:08,590 - #14 ,
+INFO  23:52:08,590 - #3 a
+INFO  23:52:08,591 - #20 ++
+INFO  23:52:08,591 - #12 ;
+INFO  23:52:08,591 - #9 {
+INFO  23:52:08,591 - #17 void
+INFO  23:52:08,591 - #3 main
+ERROR 23:52:08,592 - Sintaksna greska, izvrsen oporavak u liniji 3 u konstrukciji vardecl
+INFO  23:52:08,594 - #18 (
+INFO  23:52:08,595 - #19 )
+INFO  23:52:08,595 - #9 {
+INFO  23:52:08,596 - #10 }
+INFO  23:52:08,597 - #10 }
+INFO  23:52:08,625 - Program(
+  ProgramName(
+   Test2
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    NoMultiDeclList(
+    ) [NoMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        VarDeclErrorComma(
+        ) [VarDeclErrorComma]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  23:52:08,625 - ===================================
+INFO  23:52:08,628 - Definisana funkcija main na liniji 6
+INFO  23:52:08,629 -  Print count calls = 0
+INFO  23:52:08,629 -  Deklarisanih promenljivih ima = 0
+ERROR 23:52:08,631 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,73 @@
+INFO  23:51:59,537 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\test2.mj
+INFO  23:51:59,584 - #6 program
+INFO  23:51:59,585 - #3 Test2
+INFO  23:51:59,585 - #3 int
+INFO  23:51:59,586 - #3 x
+INFO  23:51:59,588 - #14 ,
+INFO  23:51:59,591 - #3 c
+INFO  23:51:59,591 - #3 y
+ERROR 23:51:59,591 - 
+Sintaksna greska na liniji 3
+INFO  23:51:59,592 - #20 ++
+INFO  23:51:59,592 - #14 ,
+INFO  23:51:59,592 - #3 a
+INFO  23:51:59,594 - #20 ++
+INFO  23:51:59,594 - #3 b
+INFO  23:51:59,594 - #14 ,
+INFO  23:51:59,594 - #3 a
+INFO  23:51:59,594 - #12 ;
+INFO  23:51:59,594 - #9 {
+ERROR 23:51:59,594 - Sintaksna greska, izvrsen oporavak u liniji 3 u konstrukciji vardecl
+INFO  23:51:59,596 - #17 void
+INFO  23:51:59,597 - #3 main
+INFO  23:51:59,598 - #18 (
+INFO  23:51:59,598 - #19 )
+INFO  23:51:59,599 - #9 {
+INFO  23:51:59,600 - #10 }
+INFO  23:51:59,600 - #10 }
+INFO  23:51:59,630 - Program(
+  ProgramName(
+   Test2
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    NoMultiDeclList(
+    ) [NoMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        SimpleVarDeclList(
+          VarDeclErrorComma(
+          ) [VarDeclErrorComma]
+          VarDef(
+           a
+            NoArrayDef(
+            ) [NoArrayDef]
+          ) [VarDef]
+        ) [SimpleVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  23:51:59,630 - ===================================
+INFO  23:51:59,635 - Deklarisana promenljiva a na liniji 3
+INFO  23:51:59,635 - Definisana funkcija main na liniji 6
+INFO  23:51:59,635 -  Print count calls = 0
+INFO  23:51:59,635 -  Deklarisanih promenljivih ima = 1
+ERROR 23:51:59,636 - Parsiranje NIJE uspesno zavrseno!

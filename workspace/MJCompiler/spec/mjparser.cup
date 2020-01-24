@@ -49,12 +49,12 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj VarDef, ConstValue, ConstDef, ArrayVarDef;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDecl, MethodName, MethodVarDeclList;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorStatement, Statement, Expression, Designator, Term;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Factor, DesignatorArrayPart, DesignatorStart;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Factor, DesignatorArrayPart, DesignatorStart, ExpressionPart;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodType;
 
 nonterminal MultiDeclList, MethodDeclList, MultiDecl, ConstDecl, VarDecl, ConstDeclList;
-nonterminal VarDeclList, StatementList, AssignOp, Mulop, Addop, FactorMethodPart, ExpressionPart;
+nonterminal VarDeclList, StatementList, AssignOp, Mulop, Addop, FactorMethodPart;
 
 Program ::= (Program) PROG ProgramName MultiDeclList LBRACE MethodDeclList RBRACE;
 
@@ -74,10 +74,10 @@ ConstValue ::= (ConstantValueChar) CHAR:value
 			| (ConstantValueBool) BOOLVALUE:value;
 						
 VarDecl ::= (SimpleVarDeclNoError)Type VarDeclList SEMI
-			| (VarDeclError) error:labelErrorText {: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft, null); :};
+			| (VarDeclError) error:labelErrorText SEMI{: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft +  " u konstrukciji vardecl", null); :};
 VarDeclList ::= (SimpleVarDeclList) VarDeclList COMMA VarDef
 			| (OneVarDeclList) VarDef
-			| (VarDeclErrorComma) error:labelErrorText {: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft, null); :};
+			| (VarDeclErrorComma) error:labelErrorText {: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft  + " u konstrukciji vardecl", null); :};
 VarDef ::= (VarDef) IDENT:varName ArrayVarDef:arrayObject;
 
 ArrayVarDef ::= (SimpleArrayDef) LBRACKET RBRACKET
@@ -112,7 +112,7 @@ DesignatorStatement ::= (AssignDesignatorStatement)Designator AssignOp Expressio
 					| (DesignatorStatementFactor) Factor;
 
 AssignOp ::= (SimpleAssignOp) ASSIGN
-		| (AssignOpError) error:labelErrorText {: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft, null); :};
+		| (AssignOpError) error:labelErrorText {: parser.report_error("Sintaksna greska, izvrsen oporavak u liniji " + labelErrorTextleft +  " u konstrukciji assign", null); :};
 
 Designator ::= (Designator) DesignatorStart DesignatorArrayPart:designatorArrayPart;
 

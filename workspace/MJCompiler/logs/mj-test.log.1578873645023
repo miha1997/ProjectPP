@@ -1,0 +1,243 @@
+INFO  01:00:27,026 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\array.mj
+INFO  01:00:27,093 - #6 program
+INFO  01:00:27,093 - #3 testArray
+INFO  01:00:27,093 - #3 int
+INFO  01:00:27,095 - #3 a
+INFO  01:00:27,096 - #15 [
+INFO  01:00:27,096 - #16 ]
+INFO  01:00:27,096 - #12 ;
+INFO  01:00:27,098 - #3 int
+INFO  01:00:27,098 - #3 b
+INFO  01:00:27,099 - #15 [
+INFO  01:00:27,099 - #16 ]
+INFO  01:00:27,099 - #12 ;
+INFO  01:00:27,100 - #9 {
+INFO  01:00:27,100 - #17 void
+INFO  01:00:27,101 - #3 main
+INFO  01:00:27,101 - #18 (
+INFO  01:00:27,102 - #19 )
+INFO  01:00:27,102 - #9 {
+INFO  01:00:27,103 - #3 a
+INFO  01:00:27,103 - #13 =
+INFO  01:00:27,106 - #24 new
+INFO  01:00:27,108 - #15 [
+ERROR 01:00:27,108 - 
+Sintaksna greska na liniji 7
+INFO  01:00:27,108 - #2 2
+INFO  01:00:27,108 - #16 ]
+INFO  01:00:27,108 - #12 ;
+INFO  01:00:27,109 - #3 a
+INFO  01:00:27,109 - #15 [
+INFO  01:00:27,110 - #2 0
+INFO  01:00:27,110 - #16 ]
+ERROR 01:00:27,110 - Sintaksna greska, izvrsen oporavak u liniji 7 u konstrukciji assign
+INFO  01:00:27,111 - #13 =
+ERROR 01:00:27,112 - 
+Sintaksna greska na liniji 8
+INFO  01:00:27,112 - #2 2
+INFO  01:00:27,112 - #12 ;
+INFO  01:00:27,112 - #3 a
+INFO  01:00:27,112 - #15 [
+ERROR 01:00:27,112 - Sintaksna greska, izvrsen oporavak u liniji 7 u konstrukciji assign
+INFO  01:00:27,113 - #2 1
+INFO  01:00:27,113 - #16 ]
+INFO  01:00:27,113 - #13 =
+INFO  01:00:27,113 - #2 10
+INFO  01:00:27,113 - #12 ;
+INFO  01:00:27,113 - #3 b
+INFO  01:00:27,113 - #13 =
+INFO  01:00:27,113 - #3 a
+INFO  01:00:27,114 - #12 ;
+INFO  01:00:27,115 - #7 print
+INFO  01:00:27,115 - #18 (
+INFO  01:00:27,115 - #3 b
+INFO  01:00:27,115 - #15 [
+INFO  01:00:27,116 - #2 1
+INFO  01:00:27,116 - #16 ]
+INFO  01:00:27,116 - #19 )
+INFO  01:00:27,116 - #12 ;
+INFO  01:00:27,116 - #10 }
+INFO  01:00:27,116 - #10 }
+INFO  01:00:27,162 - Program(
+  ProgramName(
+   testArray
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      NoMultiDeclList(
+      ) [NoMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           int
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             a
+              SimpleArrayDef(
+              ) [SimpleArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiVarDecl(
+      SimpleVarDeclNoError(
+        Type(
+         int
+        ) [Type]
+        OneVarDeclList(
+          VarDef(
+           b
+            SimpleArrayDef(
+            ) [SimpleArrayDef]
+          ) [VarDef]
+        ) [OneVarDeclList]
+      ) [SimpleVarDeclNoError]
+    ) [MultiVarDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      EmptyMethodVariableDeclarationList(
+      ) [EmptyMethodVariableDeclarationList]
+      SimpleStatementList(
+        SimpleStatementList(
+          SimpleStatementList(
+            SimpleStatementList(
+              NoStatementList(
+              ) [NoStatementList]
+              SimpleStatement(
+                AssignDesignatorStatement(
+                  Designator(
+                    DesignatorStart(
+                     a
+                    ) [DesignatorStart]
+                    NoDesignatorArrayPart(
+                    ) [NoDesignatorArrayPart]
+                  ) [Designator]
+                  AssignOpError(
+                  ) [AssignOpError]
+                  SimpleExpression(
+                    SimpleTerm(
+                      ConstFactor(
+                        ConstantValueNum(
+                         2
+                        ) [ConstantValueNum]
+                      ) [ConstFactor]
+                    ) [SimpleTerm]
+                  ) [SimpleExpression]
+                ) [AssignDesignatorStatement]
+              ) [SimpleStatement]
+            ) [SimpleStatementList]
+            SimpleStatement(
+              AssignDesignatorStatement(
+                Designator(
+                  DesignatorStart(
+                   a
+                  ) [DesignatorStart]
+                  SimpleDesignatorArrayPart(
+                    SimpleExpression(
+                      SimpleTerm(
+                        ConstFactor(
+                          ConstantValueNum(
+                           1
+                          ) [ConstantValueNum]
+                        ) [ConstFactor]
+                      ) [SimpleTerm]
+                    ) [SimpleExpression]
+                  ) [SimpleDesignatorArrayPart]
+                ) [Designator]
+                SimpleAssignOp(
+                ) [SimpleAssignOp]
+                SimpleExpression(
+                  SimpleTerm(
+                    ConstFactor(
+                      ConstantValueNum(
+                       10
+                      ) [ConstantValueNum]
+                    ) [ConstFactor]
+                  ) [SimpleTerm]
+                ) [SimpleExpression]
+              ) [AssignDesignatorStatement]
+            ) [SimpleStatement]
+          ) [SimpleStatementList]
+          SimpleStatement(
+            AssignDesignatorStatement(
+              Designator(
+                DesignatorStart(
+                 b
+                ) [DesignatorStart]
+                NoDesignatorArrayPart(
+                ) [NoDesignatorArrayPart]
+              ) [Designator]
+              SimpleAssignOp(
+              ) [SimpleAssignOp]
+              SimpleExpression(
+                SimpleTerm(
+                  DesignatorFactor(
+                    Designator(
+                      DesignatorStart(
+                       a
+                      ) [DesignatorStart]
+                      NoDesignatorArrayPart(
+                      ) [NoDesignatorArrayPart]
+                    ) [Designator]
+                    NoFactorMethodPart(
+                    ) [NoFactorMethodPart]
+                  ) [DesignatorFactor]
+                ) [SimpleTerm]
+              ) [SimpleExpression]
+            ) [AssignDesignatorStatement]
+          ) [SimpleStatement]
+        ) [SimpleStatementList]
+        PrintStatement(
+          SimpleExpression(
+            SimpleTerm(
+              DesignatorFactor(
+                Designator(
+                  DesignatorStart(
+                   b
+                  ) [DesignatorStart]
+                  SimpleDesignatorArrayPart(
+                    SimpleExpression(
+                      SimpleTerm(
+                        ConstFactor(
+                          ConstantValueNum(
+                           1
+                          ) [ConstantValueNum]
+                        ) [ConstFactor]
+                      ) [SimpleTerm]
+                    ) [SimpleExpression]
+                  ) [SimpleDesignatorArrayPart]
+                ) [Designator]
+                NoFactorMethodPart(
+                ) [NoFactorMethodPart]
+              ) [DesignatorFactor]
+            ) [SimpleTerm]
+          ) [SimpleExpression]
+        ) [PrintStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  01:00:27,163 - ===================================
+INFO  01:00:27,176 - Deklarisana promenljiva a na liniji 2
+INFO  01:00:27,176 - Deklarisana promenljiva b na liniji 3
+INFO  01:00:27,176 - Definisana funkcija main na liniji 6
+INFO  01:00:27,177 - Koriscena promenljiva Var a: array of int, 0, 0 na liniji 7
+ERROR 01:00:27,179 - Greska na liniji 7, tipovi nisu kompatibilni
+
+INFO  01:00:27,179 - Koriscena promenljiva Var a: array of int, 0, 0 na liniji 9
+INFO  01:00:27,179 - Koriscena promenljiva Var b: array of int, 1, 0 na liniji 11
+INFO  01:00:27,179 - Koriscena promenljiva Var a: array of int, 0, 0 na liniji 11
+INFO  01:00:27,203 - Koriscena promenljiva Var b: array of int, 1, 0 na liniji 12
+INFO  01:00:27,203 -  Print count calls = 1
+INFO  01:00:27,205 -  Deklarisanih promenljivih ima = 2
+ERROR 01:00:27,207 - Parsiranje NIJE uspesno zavrseno!

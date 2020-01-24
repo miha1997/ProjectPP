@@ -1,15 +1,18 @@
 program smalltest
-
+int cnt;
+int x;
 {
-	void func()
-	int i;
-	{
-
+	
+	
+	void testOrd(){
+		x = ord('A');
+		print(x);
 	}
 	
 	void main()	
 	int bodovi;
 	{
+		testOrd();
 		
 	}
 }

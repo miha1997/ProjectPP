@@ -1,0 +1,204 @@
+INFO  23:44:51,182 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\test1.mj
+INFO  23:44:51,230 - #6 program
+INFO  23:44:51,230 - #3 Test1
+INFO  23:44:51,230 - #3 int
+INFO  23:44:51,231 - #3 niz
+INFO  23:44:51,232 - #15 [
+INFO  23:44:51,232 - #16 ]
+INFO  23:44:51,232 - #12 ;
+INFO  23:44:51,234 - #3 smth
+INFO  23:44:51,235 - #3 go
+INFO  23:44:51,235 - #12 ;
+INFO  23:44:51,236 - #11 const
+INFO  23:44:51,236 - #3 char
+INFO  23:44:51,236 - #3 c
+INFO  23:44:51,236 - #13 =
+INFO  23:44:51,236 - #5 'a'
+INFO  23:44:51,238 - #12 ;
+INFO  23:44:51,240 - #9 {
+INFO  23:44:51,241 - #17 void
+INFO  23:44:51,242 - #3 main
+INFO  23:44:51,243 - #18 (
+INFO  23:44:51,244 - #19 )
+INFO  23:44:51,244 - #3 char
+INFO  23:44:51,245 - #3 c
+INFO  23:44:51,245 - #12 ;
+INFO  23:44:51,245 - #9 {
+INFO  23:44:51,245 - #3 niz
+INFO  23:44:51,246 - #20 ++
+INFO  23:44:51,248 - #12 ;
+INFO  23:44:51,249 - #3 niz
+INFO  23:44:51,249 - #15 [
+INFO  23:44:51,249 - #3 c
+INFO  23:44:51,249 - #16 ]
+INFO  23:44:51,251 - #20 ++
+INFO  23:44:51,251 - #12 ;
+INFO  23:44:51,251 - #3 a
+INFO  23:44:51,251 - #20 ++
+INFO  23:44:51,251 - #12 ;
+INFO  23:44:51,251 - #10 }
+INFO  23:44:51,251 - #10 }
+INFO  23:44:51,287 - Program(
+  ProgramName(
+   Test1
+  ) [ProgramName]
+  SimpleMultiDeclList(
+    SimpleMultiDeclList(
+      SimpleMultiDeclList(
+        NoMultiDeclList(
+        ) [NoMultiDeclList]
+        MultiVarDecl(
+          SimpleVarDeclNoError(
+            Type(
+             int
+            ) [Type]
+            OneVarDeclList(
+              VarDef(
+               niz
+                SimpleArrayDef(
+                ) [SimpleArrayDef]
+              ) [VarDef]
+            ) [OneVarDeclList]
+          ) [SimpleVarDeclNoError]
+        ) [MultiVarDecl]
+      ) [SimpleMultiDeclList]
+      MultiVarDecl(
+        SimpleVarDeclNoError(
+          Type(
+           smth
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             go
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [MultiVarDecl]
+    ) [SimpleMultiDeclList]
+    MultiConstDecl(
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+        OneConstDeclList(
+          ConstDef(
+           c
+            SimpleAssignOp(
+            ) [SimpleAssignOp]
+            ConstantValueChar(
+             'a'
+            ) [ConstantValueChar]
+          ) [ConstDef]
+        ) [OneConstDeclList]
+      ) [ConstDecl]
+    ) [MultiConstDecl]
+  ) [SimpleMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      SimpleMethodVarDeclList(
+        EmptyMethodVariableDeclarationList(
+        ) [EmptyMethodVariableDeclarationList]
+        SimpleVarDeclNoError(
+          Type(
+           char
+          ) [Type]
+          OneVarDeclList(
+            VarDef(
+             c
+              NoArrayDef(
+              ) [NoArrayDef]
+            ) [VarDef]
+          ) [OneVarDeclList]
+        ) [SimpleVarDeclNoError]
+      ) [SimpleMethodVarDeclList]
+      SimpleStatementList(
+        SimpleStatementList(
+          SimpleStatementList(
+            NoStatementList(
+            ) [NoStatementList]
+            SimpleStatement(
+              DesignatorInc(
+                Designator(
+                  DesignatorStart(
+                   niz
+                  ) [DesignatorStart]
+                  NoDesignatorArrayPart(
+                  ) [NoDesignatorArrayPart]
+                ) [Designator]
+              ) [DesignatorInc]
+            ) [SimpleStatement]
+          ) [SimpleStatementList]
+          SimpleStatement(
+            DesignatorInc(
+              Designator(
+                DesignatorStart(
+                 niz
+                ) [DesignatorStart]
+                SimpleDesignatorArrayPart(
+                  SimpleExpression(
+                    SimpleTerm(
+                      DesignatorFactor(
+                        Designator(
+                          DesignatorStart(
+                           c
+                          ) [DesignatorStart]
+                          NoDesignatorArrayPart(
+                          ) [NoDesignatorArrayPart]
+                        ) [Designator]
+                        NoFactorMethodPart(
+                        ) [NoFactorMethodPart]
+                      ) [DesignatorFactor]
+                    ) [SimpleTerm]
+                  ) [SimpleExpression]
+                ) [SimpleDesignatorArrayPart]
+              ) [Designator]
+            ) [DesignatorInc]
+          ) [SimpleStatement]
+        ) [SimpleStatementList]
+        SimpleStatement(
+          DesignatorInc(
+            Designator(
+              DesignatorStart(
+               a
+              ) [DesignatorStart]
+              NoDesignatorArrayPart(
+              ) [NoDesignatorArrayPart]
+            ) [Designator]
+          ) [DesignatorInc]
+        ) [SimpleStatement]
+      ) [SimpleStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  23:44:51,288 - ===================================
+INFO  23:44:51,309 - Deklarisana promenljiva niz na liniji 2
+ERROR 23:44:51,310 - Greska na liniji 4, tip smth ne postoji u tabeli simbola!
+
+INFO  23:44:51,310 - Deklarisana promenljiva go na liniji 4
+INFO  23:44:51,310 - Deklarisana konstanta c na liniji 6
+INFO  23:44:51,310 - Definisana funkcija main na liniji 8
+INFO  23:44:51,310 - Deklarisana promenljiva c na liniji 8
+INFO  23:44:51,310 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 10
+ERROR 23:44:51,310 - Greska na liniji 10, moguce je inkrementirati samo tip int
+
+INFO  23:44:51,311 - Koriscena promenljiva Var c: char, 0, 1 na liniji 13
+ERROR 23:44:51,311 - Greska na liniji 13, indeks nije tipa int
+
+INFO  23:44:51,311 - Koriscena promenljiva Var niz: array of int, 0, 0 na liniji 13
+ERROR 23:44:51,311 - Greska na liniji 16, promenljiva a nije deklarisana
+
+INFO  23:44:51,311 - Koriscena promenljiva Var noObj: -1, -1 na liniji 16
+ERROR 23:44:51,311 - Greska na liniji 16, moguce je inkrementirati samo tip int
+
+INFO  23:44:51,312 -  Print count calls = 0
+INFO  23:44:51,312 -  Deklarisanih promenljivih ima = 3
+ERROR 23:44:51,313 - Parsiranje NIJE uspesno zavrseno!

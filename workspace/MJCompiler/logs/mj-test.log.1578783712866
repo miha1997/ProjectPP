@@ -1,0 +1,65 @@
+INFO  00:01:19,922 - Compiling source file: C:\mihailo\VII Semestar\PP1\ProjectPP\workspace\MJCompiler\test\test2.mj
+INFO  00:01:19,970 - #6 program
+INFO  00:01:19,970 - #3 Test2
+INFO  00:01:19,971 - #9 {
+INFO  00:01:19,973 - #17 void
+INFO  00:01:19,973 - #3 main
+INFO  00:01:19,974 - #18 (
+INFO  00:01:19,975 - #19 )
+INFO  00:01:19,975 - #3 char
+INFO  00:01:19,976 - #3 c
+INFO  00:01:19,976 - #13 =
+ERROR 00:01:19,977 - 
+Sintaksna greska na liniji 5
+INFO  00:01:19,977 - #2 20
+INFO  00:01:19,977 - #14 ,
+INFO  00:01:19,977 - #3 b
+INFO  00:01:19,978 - #14 ,
+INFO  00:01:19,978 - #3 r
+ERROR 00:01:19,978 - Sintaksna greska, izvrsen oporavak u liniji 5 u konstrukciji vardecl
+INFO  00:01:19,981 - #14 ,
+INFO  00:01:19,981 - #3 m
+INFO  00:01:19,981 - #20 ++
+ERROR 00:01:19,981 - 
+Sintaksna greska na liniji 5
+INFO  00:01:19,982 - #12 ;
+INFO  00:01:19,982 - #9 {
+INFO  00:01:19,982 - #10 }
+INFO  00:01:19,982 - #10 }
+ERROR 00:01:19,982 - Sintaksna greska, izvrsen oporavak u liniji 5 u konstrukciji vardecl
+INFO  00:01:20,011 - Program(
+  ProgramName(
+   Test2
+  ) [ProgramName]
+  NoMultiDeclList(
+  ) [NoMultiDeclList]
+  SimpleMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      MethodTypeVoid(
+      ) [MethodTypeVoid]
+      MethodName(
+       main
+      ) [MethodName]
+      SimpleMethodVarDeclList(
+        EmptyMethodVariableDeclarationList(
+        ) [EmptyMethodVariableDeclarationList]
+        SimpleVarDeclNoError(
+          Type(
+           char
+          ) [Type]
+          VarDeclErrorComma(
+          ) [VarDeclErrorComma]
+        ) [SimpleVarDeclNoError]
+      ) [SimpleMethodVarDeclList]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecl]
+  ) [SimpleMethodDeclList]
+) [Program]
+INFO  00:01:20,012 - ===================================
+INFO  00:01:20,015 - Definisana funkcija main na liniji 5
+INFO  00:01:20,015 -  Print count calls = 0
+INFO  00:01:20,016 -  Deklarisanih promenljivih ima = 0
+ERROR 00:01:20,017 - Parsiranje NIJE uspesno zavrseno!
